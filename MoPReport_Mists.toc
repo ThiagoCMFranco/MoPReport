@@ -1,0 +1,41 @@
+## Interface: 50500, 110007, 1101001, 110105, 110200
+## Title: Mists of Pandaria Report
+## Notes: Check your Pandaria daily quests, work orders, currencies, world bosses and reputations in one place.
+## Category-ptBR: Missões
+## Category-enUS: Quests
+## Author: Thiago Franco (Topolino)
+## Version: 1.0.0
+## RequiredDeps:
+## X-Curse-Project-ID: 0000000
+## SavedVariables: MoPReportSharedDB
+## SavedVariablesPerCharacter: MoPReportDB
+
+# Libraries
+Libs\embeds.xml
+Libs\LibStub\LibStub.lua
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\libdatabroker-1-1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\lib.xml
+Util\3rdPartyFix.lua
+
+# Game Localization
+localization\GameLocalization\enUS\NPCNames-enUS.lua
+localization\GameLocalization\enUS\FactionNames-enUS.lua
+localization\GameLocalization\enUS\QuestTitles-enUS.lua
+
+localization\GameLocalization\ptBR\NPCNames-ptBR.lua
+localization\GameLocalization\ptBR\FactionNames-ptBR.lua
+localization\GameLocalization\ptBR\QuestTitles-ptBR.lua
+
+# Addon UI Localization
+localization\enUS.lua
+localization\ptBR.lua
+
+# Main Files
+Data\MoPDailiesDB.lua
+Util\Core.lua
+MoPReport.lua
+MoPReportFrame.xml
+DetailsFrame_Mists.xml
+
+Settings.lua

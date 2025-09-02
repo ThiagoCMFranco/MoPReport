@@ -1,0 +1,146 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+<Script file="MoPReportFrame_Script.lua"/>
+	<Frame name="MoPReportFrame" inherits="PortraitFrameTemplate" toplevel="true" enableMouse="true" movable="true" parent="UIParent" hidden="true">
+		<Size x="710" y="500"/>
+		<Anchors>
+			<Anchor point="CENTER" x="0" y="0"/>
+		</Anchors>
+        <Layers>
+            <Layer name="MoPReportBackground" level="BACKGROUND">
+                <!--<Texture parentKey="BackgroundOverlay" atlas="UI-EJ-MistsofPandaria">
+                    <TexCoords top="0" left="0.4" bottom="1.0" right="1.0"/>
+                </Texture>-->
+            </Layer>
+        </Layers>
+		<Frames>
+            <Frame name="$parentWorldBosses">
+                <Size x="340" y="430"/>
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="15" y="-60"/>
+                </Anchors>
+                <Scripts>
+			        <OnLoad function="MoPReport_OnLoad"/>
+                </Scripts>
+            </Frame>
+            <Frame name="$parentWorkOrders">
+                <Size x="300" y="100"/>
+                <Anchors>
+                    <Anchor point="BOTTOMLEFT" x="30" y="15"/>
+                </Anchors>
+                <Scripts>
+			        <OnLoad function="MoPReportWorkOrders_OnLoad"/>
+                </Scripts>
+                <Layers>
+                    <Layer level="BACKGROUND" textureSubLevel="1">
+                        <Texture setAllPoints="true" file="Interface\ACHIEVEMENTFRAME\UI-GuildAchievement-Parchment-Horizontal-Desaturated" /> 
+                        <!-- <Texture setAllPoints="true" file="Interface\BankFrame\Bank-Background" desaturated="true">
+                            <Size x="400" y="200" />
+                            <TexCoords left="0" right="1" top="0" bottom="0.7" />
+                        </Texture> -->
+                    </Layer>
+                    <Layer level="BACKGROUND" textureSubLevel="2">
+                        <Texture setAllPoints="true" file="Interface\BlackMarket\BlackMarketBackground-BottomShadow">
+                            <Color r="1" g="1" b="1" a="0.6" />
+                        </Texture>
+                    </Layer>
+                    <Layer level="BORDER" textureSubLevel="1">
+                        <Texture file="Interface\BlackMarket\_WoodFrame-TileHorizontal">
+                            <Size x="300" y="14" />
+                            <TexCoords left="0.00000000" right="1.00000000" top="0.01562500" bottom="0.45312500"/>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" />
+                            </Anchors>
+                        </Texture>
+                        <Texture file="Interface\BlackMarket\_WoodFrame-TileHorizontal">
+                            <Size x="300" y="14" />
+                            <TexCoords left="0.00000000" right="1.00000000" top="0.48437500" bottom="0.92187500"/>
+                            <Anchors>
+                                <Anchor point="BOTTOMLEFT" />
+                            </Anchors>
+                        </Texture>
+                        <Texture file="Interface\BlackMarket\!WoodFrame-TileVertical">
+                            <Size x="14" y="100" />
+                            <TexCoords left="0.01562500" right="0.45312500" top="0.00000000" bottom="1.00000000"/>
+                            <Anchors>
+                                <Anchor point="TOPLEFT" />
+                            </Anchors>
+                        </Texture>
+                        <Texture file="Interface\BlackMarket\!WoodFrame-TileVertical">
+                            <Size x="14" y="100" />
+                            <TexCoords left="0.48437500" right="0.92187500" top="0.00000000" bottom="1.00000000"/>	
+                            <Anchors>
+                                <Anchor point="TOPRIGHT" />
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                    <Layer level="BORDER" textureSubLevel="2">
+                        <Texture file="Interface\BlackMarket\WoodFrameCorner-TopLeft">
+                            <Size x="45" y="45" />
+                            <Anchors>
+                                <Anchor point="TOPLEFT" />
+                            </Anchors>
+                        </Texture>
+                        <Texture file="Interface\BlackMarket\WoodFrameCorner-BotRight">
+                            <Size x="60" y="60" />
+                            <Anchors>
+                                <Anchor point="BOTTOMRIGHT"/>
+                            </Anchors>
+                        </Texture>
+                        <Texture file="Interface\BlackMarket\WoodFrameCorner-TopRight">
+                            <Size x="60" y="60" />
+                            <Anchors>
+                                <Anchor point="TOPRIGHT" />
+                            </Anchors>
+                        </Texture>
+                        <Texture file="Interface\BlackMarket\WoodFrameCorner-BotLeft">
+                            <Size x="45" y="45" />
+                            <Anchors>
+                                <Anchor point="BOTTOMLEFT"/>
+                            </Anchors>
+                        </Texture>
+                    </Layer>
+                    <Layer level="ARTWORK">
+                        <FontString name="$parentTitle" parentKey="Title" inherits="QuestTitleFontBlackShadow">
+                        	<Anchors>
+                        		<Anchor point="CENTER" relativeTo="$parent" relativePoint="CENTER" x="0" y="25" />
+                        	</Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+            </Frame>
+            <ScrollFrame name="$parentScroll" inherits="UIPanelScrollFrameTemplate">
+                <Size x="340" y="430"/>
+                <Anchors>
+                    <Anchor point="TOPRIGHT" x="-30" y="-60"/>
+                </Anchors>
+                <ScrollChild>
+                    <Frame name="$parentScrollChild">
+                        <Size x="350" y="420"/>
+                        <Layers>
+                            <Layer level="ARTWORK">
+                                <FontString name="$parentText" inherits="GameFontHighlight" text="">
+                                    <Anchors>
+                                        <Anchor point="TOPLEFT" x="0" y="0"/>
+                                    </Anchors>
+                                </FontString>
+                            </Layer>
+                        </Layers>
+                    </Frame>
+                </ScrollChild>
+            </ScrollFrame>
+        </Frames>
+		<Scripts>
+			<OnLoad function="QCCFrame_OnLoad"/>
+			<OnDragStart>if not MoPReportDB.LockDragDrop then self:StartMoving(); end</OnDragStart>
+			<OnDragStop>self:StopMovingOrSizing();</OnDragStop>
+            <OnShow>
+				PlaySound(SOUNDKIT.IG_CHARACTER_INFO_OPEN);
+			</OnShow>
+            <OnHide>
+				PlaySound(SOUNDKIT.IG_CHARACTER_INFO_CLOSE);
+			</OnHide>
+		</Scripts>
+	</Frame>
+
+</Ui>

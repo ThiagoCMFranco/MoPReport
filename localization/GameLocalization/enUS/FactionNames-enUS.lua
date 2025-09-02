@@ -1,0 +1,39 @@
+--Translator Thiago Franco
+--if GetLocale() ~= "enUS" then return end
+local _, qcc = ...
+qcc.L_Factions = {}
+local L_Factions = qcc.L_Factions
+
+L_Factions[1269] = "Golden Lotus"
+L_Factions[1271] = "Order of the Cloud Serpent"
+L_Factions[1435] = "Shado-Pan Assault"
+L_Factions[1270] = "Shado-Pan"
+L_Factions[1302] = "The Anglers"
+L_Factions[1341] = "The August Celestials"
+L_Factions[1359] = "The Black Prince"
+L_Factions[1337] = "Klaxxi"
+L_Factions[1492] = "Emperor Shaohao"
+L_Factions[1345] = "The Lorewalkers"
+L_Factions[1440] = "Darkspear Rebellion"
+L_Factions[1216] = "Shang Xi's Academy"
+L_Factions[1416] = "Akama's Trust"
+L_Factions[1351] = "The Brewmasters"
+L_Factions[1387] = "Kirin Tor Offensive"
+L_Factions[1376] = "Operation: Shieldwall"
+L_Factions[1242] = "Pearlfin Jinyu"
+L_Factions[1388] = "Sunreaver Onslaught"
+L_Factions[1375] = "Dominance Offensive"
+L_Factions[1228] = "Forest Hozen"
+L_Factions[1272] = "The Tillers"
+
+L_Factions[1358] = "Nat Pagle"
+L_Factions[1283] = "Farmer Fung"
+L_Factions[1277] = "Chee Chee"
+L_Factions[1275] = "Ella"
+L_Factions[1276] = "Old Hillpaw"
+L_Factions[1282] = "Fish Fellreed"
+L_Factions[1273] = "Jogu the Drunk"
+L_Factions[1278] = "Sho"
+L_Factions[1280] = "Tina Mudclaw"
+L_Factions[1279] = "Haohan Mudclaw"
+L_Factions[1281] = "Gina Mudclaw"

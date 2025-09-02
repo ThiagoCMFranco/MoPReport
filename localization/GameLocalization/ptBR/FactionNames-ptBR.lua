@@ -1,0 +1,39 @@
+--Translator Thiago Franco
+if GetLocale() ~= "ptBR" then return end
+local _, qcc = ...
+qcc.L_Factions = {}
+local L_Factions = qcc.L_Factions
+
+L_Factions[1269] = "Lótus Dourado"
+L_Factions[1271] = "Ordem da Serpente das Nuvens"
+L_Factions[1435] = "Ataque Shado-Pan"
+L_Factions[1270] = "Shado-Pan"
+L_Factions[1302] = "Os Pescadores"
+L_Factions[1341] = "Os Celestiais Majestosos"
+L_Factions[1359] = "O Principe Negro"
+L_Factions[1337] = "Os Klaxxi"
+L_Factions[1492] = "Imperador Shaohao"
+L_Factions[1345] = "Os Andarilhos das Lendas"
+L_Factions[1440] = "Rebelião Lançanegra"
+L_Factions[1216] = "Academia de Shang Xi"
+L_Factions[1416] = "Confiança de Akama"
+L_Factions[1351] = "Os Mestres Cervejeiros"
+L_Factions[1387] = "Ofensiva do Kirin Tor"
+L_Factions[1376] = "Operação: Muralha de Escudos"
+L_Factions[1242] = "Jinyus Barbatana de Pérola"
+L_Factions[1388] = "Investida Fendessol"
+L_Factions[1375] = "Ofensiva da Dominância"
+L_Factions[1228] = "Hozens da Floresta"
+L_Factions[1272] = "Os Lavradores"
+
+L_Factions[1358] = "Nat Pagle"
+L_Factions[1283] = "Fazendeiro Fung"
+L_Factions[1277] = "Tchi Tchi"
+L_Factions[1275] = "Ella"
+L_Factions[1276] = "Velho Pata do Monte"
+L_Factions[1282] = "Peixe Cana Alta"
+L_Factions[1273] = "Be Bum, o Ébrio"
+L_Factions[1278] = "Sho"
+L_Factions[1280] = "Tina Garra de Barro"
+L_Factions[1279] = "Haohan Garra de Barro"
+L_Factions[1281] = "Gina Garra de Barro"
