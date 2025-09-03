@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
---[[ MoPReport ]]--
+--[[ Mists of Pandaria Report ]]--
 --
 -- by ThiagoCMFranco <https://github.com/ThiagoCMFranco>
 --
