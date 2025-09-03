@@ -1,3 +1,25 @@
+--------------------------------------------------------------------------------
+--[[ Mists of Pandaria Report ]]--
+--
+-- by ThiagoCMFranco <https://github.com/ThiagoCMFranco>
+--
+--Copyright (C) 2025  Thiago de C. M. Franco
+--
+--This program is free software: you can redistribute it and/or modify
+--it under the terms of the GNU General Public License as published by
+--the Free Software Foundation, either version 3 of the License, or
+--(at your option) any later version.
+--
+--This program is distributed in the hope that it will be useful,
+--but WITHOUT ANY WARRANTY; without even the implied warranty of
+--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--GNU General Public License for more details.
+--
+--You should have received a copy of the GNU General Public License
+--along with this program.  If not, see <https://www.gnu.org/licenses/>.
+--
+--------------------------------------------------------------------------------
+
 local name, qcc = ...
 local L = qcc.L 
 local L_Factions = qcc.L_Factions
@@ -80,8 +102,34 @@ C_NPC_COORDINATES = {
     [L_Units["The_August_Celestials_Sage_Whiteheart"]] = {uiMapID = 390, position = {x = 0.846, y = 0.636}, name = L_Units["The_August_Celestials_Sage_Whiteheart"]},
     [L_Units["The_August_Celestials_Sage_Lotusbloom"]] = {uiMapID = 390, position = {x = 0.626, y = 0.232}, name = L_Units["The_August_Celestials_Sage_Lotusbloom"]},
     [L_Units["The_August_Celestials_Xuen"]] = {uiMapID = 379, position = {x = 0.686, y = 0.444}, name = L_Units["The_August_Celestials_Xuen"]},
-    [L_Units["The_August_Celestials_Lin_Tenderpaw"]] = {uiMapID = 379, position = {x = 0.686, y = 0.564}, name = L_Units["The_August_Celestials_Lin_Tenderpaw"]},   
+    [L_Units["The_August_Celestials_Lin_Tenderpaw"]] = {uiMapID = 379, position = {x = 0.686, y = 0.564}, name = L_Units["The_August_Celestials_Lin_Tenderpaw"]},
 
+    [L_Units["Operation_Shieldwall_Sully_The_Pickle_McLeary"]] = {uiMapID = 418, position = {x = 0.168, y = 0.786}, name = L_Units["Operation_Shieldwall_Sully_The_Pickle_McLeary"]},
+    [L_Units["Operation_Shieldwall_Hilda_Hornswaggle"]] = {uiMapID = 418, position = {x = 0.852, y = 0.290}, name = L_Units["Operation_Shieldwall_Hilda_Hornswaggle"]},
+    [L_Units["Operation_Shieldwall_Marshal_Troteman"]] = {uiMapID = 418, position = {x = 0.896, y = 0.330}, name = L_Units["Operation_Shieldwall_Marshal_Troteman"]},
+    [L_Units["Operation_Shieldwall_Mishka"]] = {uiMapID = 418, position = {x = 0.895, y = 0.335}, name = L_Units["Operation_Shieldwall_Mishka"]},
+    [L_Units["Operation_Shieldwall_Sky_Admiral_Rogers"]] = {uiMapID = 418, position = {x = 0.166, y = 0.792}, name = L_Units["Operation_Shieldwall_Sky_Admiral_Rogers"]},
+    [L_Units["Operation_Shieldwall_Seraphine_of_the_Winter"]] = {uiMapID = 418, position = {x = 0.194, y = 0.622}, name = L_Units["Operation_Shieldwall_Seraphine_of_the_Winter"]},
+    [L_Units["Operation_Shieldwall_Amber_Kearnen"]] = {uiMapID = 418, position = {x = 0.898, y = 0.324}, name = L_Units["Operation_Shieldwall_Amber_Kearnen"]},
+    [L_Units["Operation_Shieldwall_Tinkmaster_Overspark"]] = {uiMapID = 418, position = {x = 0.166, y = 0.796}, name = L_Units["Operation_Shieldwall_Tinkmaster_Overspark"]},
+    [L_Units["Operation_Shieldwall_Huntsman_Blake"]] = {uiMapID = 418, position = {x = 0.842, y = 0.188}, name = L_Units["Operation_Shieldwall_Huntsman_Blake"]},
+    
+    [L_Units["Dominance_Offensive_Jorn_Skyseer"]] = {uiMapID = 418, position = {x = 0.126, y = 0.626}, name = L_Units["Dominance_Offensive_Jorn_Skyseer"]},
+    [L_Units["Dominance_Offensive_Grizzle_Gearslip"]] = {uiMapID = 418, position = {x = 0.256, y = 0.640}, name = L_Units["Dominance_Offensive_Grizzle_Gearslip"]},
+    [L_Units["Dominance_Offensive_Daxil_The_Gem_Oregrind"]] = {uiMapID = 418, position = {x = 0.226, y = 0.622}, name = L_Units["Dominance_Offensive_Daxil_The_Gem_Oregrind"]},
+    [L_Units["Dominance_Offensive_Boss-Lady_Trixel"]] = {uiMapID = 418, position = {x = 0.136, y = 0.558}, name = L_Units["Dominance_Offensive_Boss-Lady_Trixel"]},
+    [L_Units["Dominance_Offensive_Bounty_Board"]] = {uiMapID = 418, position = {x = 0.118, y = 0.545}, name = L_Units["Dominance_Offensive_Bounty_Board"]},
+    [L_Units["Dominance_Offensive_Bixy_Buzzsaw"]] = {uiMapID = 418, position = {x = 0.252, y = 0.604}, name = L_Units["Dominance_Offensive_Bixy_Buzzsaw"]},
+    [L_Units["Dominance_Offensive_Duke"]] = {uiMapID = 418, position = {x = 0.136, y = 0.558}, name = L_Units["Dominance_Offensive_Duke"]},
+    [L_Units["Dominance_Offensive_Rivett_Clutchpop"]] = {uiMapID = 418, position = {x = 0.130, y = 0.562}, name = L_Units["Dominance_Offensive_Rivett_Clutchpop"]},
+    [L_Units["Dominance_Offensive_Zino_The_Shredder_Quickchop"]] = {uiMapID = 418, position = {x = 0.206, y = 0.580}, name = L_Units["Dominance_Offensive_Zino_The_Shredder_Quickchop"]},
+    [L_Units["Dominance_Offensive_Kaelis_Sunsoar"]] = {uiMapID = 418, position = {x = 0.816, y = 0.182}, name = L_Units["Dominance_Offensive_Kaelis_Sunsoar"]},
+    [L_Units["Dominance_Offensive_Blood_Guard_Gro_tash"]] = {uiMapID = 418, position = {x = 0.100, y = 0.538}, name = L_Units["Dominance_Offensive_Blood_Guard_Gro_tash"]},
+    [L_Units["Dominance_Offensive_Brolic"]] = {uiMapID = 418, position = {x = 0.106, y = 0.536}, name = L_Units["Dominance_Offensive_Brolic"]},
+    [L_Units["Dominance_Offensive_Shokia"]] = {uiMapID = 418, position = {x = 0.102, y = 0.556}, name = L_Units["Dominance_Offensive_Shokia"]},
+    [L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"]] = {uiMapID = 418, position = {x = 0.758, y = 0.342}, name = L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"]},
+    [L_Units["Dominance_Offensive_Shademaster_Kiryn"]] = {uiMapID = 418, position = {x = 0.758, y = 0.344}, name = L_Units["Dominance_Offensive_Shademaster_Kiryn"]},
+    
 }
 
 --key: Faction Id
@@ -373,47 +421,47 @@ C_MOP_DAILY_QUESTS = {
 
     -- Operação: Muralha de Escudos
     [1376] = {
-        [32154] = {32154, L_Quests[32154], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Burn Out!"
+        [32154] = {32154, L_Quests[32154], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Sully_The_Pickle_McLeary"], "", "", 1}, -- Operation: Shieldwall - "Burn Out!"
         [32159] = {32159, L_Quests[32159], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Circle of Life"
-        [32446] = {32446, L_Quests[32446], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Dis-Assembly Required"
-        [32156] = {32156, L_Quests[32156], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "It's Only Right"
+        [32446] = {32446, L_Quests[32446], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Sully_The_Pickle_McLeary"], "", "", 1}, -- Operation: Shieldwall - "Dis-Assembly Required"
+        [32156] = {32156, L_Quests[32156], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Mishka"], "", "", 1}, -- Operation: Shieldwall - "It's Only Right"
         [32155] = {32155, L_Quests[32155], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Necessary Breaks"
-        [32157] = {32157, L_Quests[32157], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "The Only Good Goblin..."
-        [32158] = {32158, L_Quests[32158], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Two Step Program"
+        [32157] = {32157, L_Quests[32157], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Sky_Admiral_Rogers"], "", "", 1}, -- Operation: Shieldwall - "The Only Good Goblin..."
+        [32158] = {32158, L_Quests[32158], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Seraphine_of_the_Winter"], "", "", 1}, -- Operation: Shieldwall - "Two Step Program"
         [32433] = {32433, L_Quests[32433], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Undermining the Under Miner"
 
-        [32451] = {32451, L_Quests[32451], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Send A Message"
-        [32143] = {32143, L_Quests[32143], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "A Kind of Magic"
-        [32145] = {32145, L_Quests[32145], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Don't Lose Your Head"
-        [32146] = {32146, L_Quests[32146], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Hammer to Fall"
-        [32144] = {32144, L_Quests[32144], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Under Pressure"
-        [32142] = {32142, L_Quests[32142], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "We Will Rock You"
+        [32451] = {32451, L_Quests[32451], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Amber_Kearnen"], "", "", 1}, -- Operation: Shieldwall - "Send A Message"
+        [32143] = {32143, L_Quests[32143], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Tinkmaster_Overspark"], "", "", 1}, -- Operation: Shieldwall - "A Kind of Magic"
+        [32145] = {32145, L_Quests[32145], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Sully_The_Pickle_McLeary"], "", "", 1}, -- Operation: Shieldwall - "Don't Lose Your Head"
+        [32146] = {32146, L_Quests[32146], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Sky_Admiral_Rogers"], "", "", 1}, -- Operation: Shieldwall - "Hammer to Fall"
+        [32144] = {32144, L_Quests[32144], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Mishka"], "", "", 1}, -- Operation: Shieldwall - "Under Pressure"
+        [32142] = {32142, L_Quests[32142], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Sky_Admiral_Rogers"], "", "", 1}, -- Operation: Shieldwall - "We Will Rock You"
 
-        [32148] = {32148, L_Quests[32148], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Attack! Move!"
-        [32153] = {32153, L_Quests[32153], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Hero Killer"
-        [32149] = {32149, L_Quests[32149], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Resource Gathering"
-        [32152] = {32152, L_Quests[32152], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Siege Damage"
-        [32150] = {32150, L_Quests[32150], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Supply Block"
+        [32148] = {32148, L_Quests[32148], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Marshal_Troteman"], "", "", 1}, -- Operation: Shieldwall - "Attack! Move!"
+        [32153] = {32153, L_Quests[32153], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Marshal_Troteman"], "", "", 1}, -- Operation: Shieldwall - "Hero Killer"
+        [32149] = {32149, L_Quests[32149], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Mishka"], "", "", 1}, -- Operation: Shieldwall - "Resource Gathering"
+        [32152] = {32152, L_Quests[32152], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Marshal_Troteman"], "", "", 1}, -- Operation: Shieldwall - "Siege Damage"
+        [32150] = {32150, L_Quests[32150], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Mishka"], "", "", 1}, -- Operation: Shieldwall - "Supply Block"
 
-        [32116] = {32116, L_Quests[32116], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Priorities, People!"
-        [32347] = {32347, L_Quests[32347], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Eviction Notice"
-        [32119] = {32119, L_Quests[32119], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "It Is A Mystery"
-        [32122] = {32122, L_Quests[32122], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Ogudei's Lieutenants"
-        [32346] = {32346, L_Quests[32346], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Oi Ain't Afraid o' No Ghosts!"
-        [32115] = {32115, L_Quests[32115], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Shackles of the Past"
-        [32121] = {32121, L_Quests[32121], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "The Spirit Trap"
+        [32116] = {32116, L_Quests[32116], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Marshal_Troteman"], "", "", 1}, -- Operation: Shieldwall - "Priorities, People!"
+        [32347] = {32347, L_Quests[32347], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "Eviction Notice"
+        [32119] = {32119, L_Quests[32119], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "It Is A Mystery"
+        [32122] = {32122, L_Quests[32122], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "Ogudei's Lieutenants"
+        [32346] = {32346, L_Quests[32346], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "Oi Ain't Afraid o' No Ghosts!"
+        [32115] = {32115, L_Quests[32115], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "Shackles of the Past"
+        [32121] = {32121, L_Quests[32121], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "The Spirit Trap"
 
-        [32166] = {32166, L_Quests[32166], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crab"
-        [32186] = {32186, L_Quests[32186], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crab"
-        [32172] = {32172, L_Quests[32172], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "A Colossal Victory"
+        [32166] = {32166, L_Quests[32166], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crab"
+        [32186] = {32186, L_Quests[32186], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crab"
+        [32172] = {32172, L_Quests[32172], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Operation: Shieldwall - "A Colossal Victory"
 
-        [32164] = {32164, L_Quests[32164], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crane"
-        [32184] = {32184, L_Quests[32184], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crane"
-        [32170] = {32170, L_Quests[32170], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Ancient's Fall"
+        [32164] = {32164, L_Quests[32164], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crane"
+        [32184] = {32184, L_Quests[32184], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crane"
+        [32170] = {32170, L_Quests[32170], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Operation: Shieldwall - "Ancient's Fall"
 
-        [32165] = {32165, L_Quests[32165], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Tiger"
-        [32185] = {32185, L_Quests[32185], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Tiger"
-        [32171] = {32171, L_Quests[32171], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_"], "", "", 1}, -- Operation: Shieldwall - "End of an Elder"
+        [32165] = {32165, L_Quests[32165], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Tiger"
+        [32185] = {32185, L_Quests[32185], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Tiger"
+        [32171] = {32171, L_Quests[32171], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Operation: Shieldwall - "End of an Elder"
 
     };
 
@@ -502,53 +550,53 @@ C_MOP_DAILY_QUESTS = {
     -- Dominance Offensive
     [1375] = {
         
-        [32199] = {32199, L_Quests[32199], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Krasarang Steampot"
-        [32221] = {32221, L_Quests[32221], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Storming the Beach"
-        [32223] = {32223, L_Quests[32223], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "WANTED: Lieutenant Ethan Jacobson"
-        [32214] = {32214, L_Quests[32214], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Bilgewater Infiltrators"
-        [32197] = {32197, L_Quests[32197], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Mystery Meatloaf"
-        [32222] = {32222, L_Quests[32222], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "WANTED: Chief Engineer Cogwrench"
-        [32136] = {32136, L_Quests[32136], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Work Order: Fuel"
-        [32237] = {32237, L_Quests[32237], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Precious Resource"
-        [32137] = {32137, L_Quests[32137], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Runnin' On Empty"
-        [32140] = {32140, L_Quests[32140], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Work Order: Iron"
-        [32236] = {32236, L_Quests[32236], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Bug Off!"
-        [32141] = {32141, L_Quests[32141], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Power Metal"
-        [32138] = {32138, L_Quests[32138], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Work Order: Lumber"
-        [32139] = {32139, L_Quests[32139], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Stacked!"
-        [32238] = {32238, L_Quests[32238], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Universal Remote-Explode"
+        [32199] = {32199, L_Quests[32199], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Duke"], "", "", 1}, -- Dominance Offensive - "Krasarang Steampot"
+        [32221] = {32221, L_Quests[32221], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Rivett_Clutchpop"], "", "", 1}, -- Dominance Offensive - "Storming the Beach"
+        [32223] = {32223, L_Quests[32223], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Bounty_Board"], "", "", 1}, -- Dominance Offensive - "WANTED: Lieutenant Ethan Jacobson"
+        [32214] = {32214, L_Quests[32214], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Rivett_Clutchpop"], "", "", 1}, -- Dominance Offensive - "Bilgewater Infiltrators"
+        [32197] = {32197, L_Quests[32197], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Duke"], "", "", 1}, -- Dominance Offensive - "Mystery Meatloaf"
+        [32222] = {32222, L_Quests[32222], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Bounty_Board"], "", "", 1}, -- Dominance Offensive - "WANTED: Chief Engineer Cogwrench"
+        [32136] = {32136, L_Quests[32136], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Boss-Lady_Trixel"], "", "", 1}, -- Dominance Offensive - "Work Order: Fuel"
+        [32237] = {32237, L_Quests[32237], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Bixy_Buzzsaw"], "", "", 1}, -- Dominance Offensive - "Precious Resource"
+        [32137] = {32137, L_Quests[32137], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Grizzle_Gearslip"], "", "", 1}, -- Dominance Offensive - "Runnin' On Empty"
+        [32140] = {32140, L_Quests[32140], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Boss-Lady_Trixel"], "", "", 1}, -- Dominance Offensive - "Work Order: Iron"
+        [32236] = {32236, L_Quests[32236], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Bixy_Buzzsaw"], "", "", 1}, -- Dominance Offensive - "Bug Off!"
+        [32141] = {32141, L_Quests[32141], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Daxil_The_Gem_Oregrind"], "", "", 1}, -- Dominance Offensive - "Power Metal"
+        [32138] = {32138, L_Quests[32138], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Boss-Lady_Trixel"], "", "", 1}, -- Dominance Offensive - "Work Order: Lumber"
+        [32139] = {32139, L_Quests[32139], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Zino_The_Shredder_Quickchop"], "", "", 1}, -- Dominance Offensive - "Stacked!"
+        [32238] = {32238, L_Quests[32238], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Bixy_Buzzsaw"], "", "", 1}, -- Dominance Offensive - "Universal Remote-Explode"
 
-        [32127] = {32127, L_Quests[32127], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "All Dead, All Dead"
-        [32128] = {32128, L_Quests[32128], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Another One Bites the Dust"
-        [32123] = {32123, L_Quests[32123], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Death on Two Legs"
-        [32235] = {32235, L_Quests[32235], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Flash! Aaaaaahhhh!"
-        [32126] = {32126, L_Quests[32126], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Tear It Up"
+        [32127] = {32127, L_Quests[32127], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Brolic"], "", "", 1}, -- Dominance Offensive - "All Dead, All Dead"
+        [32128] = {32128, L_Quests[32128], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Blood_Guard_Gro_tash"], "", "", 1}, -- Dominance Offensive - "Another One Bites the Dust"
+        [32123] = {32123, L_Quests[32123], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Shokia"], "", "", 1}, -- Dominance Offensive - "Death on Two Legs"
+        [32235] = {32235, L_Quests[32235], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Blood_Guard_Gro_tash"], "", "", 1}, -- Dominance Offensive - "Flash! Aaaaaahhhh!"
+        [32126] = {32126, L_Quests[32126], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Brolic"], "", "", 1}, -- Dominance Offensive - "Tear It Up"
 
-        [32450] = {32450, L_Quests[32450], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "The Time Is Now!"
-        [32130] = {32130, L_Quests[32130], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Good Luck, Have Fun"
-        [32135] = {32135, L_Quests[32135], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Hero Killer"
-        [32133] = {32133, L_Quests[32133], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Sentry Wards"
-        [32131] = {32131, L_Quests[32131], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "We Require More Minerals!"
-        [32132] = {32132, L_Quests[32132], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Worker Harassment"
+        [32450] = {32450, L_Quests[32450], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Blood_Guard_Gro_tash"], "", "", 1}, -- Dominance Offensive - "The Time Is Now!"
+        [32130] = {32130, L_Quests[32130], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"], "", "", 1}, -- Dominance Offensive - "Good Luck, Have Fun"
+        [32135] = {32135, L_Quests[32135], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Shademaster_Kiryn"], "", "", 1}, -- Dominance Offensive - "Hero Killer"
+        [32133] = {32133, L_Quests[32133], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Shademaster_Kiryn"], "", "", 1}, -- Dominance Offensive - "Sentry Wards"
+        [32131] = {32131, L_Quests[32131], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"], "", "", 1}, -- Dominance Offensive - "We Require More Minerals!"
+        [32132] = {32132, L_Quests[32132], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Shademaster_Kiryn"], "", "", 1}, -- Dominance Offensive - "Worker Harassment"
 
-        [32449] = {32449, L_Quests[32449], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "The Ruins of Ogudei"
-        [32344] = {32344, L_Quests[32344], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "It Is A Mystery"
-        [32348] = {32348, L_Quests[32348], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Kick 'em While They're Down"
-        [32120] = {32120, L_Quests[32120], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Legacy of Ogudei"
-        [32343] = {32343, L_Quests[32343], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Ogudei's Lieutenants"
-        [32342] = {32342, L_Quests[32342], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "The Spirit Trap"
+        [32449] = {32449, L_Quests[32449], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Blood_Guard_Gro_tash"], "", "", 1}, -- Dominance Offensive - "The Ruins of Ogudei"
+        [32344] = {32344, L_Quests[32344], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "It Is A Mystery"
+        [32348] = {32348, L_Quests[32348], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "Kick 'em While They're Down"
+        [32120] = {32120, L_Quests[32120], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "Legacy of Ogudei"
+        [32343] = {32343, L_Quests[32343], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "Ogudei's Lieutenants"
+        [32342] = {32342, L_Quests[32342], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "The Spirit Trap"
 
-        [32163] = {32163, L_Quests[32163], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crab"
-        [32183] = {32183, L_Quests[32183], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Beastmaster's Quarry: The Crab"
-        [32169] = {32169, L_Quests[32169], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "A Colossal Victory"
+        [32163] = {32163, L_Quests[32163], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crab"
+        [32183] = {32183, L_Quests[32183], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crab"
+        [32169] = {32169, L_Quests[32169], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Dominance Offensive - "A Colossal Victory"
 
-        [32161] = {32161, L_Quests[32161], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crane"
-        [32181] = {32181, L_Quests[32181], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Beastmaster's Quarry: The Crane"
-        [32167] = {32167, L_Quests[32167], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Ancient's Fall"
+        [32161] = {32161, L_Quests[32161], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crane"
+        [32181] = {32181, L_Quests[32181], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crane"
+        [32167] = {32167, L_Quests[32167], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Dominance Offensive - "Ancient's Fall"
 
-        [32162] = {32162, L_Quests[32162], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Tiger"
-        [32182] = {32182, L_Quests[32182], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "Beastmaster's Quarry: The Tiger"
-        [32168] = {32168, L_Quests[32168], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_"], "", "", 1}, -- Dominance Offensive - "End of an Elder"
+        [32162] = {32162, L_Quests[32162], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Tiger"
+        [32182] = {32182, L_Quests[32182], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Tiger"
+        [32168] = {32168, L_Quests[32168], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Dominance Offensive - "End of an Elder"
 
     };
 

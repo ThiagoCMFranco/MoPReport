@@ -144,9 +144,9 @@ local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("MoPReport", {
 			return
 		end
 		if (MoPReportDB.HideDeveloperCreditOnTooltips) then
-        	tooltip:AddLine(L["AddonName"] .. "\n\n" .. L["LClickAction"] .. "\n" .. L["RClickAction"] .."", nil, nil, nil, nil)
+        	tooltip:AddLine(L["AddonName_Interface"] .. "\n\n" .. L["LClickAction"] .. "\n" .. L["RClickAction"] .."", nil, nil, nil, nil)
     	else
-			tooltip:AddLine(L["AddonName"] .. "\n\n" .. L["LClickAction"] .. "\n" .. L["RClickAction"] .. "\n\n" .. L["DevelopmentTeamCredit"], nil, nil, nil, nil)
+			tooltip:AddLine(L["AddonName_Interface"] .. "\n\n" .. L["LClickAction"] .. "\n" .. L["RClickAction"] .. "\n\n" .. L["DevelopmentTeamCredit"], nil, nil, nil, nil)
 	    end
         
 	end,
