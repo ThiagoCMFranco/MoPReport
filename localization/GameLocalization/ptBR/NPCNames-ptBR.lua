@@ -101,10 +101,52 @@ L_Units["Dominance_Offensive_Shokia"] = "Shokia"
 L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"] = "Zazzix Foguetelouco, o Tostado"
 L_Units["Dominance_Offensive_Shademaster_Kiryn"] = "Mestressombra Kiryn"
 
-L_Units["Kirin_Tor_Offensive"] = nil
+-- Golden Lotus
 
-L_Units["Sunreaver_Onslaught_"] = nil
+L_Units["QuestHub_Golden_Pagoda"] = "Pagode Dourado"
+L_Units["QuestHub_Mistfall_Village"] = "Vila do Cair da Bruma"
+L_Units["QuestHub_Ruins_of_Guo-Lai"] = "Ruínas de Guo-Lai"
+L_Units["QuestHub_Setting_Sun"] = "Guarnição do Sol Poente"
+L_Units["QuestHub_Whitepetal_Lake"] = "Lago Pétala Branca"
+
+L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"] = "Ren Língua de Fogo" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"] = "Sun Coração Tenro" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"] = "Anji Luz Outonal" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"] = "Kun Luz Outonal" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"] = "Leven Lâmina da Manhã" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"] = "He Pés Leves" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+
+L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"] = "Sun Coração Tenro" .. " (" .. L_Units["QuestHub_Mistfall_Village"]
+L_Units["Golden_Lotus_Mistfall_Village_Merchant_Benny"] = "Mercador Benny" .. " (" .. L_Units["QuestHub_Mistfall_Village"]
+L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"] = "Che Andarilho Selvagem" .. " (" .. L_Units["QuestHub_Mistfall_Village"]
+L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"] = "Rook Dedão de Pedra" .. " (" .. L_Units["QuestHub_Mistfall_Village"]
+L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"] = "Cozinheiro Tope" .. " (" .. L_Units["QuestHub_Mistfall_Village"]
+L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"] = "Prefeita Shiyo" .. " (" .. L_Units["QuestHub_Mistfall_Village"]
+
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"] = "Leven Lâmina da Manhã" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")" --338 386
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"] = "Sun Coração Tenro" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"] = "Anji Luz Outonal" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"] = "Kun Luz Outonal" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"] = "Rook Dedão de Pedra" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"] = "Sinan, a Sonhadora" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+
+L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"] = "Anji Luz Outonal" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"] = "Kun Luz Outonal" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"] = "Kelari Pé de Pena" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"] = "Yumi Pata de Ouro" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Hai-Me_Heavyhands"] = "Hai-me Mão-pesada" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+
+L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"] = "Ren Língua de Fogo" .. " (" .. L_Units["QuestHub_Whitepetal_Lake"] .. ")"
+L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"] = "He Pés Leves" .. " (" .. L_Units["QuestHub_Whitepetal_Lake"] .. ")"
+
+L_Units["Golden_Lotus_Merchant_Tantan"] = "Mercador Tantan"
+
+
+
 L_Units["Golden_Lotus_"] = nil
+
+L_Units["Kirin_Tor_Offensive"] = nil
+L_Units["Sunreaver_Onslaught_"] = nil
 
 L_Units["Empty_Crate"] = "Caixote Vazio"
 L_Units["Work_Order"] = "Ordem de Serviço"

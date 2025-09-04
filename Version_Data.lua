@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
---[[ Chromie Time Tracker ]]--
+--[[ Mists of Pandaria Report ]]--
 --
 -- by ThiagoCMFranco <https://github.com/ThiagoCMFranco>
 --
@@ -20,5 +20,5 @@
 --
 --------------------------------------------------------------------------------
 
-C_MOPREPORT_VERSION_UID = 1000001
-C_MOPREPORT_VERSION_SEMANTIC_NUMBER = "1.0.1"
+C_MOPREPORT_VERSION_UID = 1000002
+C_MOPREPORT_VERSION_SEMANTIC_NUMBER = "1.0.2"
