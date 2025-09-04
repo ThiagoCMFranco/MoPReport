@@ -129,8 +129,46 @@ C_NPC_COORDINATES = {
     [L_Units["Dominance_Offensive_Shokia"]] = {uiMapID = 418, position = {x = 0.102, y = 0.556}, name = L_Units["Dominance_Offensive_Shokia"]},
     [L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"]] = {uiMapID = 418, position = {x = 0.758, y = 0.342}, name = L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"]},
     [L_Units["Dominance_Offensive_Shademaster_Kiryn"]] = {uiMapID = 418, position = {x = 0.758, y = 0.344}, name = L_Units["Dominance_Offensive_Shademaster_Kiryn"]},
+
+    [L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"]] = {uiMapID = 390, position = {x = 0.566, y = 0.435}, name = L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"]}, -- Need to update location
+    [L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"]] = {uiMapID = 390, position = {x = 0.566, y = 0.434}, name = L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"]},
+    [L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"]] = {uiMapID = 390, position = {x = 0.564, y = 0.436}, name = L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"]},
+    [L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"]] = {uiMapID = 390, position = {x = 0.566, y = 0.437}, name = L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"]}, -- Need to update location
+    [L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"]] = {uiMapID = 390, position = {x = 0.566, y = 0.436}, name = L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"]},
+    [L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"]] = {uiMapID = 390, position = {x = 0.566, y = 0.438}, name = L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"]}, -- Need to update location
+
+    [L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"]] = {uiMapID = 390, position = {x = 0.352, y = 0.752}, name = L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"]},
+    [L_Units["Golden_Lotus_Mistfall_Village_Merchant_Benny"]] = {uiMapID = 390, position = {x = 0.338, y = 0.698}, name = L_Units["Golden_Lotus_Mistfall_Village_Merchant_Benny"]},
+    [L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"]] = {uiMapID = 390, position = {x = 0.338, y = 0.722}, name = L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"]},
+    [L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"]] = {uiMapID = 390, position = {x = 0.352, y = 0.750}, name = L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"]},
+    [L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"]] = {uiMapID = 390, position = {x = 0.338, y = 0.702}, name = L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"]},
+    [L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"]] = {uiMapID = 390, position = {x = 0.352, y = 0.740}, name = L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"]},
+
+    [L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"]] = {uiMapID = 390, position = {x = 0.338, y = 0.386}, name = L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"]},
+    [L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"]] = {uiMapID = 390, position = {x = 0.332, y = 0.390}, name = L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"]},
+    [L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"]] = {uiMapID = 390, position = {x = 0.341, y = 0.382}, name = L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"]},
+    [L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"]] = {uiMapID = 390, position = {x = 0.340, y = 0.382}, name = L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"]},
+    [L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"]] = {uiMapID = 390, position = {x = 0.330, y = 0.380}, name = L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"]},
+    [L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"]] = {uiMapID = 390, position = {x = 0.336, y = 0.406}, name = L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"]},
+
+    [L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"]] = {uiMapID = 390, position = {x = 0.214, y = 0.716}, name = L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"]},
+    [L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"]] = {uiMapID = 390, position = {x = 0.215, y = 0.715}, name = L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"]},
+    [L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"]] = {uiMapID = 390, position = {x = 0.182, y = 0.636}, name = L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"]},
+    [L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"]] = {uiMapID = 390, position = {x = 0.186, y = 0.714}, name = L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"]},
+    [L_Units["Golden_Lotus_Setting_Sun_Hai-Me_Heavyhands"]] = {uiMapID = 390, position = {x = 0.204, y = 0.736}, name = L_Units["Golden_Lotus_Setting_Sun_Hai-Me_Heavyhands"]},
     
+    [L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"]] = {uiMapID = 390, position = {x = 0.424, y = 0.460}, name = L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"]},
+    [L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"]] = {uiMapID = 390, position = {x = 0.436, y = 0.462}, name = L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"]},
+
+    [L_Units["Golden_Lotus_Merchant_Tantan"]] = {uiMapID = 390, position = {x = 0.422, y = 0.458}, name = L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"]},
+
 }
+
+
+
+
+
+
 
 --key: Faction Id
 --data: Faction Id, Faction Name, Faction Level, Faction Type, Faction Allignment, Hide if unknown, Use Details Window
@@ -685,107 +723,107 @@ C_MOP_DAILY_QUESTS = {
 
     -- Lótus Dourado
     [1269] = {
-        [30283] = {30283, L_Quests[30283], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Smashing Impression"
-        [31755] = {31755, L_Quests[31755], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Acts of Cruelty"
-        [30282] = {30282, L_Quests[30282], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Burning Away the Filth"
-        [31754] = {31754, L_Quests[31754], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Cannonfire"
-        [31762] = {31762, L_Quests[31762], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Crumbling Behemoth"
-        [30320] = {30320, L_Quests[30320], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Free Spirits"
-        [30312] = {30312, L_Quests[30312], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Given a Second Chance"
-        [31756] = {31756, L_Quests[31756], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "High Chance of Rain"
-        [30311] = {30311, L_Quests[30311], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "High Standards"
-        [30293] = {30293, L_Quests[30293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "In Enemy Hands" 
-        [31758] = {31758, L_Quests[31758], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Laosy Scouting"
-        [30292] = {30292, L_Quests[30292], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Rude Awakenings"
-        [30309] = {30309, L_Quests[30309], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Set in Stone"
-        [30308] = {30308, L_Quests[30308], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stone Hard Quilen"
-        [31760] = {31760, L_Quests[31760], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Striking First"
-        [30307] = {30307, L_Quests[30307], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Eternal Vigil"
-        [30281] = {30281, L_Quests[30281], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Silent Approach"
-        [30310] = {30310, L_Quests[30310], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Thundering Skies"
-        [31757] = {31757, L_Quests[31757], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Unleashed Spirits"
-        [31136] = {31136, L_Quests[31136], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Behind Our Lines"
-        [30482] = {30482, L_Quests[30482], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Soul-Gatherer"
+        [30283] = {30283, L_Quests[30283], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Smashing Impression"
+        [31755] = {31755, L_Quests[31755], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Acts of Cruelty"
+        [30282] = {30282, L_Quests[30282], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Burning Away the Filth"
+        [31754] = {31754, L_Quests[31754], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Cannonfire"
+        [31762] = {31762, L_Quests[31762], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Crumbling Behemoth"
+        [30320] = {30320, L_Quests[30320], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Free Spirits"
+        [30312] = {30312, L_Quests[30312], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Given a Second Chance"
+        [31756] = {31756, L_Quests[31756], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "High Chance of Rain"
+        [30311] = {30311, L_Quests[30311], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_"], "", L["Category_Time"], 1}, -- Golden Lotus - "High Standards"
+        [30293] = {30293, L_Quests[30293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "In Enemy Hands" 
+        [31758] = {31758, L_Quests[31758], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Laosy Scouting"
+        [30292] = {30292, L_Quests[30292], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Rude Awakenings"
+        [30309] = {30309, L_Quests[30309], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Set in Stone"
+        [30308] = {30308, L_Quests[30308], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stone Hard Quilen"
+        [31760] = {31760, L_Quests[31760], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Striking First"
+        [30307] = {30307, L_Quests[30307], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Eternal Vigil"
+        [30281] = {30281, L_Quests[30281], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Silent Approach"
+        [30310] = {30310, L_Quests[30310], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Thundering Skies"
+        [31757] = {31757, L_Quests[31757], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Unleashed Spirits"
+        [31136] = {31136, L_Quests[31136], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "Behind Our Lines"
+        [30482] = {30482, L_Quests[30482], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Soul-Gatherer"
 
-        [31246] = {31246, L_Quests[31246], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Attack on Mistfall Village"
-        [31249] = {31249, L_Quests[31249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Mistfall Village"
-        [30286] = {30286, L_Quests[30286], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Backed Into a Corner"
-        [30195] = {30195, L_Quests[30195], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Blooming Blossoms"
-        [30263] = {30263, L_Quests[30263], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Clearing in the Forest"
-        [30194] = {30194, L_Quests[30194], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Encroaching Storm"
-        [30289] = {30289, L_Quests[30289], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Freeing Mind and Body"
-        [30196] = {30196, L_Quests[30196], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Lushroom Rush"
-        [30193] = {30193, L_Quests[30193], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Meating Expectations"
-        [31293] = {31293, L_Quests[31293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Mogu Make Poor House Guests"
-        [30192] = {30192, L_Quests[30192], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "My Town, It's on Fire"
-        [30288] = {30288, L_Quests[30288], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "My Town, It's On Fire Again"
-        [30231] = {30231, L_Quests[30231], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Pomfruit Pickup"
-        [30238] = {30238, L_Quests[30238], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Return to Rest"
-        [30232] = {30232, L_Quests[30232], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Ruffling Some Feathers"
-        [30190] = {30190, L_Quests[30190], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Sprite Plight"
-        [30191] = {30191, L_Quests[30191], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Steer Clear of the Beer Here"
-        [30290] = {30290, L_Quests[30290], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Stonebound Killers"
-        [30237] = {30237, L_Quests[30237], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "The Pandaren Uprising Relived"
-        [30285] = {30285, L_Quests[30285], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Wu Kao Scouting Reports"
+        [31246] = {31246, L_Quests[31246], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Attack on Mistfall Village"
+        [31249] = {31249, L_Quests[31249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "Mistfall Village"
+        [30286] = {30286, L_Quests[30286], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Backed Into a Corner"
+        [30195] = {30195, L_Quests[30195], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Merchant_Benny"], "", "", 1}, -- Golden Lotus - "Blooming Blossoms"
+        [30263] = {30263, L_Quests[30263], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Clearing in the Forest"
+        [30194] = {30194, L_Quests[30194], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Encroaching Storm"
+        [30289] = {30289, L_Quests[30289], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Freeing Mind and Body"
+        [30196] = {30196, L_Quests[30196], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"], "", "", 1}, -- Golden Lotus - "Lushroom Rush"
+        [30193] = {30193, L_Quests[30193], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"], "", "", 1}, -- Golden Lotus - "Meating Expectations"
+        [31293] = {31293, L_Quests[31293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Mogu Make Poor House Guests"
+        [30192] = {30192, L_Quests[30192], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "My Town, It's on Fire"
+        [30288] = {30288, L_Quests[30288], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "My Town, It's On Fire Again"
+        [30231] = {30231, L_Quests[30231], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"], "", "", 1}, -- Golden Lotus - "Pomfruit Pickup"
+        [30238] = {30238, L_Quests[30238], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Return to Rest"
+        [30232] = {30232, L_Quests[30232], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Ruffling Some Feathers"
+        [30190] = {30190, L_Quests[30190], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "Sprite Plight"
+        [30191] = {30191, L_Quests[30191], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "Steer Clear of the Beer Here"
+        [30290] = {30290, L_Quests[30290], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stonebound Killers"
+        [30237] = {30237, L_Quests[30237], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "The Pandaren Uprising Relived"
+        [30285] = {30285, L_Quests[30285], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Wu Kao Scouting Reports"
         
-        [30236] = {30236, L_Quests[30236], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Aetha"
-        [30297] = {30297, L_Quests[30297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Baolai the Immolator"
-        [30296] = {30296, L_Quests[30296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Gaohun the Soul-Severer"
-        [30239] = {30239, L_Quests[30239], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Lao-Fe the Slavebinder"
-        [30235] = {30235, L_Quests[30235], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Quid Pro Quo"
+        [30236] = {30236, L_Quests[30236], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Aetha"
+        [30297] = {30297, L_Quests[30297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Baolai the Immolator"
+        [30296] = {30296, L_Quests[30296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Gaohun the Soul-Severer"
+        [30239] = {30239, L_Quests[30239], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Lao-Fe the Slavebinder"
+        [30235] = {30235, L_Quests[30235], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Quid Pro Quo"
         
-        [31244] = {31244, L_Quests[31244], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Guo-Lai Encampment"
-        [31240] = {31240, L_Quests[31240], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "Guo-Lai Infestation"
-        [31296] = {31296, L_Quests[31296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - "The Ruins of Guo-Lai"
+        [31244] = {31244, L_Quests[31244], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", "", 1}, -- Golden Lotus - "Guo-Lai Encampment"
+        [31240] = {31240, L_Quests[31240], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", "", 1}, -- Golden Lotus - "Guo-Lai Infestation"
+        [31296] = {31296, L_Quests[31296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Ruins of Guo-Lai"
 
-        [30481] = {30481, L_Quests[30481], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30304] = {30304, L_Quests[30304], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30200] = {30200, L_Quests[30200], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30299] = {30299, L_Quests[30299], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30301] = {30301, L_Quests[30301], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30298] = {30298, L_Quests[30298], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30205] = {30205, L_Quests[30205], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30206] = {30206, L_Quests[30206], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30204] = {30204, L_Quests[30204], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30300] = {30300, L_Quests[30300], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30228] = {30228, L_Quests[30228], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
+        [30481] = {30481, L_Quests[30481], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Carved in Stone"
+        [30304] = {30304, L_Quests[30304], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Hard as a Rock"
+        [30200] = {30200, L_Quests[30200], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "In Ashen Webs"
+        [30299] = {30299, L_Quests[30299], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "No Stone Unturned"
+        [30301] = {30301, L_Quests[30301], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"], "", "", 1}, -- Golden Lotus - "Offering a Warm Welcome"
+        [30298] = {30298, L_Quests[30298], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"], "", "", 1}, -- Golden Lotus - "Painting the Ruins Red"
+        [30205] = {30205, L_Quests[30205], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"], "", "", 1}, -- Golden Lotus - "Runelocked"
+        [30206] = {30206, L_Quests[30206], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"], "", "", 1}, -- Golden Lotus - "Runes in the Ruins"
+        [30204] = {30204, L_Quests[30204], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "That's Not a Rock!"
+        [30300] = {30300, L_Quests[30300], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Key to Success"
+        [30228] = {30228, L_Quests[30228], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Troubling the Troublemakers"
 
-        [30225] = {30225, L_Quests[30225], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30302] = {30302, L_Quests[30302], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30227] = {30227, L_Quests[30227], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
+        [30225] = {30225, L_Quests[30225], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "The Ashweb Matriarch"
+        [30302] = {30302, L_Quests[30302], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"], "", "", 1}, -- Golden Lotus - "The Imperion Threat"
+        [30227] = {30227, L_Quests[30227], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Wulon, the Granite Sentinel"
 
-        [31297] = {31297, L_Quests[31297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30244] = {30244, L_Quests[30244], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30266] = {30266, L_Quests[30266], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30245] = {30245, L_Quests[30245], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30243] = {30243, L_Quests[30243], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30444] = {30444, L_Quests[30444], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30261] = {30261, L_Quests[30261], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30247] = {30247, L_Quests[30247], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30242] = {30242, L_Quests[30242], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30240] = {30240, L_Quests[30240], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30250] = {30250, L_Quests[30250], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30306] = {30306, L_Quests[30306], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30246] = {30246, L_Quests[30246], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30264] = {30264, L_Quests[30264], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30248] = {30248, L_Quests[30248], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30249] = {30249, L_Quests[30249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
-        [30251] = {30251, L_Quests[30251], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", "", 1}, -- Golden Lotus - 
+        [31297] = {31297, L_Quests[31297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Setting Sun Garrison"
+        [30244] = {30244, L_Quests[30244], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Along the Serpent's Spine"
+        [30266] = {30266, L_Quests[30266], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Bloodied Skies"
+        [30245] = {30245, L_Quests[30245], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Lost Scouts"
+        [30243] = {30243, L_Quests[30243], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Mantid Under Fire"
+        [30444] = {30444, L_Quests[30444], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "No Reprieve"
+        [30261] = {30261, L_Quests[30261], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"], "", "", 1}, -- Golden Lotus - "Roll Club: Serpent's Spine"
+        [30247] = {30247, L_Quests[30247], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"], "", "", 1}, -- Golden Lotus - "Roll Club: Vale of Eternal Blossoms"
+        [30242] = {30242, L_Quests[30242], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"], "", "", 1}, -- Golden Lotus - "Survival Ring: Blades"
+        [30240] = {30240, L_Quests[30240], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"], "", "", 1}, -- Golden Lotus - "Survival Ring: Flame"
+        [30250] = {30250, L_Quests[30250], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"], "", "", 1}, -- Golden Lotus - "Survival Ring: Thunder"
+        [30306] = {30306, L_Quests[30306], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Hai-Me_Heavyhands"], "", "", 1}, -- Golden Lotus - "The Battle Ring"
+        [30246] = {30246, L_Quests[30246], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Upon the Ramparts"
+        [30264] = {30264, L_Quests[30264], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Enemy at the Gates"
+        [30248] = {30248, L_Quests[30248], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "The Butcher"
+        [30249] = {30249, L_Quests[30249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Under the Setting Sun"
+        [30251] = {30251, L_Quests[30251], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Vyraxxis, the Krik'thik Swarm-Lord"
 
-        [31131] = {31131, L_Quests[31131], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30284] = {30284, L_Quests[30284], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30338] = {30338, L_Quests[30338], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30342] = {30342, L_Quests[30342], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30339] = {30339, L_Quests[30339], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30294] = {30294, L_Quests[30294], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30265] = {30265, L_Quests[30265], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30340] = {30340, L_Quests[30340], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30291] = {30291, L_Quests[30291], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30314] = {30314, L_Quests[30314], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30313] = {30313, L_Quests[30313], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30341] = {30341, L_Quests[30341], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30233] = {30233, L_Quests[30233], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
-        [30234] = {30234, L_Quests[30234], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - 
+        [31131] = {31131, L_Quests[31131], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "Whitepetal Lake"
+        [30284] = {30284, L_Quests[30284], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Thousand Pointy Teeth"
+        [30338] = {30338, L_Quests[30338], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Weighty Task"
+        [30342] = {30342, L_Quests[30342], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Fiery Tongue, Fragile Feet"
+        [30339] = {30339, L_Quests[30339], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Merchant_Tantan"], "", L["Category_Time"], 1}, -- Golden Lotus - "Getting your Hands Dirty"
+        [30294] = {30294, L_Quests[30294], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Small Comforts"
+        [30265] = {30265, L_Quests[30265], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Sparkle in the Eye"
+        [30340] = {30340, L_Quests[30340], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Merchant_Tantan"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stick in the Mud"
+        [30291] = {30291, L_Quests[30291], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stunning Display"
+        [30314] = {30314, L_Quests[30314], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Displaced Paleblade"
+        [30313] = {30313, L_Quests[30313], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Moving Mists"
+        [30341] = {30341, L_Quests[30341], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "Under Watchful Eyes"
+        [30233] = {30233, L_Quests[30233], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Cracklefang"
+        [30234] = {30234, L_Quests[30234], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Vicejaw"
         
     };
 

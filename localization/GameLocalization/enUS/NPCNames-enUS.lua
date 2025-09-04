@@ -101,9 +101,50 @@ L_Units["Dominance_Offensive_Shokia"] = "Shokia"
 L_Units["Dominance_Offensive_Zazzix_Toasty_Sparkrocket"] = "Zazzix 'Toasty' Sparkrocket"
 L_Units["Dominance_Offensive_Shademaster_Kiryn"] = "Shademaster Kiryn"
 
+-- Golden Lotus
+
+L_Units["QuestHub_Golden_Pagoda"] = "Golden Pagoda"
+L_Units["QuestHub_Mistfall_Village"] = "Mistfall Village"
+L_Units["QuestHub_Ruins_of_Guo-Lai"] = "Ruins of Guo-Lai"
+L_Units["QuestHub_Setting_Sun"] = "Setting Sun Garrison"
+L_Units["QuestHub_Whitepetal_Lake"] = "Whitepetal Lake"
+
+L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"] = "Ren Firetongue" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"] = "Sun Tenderheart" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"] = "Anji Autumnlight" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"] = "Kun Autumnlight" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"] = "Leven Dawnblade" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"] = "He Softfoot" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+
+L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"] = "Sun Tenderheart" .. " (" .. L_Units["QuestHub_Mistfall_Village"] .. ")"
+L_Units["Golden_Lotus_Mistfall_Village_Merchant_Benny"] = "Merchant Benny" .. " (" .. L_Units["QuestHub_Mistfall_Village"] .. ")"
+L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"] = "Che Wildwalker" .. " (" .. L_Units["QuestHub_Mistfall_Village"] .. ")"
+L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"] = "Rook Stonetoe" .. " (" .. L_Units["QuestHub_Mistfall_Village"] .. ")"
+L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"] = "Cook Tope" .. " (" .. L_Units["QuestHub_Mistfall_Village"] .. ")"
+L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"] = "Mayor Shiyo" .. " (" .. L_Units["QuestHub_Mistfall_Village"] .. ")"
+
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"] = "Leven Dawnblade" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")" --338 386
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"] = "Sun Tenderheart" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"] = "Anji Autumnlight" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"] = "Kun Autumnlight" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"] = "Rook Stonetoe" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"] = "Sinan the Dreamer" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+
+L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"] = "Anji Autumnlight" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"] = "Kun Luz Outonal" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"] = "Kelari Featherfoot" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"] = "Yumi Goldenpaw" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Hai-Me_Heavyhands"] = "Hai-Me Heavyhands" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+
+L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"] = "Ren Firetongue" .. " (" .. L_Units["QuestHub_Whitepetal_Lake"] .. ")"
+L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"] = "He Softfoot" .. " (" .. L_Units["QuestHub_Whitepetal_Lake"] .. ")"
+
+L_Units["Golden_Lotus_Merchant_Tantan"] = "Merchant Tantan"
+
+L_Units["Golden_Lotus_"] = nil
+
 L_Units["Kirin_Tor_Offensive"] = nil
 L_Units["Sunreaver_Onslaught_"] = nil
-L_Units["Golden_Lotus_"] = nil
 
 L_Units["Empty_Crate"] = "Empty Crate"
 L_Units["Work_Order"] = "Work Order"
