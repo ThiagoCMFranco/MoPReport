@@ -25,15 +25,43 @@ local L = qcc.L
 local L_Factions = qcc.L_Factions
 local L_Units = qcc.L_Units
 local L_Quests = qcc.L_Quests
+local L_Categories = qcc.L_Categories
 
 C_CATEGORY_ICONS = {
-    [L["Category_Cook"]] = {icon = "worldquest-icon-cooking", tooltip = ""},
-    [L["Category_Arch"]] = {icon = "worldquest-icon-archaeology", tooltip = ""},
-    [L["Category_FAid"]] = {icon = "worldquest-icon-firstaid", tooltip = ""},
-    [L["Category_Fish"]] = {icon = "worldquest-icon-fishing", tooltip = ""},
-    [L["Category_Race"]] = {icon = "racing", tooltip = ""},
-    [L["Category_PvP"]] = {icon = "BattleMaster", tooltip = L["Category_PvP_Tooltip"]},
-    [L["Category_Time"]] = {icon = "questlog-questtypeicon-clockyellow", tooltip = L["Category_Time_Tooltip"]},
+    [L_Categories["Category_Cook"]] = {icon = "worldquest-icon-cooking", tooltip = ""},
+    [L_Categories["Category_Arch"]] = {icon = "worldquest-icon-archaeology", tooltip = ""},
+    [L_Categories["Category_FAid"]] = {icon = "worldquest-icon-firstaid", tooltip = ""},
+    [L_Categories["Category_Fish"]] = {icon = "worldquest-icon-fishing", tooltip = ""},
+    [L_Categories["Category_Race"]] = {icon = "racing", tooltip = ""},
+    [L_Categories["Category_PvP"]] = {icon = "BattleMaster", tooltip = L_Categories["Category_PvP_Tooltip"]},
+    [L_Categories["Category_Time"]] = {icon = "questlog-questtypeicon-clockyellow", tooltip = L_Categories["Category_Time_Tooltip"]},
+}
+
+C_RESTRICTED_FACTION_QUESTS = {
+
+    --Celestials Quartermaster : Sage Whiteheart
+
+    [31376] = "Alliance",
+    [31378] = "Alliance",
+    [31382] = "Alliance",
+    [31380] = "Alliance",
+
+    --Celestials Quartermaster : Sage Lotusbloom
+
+    [31377] = "Horde",
+    [31379] = "Horde",
+    [31383] = "Horde",
+    [31381] = "Horde",
+
+    -- Operation: Shieldwall - Work Orders
+
+    [32645] = "Alliance",
+    [32646] = "Alliance",
+
+    -- Dominance Offensive - Work Orders
+
+    [32642] = "Horde",
+    [32643] = "Horde",
 }
 
 --use: C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"]
@@ -245,16 +273,16 @@ C_MOP_DAILY_QUESTS = {
         [31698]={31698,L_Quests[31698],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Instructor_Skythorn"],"",""}, -- Order of the Cloud Serpent - Thinning The Pack
         [31706]={31706,L_Quests[31706],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Instructor_Skythorn"],"",""}, -- Order of the Cloud Serpent - Weeping Widows
 
-        [30149]={30149,L_Quests[30149],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L["Category_Professions"],L["Category_Cook"]},  -- Order of the Cloud Serpent - A Feast for the Senses
-        [30147]={30147,L_Quests[30147],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L["Category_Professions"],L["Category_Arch"]},  -- Order of the Cloud Serpent - Fragments of the Past
-        [30148]={30148,L_Quests[30148],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L["Category_Professions"],L["Category_FAid"]},  -- Order of the Cloud Serpent - Just a Flesh Wound
-        [30146]={30146,L_Quests[30146],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L["Category_Professions"],L["Category_Fish"]},  -- Order of the Cloud Serpent - Snack Time
+        [30149]={30149,L_Quests[30149],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L_Categories["Category_Professions"],L_Categories["Category_Cook"]},  -- Order of the Cloud Serpent - A Feast for the Senses
+        [30147]={30147,L_Quests[30147],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L_Categories["Category_Professions"],L_Categories["Category_Arch"]},  -- Order of the Cloud Serpent - Fragments of the Past
+        [30148]={30148,L_Quests[30148],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L_Categories["Category_Professions"],L_Categories["Category_FAid"]},  -- Order of the Cloud Serpent - Just a Flesh Wound
+        [30146]={30146,L_Quests[30146],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Jenova_Longeye"],L_Categories["Category_Professions"],L_Categories["Category_Fish"]},  -- Order of the Cloud Serpent - Snack Time
  
-        [31717]={31717,L_Quests[31717],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L["Category_Race"],L["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Ace Longpaw
-        [31718]={31718,L_Quests[31718],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L["Category_Race"],L["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Big Bao
-        [31719]={31719,L_Quests[31719],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L["Category_Race"],L["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Ningna Darkwheel
-        [31720]={31720,L_Quests[31720],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L["Category_Race"],L["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Suchi the Sweet
-        [31721]={31721,L_Quests[31721],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L["Category_Race"],L["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Qua-Ro Whitebrow
+        [31717]={31717,L_Quests[31717],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L_Categories["Category_Race"],L_Categories["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Ace Longpaw
+        [31718]={31718,L_Quests[31718],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L_Categories["Category_Race"],L_Categories["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Big Bao
+        [31719]={31719,L_Quests[31719],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L_Categories["Category_Race"],L_Categories["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Ningna Darkwheel
+        [31720]={31720,L_Quests[31720],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L_Categories["Category_Race"],L_Categories["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Suchi the Sweet
+        [31721]={31721,L_Quests[31721],60,1271,L_Factions[1271],L_Units["Cloud_Serpent_Elder_Anli"],L_Categories["Category_Race"],L_Categories["Category_Race"]},  -- Order of the Cloud Serpent - The Trainer's Challenge: Qua-Ro Whitebrow
 
     },
 
@@ -268,25 +296,25 @@ C_MOP_DAILY_QUESTS = {
         [31120]={31120,L_Quests[31120],60,1270,L_Factions[1270],L_Units["Shado_Pan_Master_Snowdrift"],"","","",1}, -- Shado-Pan - "Cheng Bo!"
         
         --Set One
-        [31041]={31041,L_Quests[31041],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_1"],"","",1}, -- Shado-Pan - "Egg Rescue!"
-        [31046]={31046,L_Quests[31046],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_1"],"","",2}, -- Shado-Pan - "Little Hatchlings"
-        [31040]={31040,L_Quests[31040],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_1"],"","",3}, -- Shado-Pan - "Spiteful Sprites"
-        [31039]={31039,L_Quests[31039],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_1"],"","",4}, -- Shado-Pan - "The Mogu Menace"
-        [31049]={31049,L_Quests[31049],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_1"],"","",5}, -- Shado-Pan - "In Sprite Of Everything"
+        [31041]={31041,L_Quests[31041],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_1"],"","",1}, -- Shado-Pan - "Egg Rescue!"
+        [31046]={31046,L_Quests[31046],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_1"],"","",2}, -- Shado-Pan - "Little Hatchlings"
+        [31040]={31040,L_Quests[31040],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_1"],"","",3}, -- Shado-Pan - "Spiteful Sprites"
+        [31039]={31039,L_Quests[31039],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_1"],"","",4}, -- Shado-Pan - "The Mogu Menace"
+        [31049]={31049,L_Quests[31049],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_1"],"","",5}, -- Shado-Pan - "In Sprite Of Everything"
 
         --Set Two
-        [31042]={31042,L_Quests[31042],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_2"],"","",1}, -- Shado-Pan - "Onyx Hearts"
-        [31043]={31043,L_Quests[31043],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_2"],"","",2}, -- Shado-Pan - "Dark Arts"
-        [31047]={31047,L_Quests[31047],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_2"],"","",3}, -- Shado-Pan - "Born Free"
-        [31105]={31105,L_Quests[31105],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_2"],"","",4}, -- Shado-Pan - "The Mogu Menace"
-        [31061]={31061,L_Quests[31061],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_2"],"","",5}, -- Shado-Pan - "Riding the Storm"
+        [31042]={31042,L_Quests[31042],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_2"],"","",1}, -- Shado-Pan - "Onyx Hearts"
+        [31043]={31043,L_Quests[31043],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_2"],"","",2}, -- Shado-Pan - "Dark Arts"
+        [31047]={31047,L_Quests[31047],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_2"],"","",3}, -- Shado-Pan - "Born Free"
+        [31105]={31105,L_Quests[31105],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_2"],"","",4}, -- Shado-Pan - "The Mogu Menace"
+        [31061]={31061,L_Quests[31061],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_2"],"","",5}, -- Shado-Pan - "Riding the Storm"
 
         --Set Three
-        [31044]={31044,L_Quests[31044],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_3"],"","",1}, -- Shado-Pan - "Bronze Claws"
-        [31045]={31045,L_Quests[31045],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_3"],"","",2}, -- Shado-Pan - "Illusions Of The Past"
-        [31048]={31048,L_Quests[31048],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_3"],"","",3}, -- Shado-Pan - "Grave Consequences"
-        [31106]={31106,L_Quests[31106],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_3"],"","",4}, -- Shado-Pan - "The Mogu Menace"
-        [31062]={31062,L_Quests[31062],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L["Category_SET_3"],"","",5}, -- Shado-Pan - "When The Dead Speak"
+        [31044]={31044,L_Quests[31044],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_3"],"","",1}, -- Shado-Pan - "Bronze Claws"
+        [31045]={31045,L_Quests[31045],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_3"],"","",2}, -- Shado-Pan - "Illusions Of The Past"
+        [31048]={31048,L_Quests[31048],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_3"],"","",3}, -- Shado-Pan - "Grave Consequences"
+        [31106]={31106,L_Quests[31106],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_3"],"","",4}, -- Shado-Pan - "The Mogu Menace"
+        [31062]={31062,L_Quests[31062],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ban_Bearheart"],L_Categories["Category_SET_3"],"","",5}, -- Shado-Pan - "When The Dead Speak"
 
         [31198]={31198,L_Quests[31198],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ling_of_the_Six_Pools"],"","","",5}, -- Shado-Pan - "A Morale Victory"
         [31199]={31199,L_Quests[31199],60,1270,L_Factions[1270],L_Units["Shado_Pan_Ling_of_the_Six_Pools"],"","","",5}, -- Shado-Pan - "Destroy the Siege Weapons!"
@@ -338,22 +366,22 @@ C_MOP_DAILY_QUESTS = {
     },
 
     [1302] ={
-        [31443] = {31443, L_Quests[31443], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Flying Tiger Gourami
-        [30613] = {30613, L_Quests[30613], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Armored Carp
-        [30754] = {30754, L_Quests[30754], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Bright Bait
-        [30588] = {30588, L_Quests[30588], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Fishing for a Bruising
-        [30598] = {30598, L_Quests[30598], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Who Knew Fish Liked Eggs?
-        [30658] = {30658, L_Quests[30658], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Huff & Puff
-        [30586] = {30586, L_Quests[30586], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Jagged Abalone
-        [30678] = {30678, L_Quests[30678], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Like Bombing Fish In A Barrel
-        [31446] = {31446, L_Quests[31446], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Mimic Octopus
-        [30763] = {30763, L_Quests[30763], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Piranha!
-        [30698] = {30698, L_Quests[30698], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Scavenger Hunt
-        [30584] = {30584, L_Quests[30584], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Shocking!
-        [30700] = {30700, L_Quests[30700], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Snapclaw
-        [31444] = {31444, L_Quests[31444], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Spinefish Alpha
-        [30701] = {30701, L_Quests[30701], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - Viseclaw Soup
-        [30585] = {30585, L_Quests[30585], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L["Category_Fish"],L["Category_Fish"], 1}, -- The Anglers - What Lurks Below
+        [31443] = {31443, L_Quests[31443], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Flying Tiger Gourami
+        [30613] = {30613, L_Quests[30613], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Armored Carp
+        [30754] = {30754, L_Quests[30754], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Bright Bait
+        [30588] = {30588, L_Quests[30588], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Fishing for a Bruising
+        [30598] = {30598, L_Quests[30598], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Who Knew Fish Liked Eggs?
+        [30658] = {30658, L_Quests[30658], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Huff & Puff
+        [30586] = {30586, L_Quests[30586], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Jagged Abalone
+        [30678] = {30678, L_Quests[30678], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Like Bombing Fish In A Barrel
+        [31446] = {31446, L_Quests[31446], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Mimic Octopus
+        [30763] = {30763, L_Quests[30763], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Piranha!
+        [30698] = {30698, L_Quests[30698], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Scavenger Hunt
+        [30584] = {30584, L_Quests[30584], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Shocking!
+        [30700] = {30700, L_Quests[30700], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Snapclaw
+        [31444] = {31444, L_Quests[31444], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Spinefish Alpha
+        [30701] = {30701, L_Quests[30701], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - Viseclaw Soup
+        [30585] = {30585, L_Quests[30585], 90, 1302, L_Factions[1302], L_Units["The_Anglers_"], L_Categories["Category_Fish"],L_Categories["Category_Fish"], 1}, -- The Anglers - What Lurks Below
 
     },
 
@@ -398,63 +426,63 @@ C_MOP_DAILY_QUESTS = {
     },
 
     [1341] = {
-        [30716] = {30716, L_Quests[30716], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Kuo-Na_Quillpaw"], L["Category_Chi-Ji"], "", 1}, -- The August Celestials - Chasing Hope
-        [30717] = {30717, L_Quests[30717], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Yan_Quillpaw"], L["Category_Chi-Ji"], "", 2}, -- The August Celestials - Gifts of the Great Crane
-        [30718] = {30718, L_Quests[30718], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 3}, -- The August Celestials - Students of Chi-Ji
-        [30725] = {30725, L_Quests[30725], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 4}, -- The August Celestials - Ellia Ravenmane
-        [30726] = {30726, L_Quests[30726], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 5}, -- The August Celestials - Minh Do-Tan
-        [30727] = {30727, L_Quests[30727], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 6}, -- The August Celestials - Ellia Ravenmane: Rematch
-        [30728] = {30728, L_Quests[30728], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 7}, -- The August Celestials - Fat Long-Fat
-        [30729] = {30729, L_Quests[30729], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 8}, -- The August Celestials - Julia Bates
-        [30730] = {30730, L_Quests[30730], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 9}, -- The August Celestials - Dextrous Izissha
-        [30731] = {30731, L_Quests[30731], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 10}, -- The August Celestials - Kuo-Na Quillpaw
-        [30732] = {30732, L_Quests[30732], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 11}, -- The August Celestials - Ellia Ravenmane: Revenge
-        [30733] = {30733, L_Quests[30733], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 12}, -- The August Celestials - Tukka-Tuk
-        [30734] = {30734, L_Quests[30734], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 13}, -- The August Celestials - Huck Wheelbarrow
-        [30735] = {30735, L_Quests[30735], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 14}, -- The August Celestials - Mindel Sunspeaker
-        [30736] = {30736, L_Quests[30736], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 15}, -- The August Celestials - Yan Quillpaw
-        [30737] = {30737, L_Quests[30737], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 16}, -- The August Celestials - Fat Long-Fat: Rematch
-        [30738] = {30738, L_Quests[30738], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 17}, -- The August Celestials - Thelonius
-        [30739] = {30739, L_Quests[30739], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 18}, -- The August Celestials - Ellia Ravenmane: Redemption
-        [30740] = {30740, L_Quests[30740], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L["Category_Chi-Ji"], "", 19}, -- The August Celestials - Champion of Chi-Ji
+        [30716] = {30716, L_Quests[30716], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Kuo-Na_Quillpaw"], L_Categories["Category_Chi-Ji"], "", 1}, -- The August Celestials - Chasing Hope
+        [30717] = {30717, L_Quests[30717], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Yan_Quillpaw"], L_Categories["Category_Chi-Ji"], "", 2}, -- The August Celestials - Gifts of the Great Crane
+        [30718] = {30718, L_Quests[30718], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 3}, -- The August Celestials - Students of Chi-Ji
+        [30725] = {30725, L_Quests[30725], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 4}, -- The August Celestials - Ellia Ravenmane
+        [30726] = {30726, L_Quests[30726], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 5}, -- The August Celestials - Minh Do-Tan
+        [30727] = {30727, L_Quests[30727], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 6}, -- The August Celestials - Ellia Ravenmane: Rematch
+        [30728] = {30728, L_Quests[30728], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 7}, -- The August Celestials - Fat Long-Fat
+        [30729] = {30729, L_Quests[30729], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 8}, -- The August Celestials - Julia Bates
+        [30730] = {30730, L_Quests[30730], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 9}, -- The August Celestials - Dextrous Izissha
+        [30731] = {30731, L_Quests[30731], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 10}, -- The August Celestials - Kuo-Na Quillpaw
+        [30732] = {30732, L_Quests[30732], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 11}, -- The August Celestials - Ellia Ravenmane: Revenge
+        [30733] = {30733, L_Quests[30733], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 12}, -- The August Celestials - Tukka-Tuk
+        [30734] = {30734, L_Quests[30734], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 13}, -- The August Celestials - Huck Wheelbarrow
+        [30735] = {30735, L_Quests[30735], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 14}, -- The August Celestials - Mindel Sunspeaker
+        [30736] = {30736, L_Quests[30736], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 15}, -- The August Celestials - Yan Quillpaw
+        [30737] = {30737, L_Quests[30737], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 16}, -- The August Celestials - Fat Long-Fat: Rematch
+        [30738] = {30738, L_Quests[30738], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 17}, -- The August Celestials - Thelonius
+        [30739] = {30739, L_Quests[30739], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 18}, -- The August Celestials - Ellia Ravenmane: Redemption
+        [30740] = {30740, L_Quests[30740], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Thelonius"], L_Categories["Category_Chi-Ji"], "", 19}, -- The August Celestials - Champion of Chi-Ji
 
-        [30952] = {30952, L_Quests[30952], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Elder"], L["Category_Niuzao"], "", 1}, -- The August Celestials - "The Unending Siege"
-        [30953] = {30953, L_Quests[30953], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Yak-Keeper_Kyana"], L["Category_Niuzao"], "", 2}, -- The August Celestials - "Fallen Sentinels"
-        [30954] = {30954, L_Quests[30954], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Youger"], L["Category_Niuzao"], "", 3}, -- The August Celestials - "A Blade is a Blade"
-        [30955] = {30955, L_Quests[30955], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_High_Adept_Paosha"], L["Category_Niuzao"], "", 4}, -- The August Celestials - "Paying Tribute"
-        [30956] = {30956, L_Quests[30956], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Elder"], L["Category_Niuzao"], "", 5}, -- The August Celestials - "The Siege Swells"
-        [30957] = {30957, L_Quests[30957], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sentinel_Commander_Qipan"], L["Category_Niuzao"], "", 6}, -- The August Celestials - "The Overwhelming Swarm"
-        [30958] = {30958, L_Quests[30958], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_High_Adept_Paosha"], L["Category_Niuzao"], "", 7}, -- The August Celestials - "In Battle's Shadow"
-        [30959] = {30959, L_Quests[30959], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Youger"], L["Category_Niuzao"], "", 8}, -- The August Celestials - "The Big Guns"
+        [30952] = {30952, L_Quests[30952], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Elder"], L_Categories["Category_Niuzao"], "", 1}, -- The August Celestials - "The Unending Siege"
+        [30953] = {30953, L_Quests[30953], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Yak-Keeper_Kyana"], L_Categories["Category_Niuzao"], "", 2}, -- The August Celestials - "Fallen Sentinels"
+        [30954] = {30954, L_Quests[30954], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Youger"], L_Categories["Category_Niuzao"], "", 3}, -- The August Celestials - "A Blade is a Blade"
+        [30955] = {30955, L_Quests[30955], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_High_Adept_Paosha"], L_Categories["Category_Niuzao"], "", 4}, -- The August Celestials - "Paying Tribute"
+        [30956] = {30956, L_Quests[30956], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Elder"], L_Categories["Category_Niuzao"], "", 5}, -- The August Celestials - "The Siege Swells"
+        [30957] = {30957, L_Quests[30957], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sentinel_Commander_Qipan"], L_Categories["Category_Niuzao"], "", 6}, -- The August Celestials - "The Overwhelming Swarm"
+        [30958] = {30958, L_Quests[30958], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_High_Adept_Paosha"], L_Categories["Category_Niuzao"], "", 7}, -- The August Celestials - "In Battle's Shadow"
+        [30959] = {30959, L_Quests[30959], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Ogo_the_Youger"], L_Categories["Category_Niuzao"], "", 8}, -- The August Celestials - "The Big Guns"
 
-        [30063] = {30063, L_Quests[30063], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Storm-Sing"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Behind the Masks"
-        [30064] = {30064, L_Quests[30064], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Storm-Sing"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Saving the Sutras"
-        [30065] = {30065, L_Quests[30065], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Arrows of Fortune"
-        [30066] = {30066, L_Quests[30066], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Hidden Power"
-        [30067] = {30067, L_Quests[30067], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "The Shadow of Doubt"
-        [30068] = {30068, L_Quests[30068], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Flames of the Void"
-        [30006] = {30006, L_Quests[30006], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "The Darkness Around Us"
+        [30063] = {30063, L_Quests[30063], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Storm-Sing"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Behind the Masks"
+        [30064] = {30064, L_Quests[30064], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Storm-Sing"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Saving the Sutras"
+        [30065] = {30065, L_Quests[30065], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Arrows of Fortune"
+        [30066] = {30066, L_Quests[30066], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Hidden Power"
+        [30067] = {30067, L_Quests[30067], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "The Shadow of Doubt"
+        [30068] = {30068, L_Quests[30068], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Flames of the Void"
+        [30006] = {30006, L_Quests[30006], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Elder_Sage_Tai-Feng"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "The Darkness Around Us"
         
-        [31517] = {31517, L_Quests[31517], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Contending With Bullies"
-        [30879] = {30879, L_Quests[30879], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 1: Brewmaster Chani"
-        [30880] = {30880, L_Quests[30880], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 1: The Streetfighter"
-        [30881] = {30881, L_Quests[30881], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 2: Clever Ashyo & Ken-Ken"
-        [30882] = {30882, L_Quests[30882], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 2: Kang Bramblestaff"
-        [30885] = {30885, L_Quests[30885], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 3: Master Boom Boom"
-        [30883] = {30883, L_Quests[30883], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 3: The Wrestler"
-        [30902] = {30902, L_Quests[30902], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 4: Master Windfur"
-        [30907] = {30907, L_Quests[30907], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 4: The P.U.G."
-        [31492] = {31492, L_Quests[31492], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Lin_Tenderpaw"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "The Torch of Strength"
+        [31517] = {31517, L_Quests[31517], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Contending With Bullies"
+        [30879] = {30879, L_Quests[30879], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 1: Brewmaster Chani"
+        [30880] = {30880, L_Quests[30880], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 1: The Streetfighter"
+        [30881] = {30881, L_Quests[30881], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 2: Clever Ashyo & Ken-Ken"
+        [30882] = {30882, L_Quests[30882], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 2: Kang Bramblestaff"
+        [30885] = {30885, L_Quests[30885], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 3: Master Boom Boom"
+        [30883] = {30883, L_Quests[30883], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 3: The Wrestler"
+        [30902] = {30902, L_Quests[30902], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 4: Master Windfur"
+        [30907] = {30907, L_Quests[30907], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Xuen"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Round 4: The P.U.G."
+        [31492] = {31492, L_Quests[31492], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Lin_Tenderpaw"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "The Torch of Strength"
 
-        [31376] = {31376, L_Quests[31376], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Attack At The Temple of the Jade Serpent"
-        [31378] = {31378, L_Quests[31378], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L["Category_Chi-Ji"], "", 1}, -- The August Celestials - "Challenge At The Temple of the Red Crane"
-        [31382] = {31382, L_Quests[31382], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L["Category_Niuzao"], "", 1}, -- The August Celestials - "Defense At Niuzao Temple"
-        [31380] = {31380, L_Quests[31380], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Trial At The Temple of the White Tiger"
+        [31376] = {31376, L_Quests[31376], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Attack At The Temple of the Jade Serpent"
+        [31378] = {31378, L_Quests[31378], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L_Categories["Category_Chi-Ji"], "", 1}, -- The August Celestials - "Challenge At The Temple of the Red Crane"
+        [31382] = {31382, L_Quests[31382], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L_Categories["Category_Niuzao"], "", 1}, -- The August Celestials - "Defense At Niuzao Temple"
+        [31380] = {31380, L_Quests[31380], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Whiteheart"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Trial At The Temple of the White Tiger"
 
-        [31377] = {31376, L_Quests[31376], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Attack At The Temple of the Jade Serpent"
-        [31379] = {31378, L_Quests[31378], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L["Category_Chi-Ji"], "", 1}, -- The August Celestials - "Challenge At The Temple of the Red Crane"
-        [31383] = {31382, L_Quests[31382], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L["Category_Niuzao"], "", 1}, -- The August Celestials - "Defense At Niuzao Temple"
-        [31381] = {31380, L_Quests[31380], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L["Category_White_Tiger"], "", 1}, -- The August Celestials - "Trial At The Temple of the White Tiger"
+        [31377] = {31377, L_Quests[31377], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L_Categories["Category_Jade_Serpent"], "", 1}, -- The August Celestials - "Attack At The Temple of the Jade Serpent"
+        [31379] = {31379, L_Quests[31379], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L_Categories["Category_Chi-Ji"], "", 1}, -- The August Celestials - "Challenge At The Temple of the Red Crane"
+        [31383] = {31383, L_Quests[31383], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L_Categories["Category_Niuzao"], "", 1}, -- The August Celestials - "Defense At Niuzao Temple"
+        [31381] = {31381, L_Quests[31381], 90, 1341, L_Factions[1341], L_Units["The_August_Celestials_Sage_Lotusbloom"], L_Categories["Category_White_Tiger"], "", 1}, -- The August Celestials - "Trial At The Temple of the White Tiger"
     },
 
     -- Operação: Muralha de Escudos
@@ -489,17 +517,17 @@ C_MOP_DAILY_QUESTS = {
         [32115] = {32115, L_Quests[32115], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "Shackles of the Past"
         [32121] = {32121, L_Quests[32121], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "The Spirit Trap"
 
-        [32166] = {32166, L_Quests[32166], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crab"
-        [32186] = {32186, L_Quests[32186], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crab"
-        [32172] = {32172, L_Quests[32172], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Operation: Shieldwall - "A Colossal Victory"
+        [32166] = {32166, L_Quests[32166], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crab"
+        [32186] = {32186, L_Quests[32186], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crab"
+        [32172] = {32172, L_Quests[32172], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Operation: Shieldwall - "A Colossal Victory"
 
-        [32164] = {32164, L_Quests[32164], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crane"
-        [32184] = {32184, L_Quests[32184], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crane"
-        [32170] = {32170, L_Quests[32170], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Operation: Shieldwall - "Ancient's Fall"
+        [32164] = {32164, L_Quests[32164], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crane"
+        [32184] = {32184, L_Quests[32184], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crane"
+        [32170] = {32170, L_Quests[32170], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Operation: Shieldwall - "Ancient's Fall"
 
-        [32165] = {32165, L_Quests[32165], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Tiger"
-        [32185] = {32185, L_Quests[32185], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Tiger"
-        [32171] = {32171, L_Quests[32171], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Operation: Shieldwall - "End of an Elder"
+        [32165] = {32165, L_Quests[32165], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Tiger"
+        [32185] = {32185, L_Quests[32185], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Tiger"
+        [32171] = {32171, L_Quests[32171], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Operation: Shieldwall - "End of an Elder"
 
     };
 
@@ -532,15 +560,15 @@ C_MOP_DAILY_QUESTS = {
         [32529] = {32529, L_Quests[32529], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Call of Thunder"
         [32531] = {32531, L_Quests[32531], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Conquest of Stone"
 
-        [32634] = {32634, L_Quests[32634], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Breaking Down the Defenses"
-        [32636] = {32636, L_Quests[32636], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Captive Audience"
-        [32639] = {32639, L_Quests[32639], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Deconstruction"
-        [32632] = {32632, L_Quests[32632], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Made for War"
-        [32638] = {32638, L_Quests[32638], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Mana Scavengers"
-        [32301] = {32301, L_Quests[32301], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Old Enemies"
-        [32637] = {32637, L_Quests[32637], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Overpowered"
-        [32633] = {32633, L_Quests[32633], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Spellbound"
-        [32628] = {32628, L_Quests[32628], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L["Category_PvP"], 1}, -- Kirin Tor Offensive - "Tactical Mana Bombs"
+        [32634] = {32634, L_Quests[32634], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Breaking Down the Defenses"
+        [32636] = {32636, L_Quests[32636], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Captive Audience"
+        [32639] = {32639, L_Quests[32639], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Deconstruction"
+        [32632] = {32632, L_Quests[32632], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Made for War"
+        [32638] = {32638, L_Quests[32638], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Mana Scavengers"
+        [32301] = {32301, L_Quests[32301], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Old Enemies"
+        [32637] = {32637, L_Quests[32637], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Overpowered"
+        [32633] = {32633, L_Quests[32633], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Spellbound"
+        [32628] = {32628, L_Quests[32628], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Tactical Mana Bombs"
 
         [32571] = {32571, L_Quests[32571], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "A Wing to Fly On"
         [32573] = {32573, L_Quests[32573], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Enemies Beneath the Tower"
@@ -624,17 +652,17 @@ C_MOP_DAILY_QUESTS = {
         [32343] = {32343, L_Quests[32343], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "Ogudei's Lieutenants"
         [32342] = {32342, L_Quests[32342], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "The Spirit Trap"
 
-        [32163] = {32163, L_Quests[32163], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crab"
-        [32183] = {32183, L_Quests[32183], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crab"
-        [32169] = {32169, L_Quests[32169], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Dominance Offensive - "A Colossal Victory"
+        [32163] = {32163, L_Quests[32163], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crab"
+        [32183] = {32183, L_Quests[32183], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crab"
+        [32169] = {32169, L_Quests[32169], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Dominance Offensive - "A Colossal Victory"
 
-        [32161] = {32161, L_Quests[32161], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crane"
-        [32181] = {32181, L_Quests[32181], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crane"
-        [32167] = {32167, L_Quests[32167], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Dominance Offensive - "Ancient's Fall"
+        [32161] = {32161, L_Quests[32161], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crane"
+        [32181] = {32181, L_Quests[32181], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crane"
+        [32167] = {32167, L_Quests[32167], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Dominance Offensive - "Ancient's Fall"
 
-        [32162] = {32162, L_Quests[32162], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Tiger"
-        [32182] = {32182, L_Quests[32182], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Tiger"
-        [32168] = {32168, L_Quests[32168], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Dominance Offensive - "End of an Elder"
+        [32162] = {32162, L_Quests[32162], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Tiger"
+        [32182] = {32182, L_Quests[32182], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Tiger"
+        [32168] = {32168, L_Quests[32168], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Dominance Offensive - "End of an Elder"
 
     };
 
@@ -690,15 +718,15 @@ C_MOP_DAILY_QUESTS = {
         [32274] = {32274, L_Quests[32274], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Residents of Ihgaluk"
         [32204] = {32204, L_Quests[32204], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Skumblade Threat"
 
-        [32269] = {32269, L_Quests[32269], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Breaking Down the Defenses"
-        [32262] = {32262, L_Quests[32262], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Captive Audience"
-        [32302] = {32302, L_Quests[32302], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Deconstruction"
-        [32303] = {32303, L_Quests[32303], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Made for War"
-        [32266] = {32266, L_Quests[32266], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Mana Manifestations"
-        [32213] = {32213, L_Quests[32213], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Old Enemies"
-        [32305] = {32305, L_Quests[32305], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Overpowered"
-        [32264] = {32264, L_Quests[32264], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Spellbound"
-        [32268] = {32268, L_Quests[32268], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L["Category_PvP"], 1}, -- Sunreaver Onslaught - "Tactical Mana Bombs"
+        [32269] = {32269, L_Quests[32269], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Breaking Down the Defenses"
+        [32262] = {32262, L_Quests[32262], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Captive Audience"
+        [32302] = {32302, L_Quests[32302], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Deconstruction"
+        [32303] = {32303, L_Quests[32303], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Made for War"
+        [32266] = {32266, L_Quests[32266], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Mana Manifestations"
+        [32213] = {32213, L_Quests[32213], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Old Enemies"
+        [32305] = {32305, L_Quests[32305], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Overpowered"
+        [32264] = {32264, L_Quests[32264], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Spellbound"
+        [32268] = {32268, L_Quests[32268], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Tactical Mana Bombs"
 
         [32729] = {32729, L_Quests[32729], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Za'Tual"
         [32200] = {32200, L_Quests[32200], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Dangers of Za'Tual"
@@ -723,38 +751,38 @@ C_MOP_DAILY_QUESTS = {
 
     -- Lótus Dourado
     [1269] = {
-        [30283] = {30283, L_Quests[30283], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Smashing Impression"
-        [31755] = {31755, L_Quests[31755], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Acts of Cruelty"
-        [30282] = {30282, L_Quests[30282], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Burning Away the Filth"
-        [31754] = {31754, L_Quests[31754], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Cannonfire"
-        [31762] = {31762, L_Quests[31762], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Crumbling Behemoth"
-        [30320] = {30320, L_Quests[30320], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Free Spirits"
-        [30312] = {30312, L_Quests[30312], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Given a Second Chance"
-        [31756] = {31756, L_Quests[31756], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "High Chance of Rain"
-        [30311] = {30311, L_Quests[30311], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_"], "", L["Category_Time"], 1}, -- Golden Lotus - "High Standards"
-        [30293] = {30293, L_Quests[30293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "In Enemy Hands" 
-        [31758] = {31758, L_Quests[31758], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Laosy Scouting"
-        [30292] = {30292, L_Quests[30292], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Rude Awakenings"
-        [30309] = {30309, L_Quests[30309], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Set in Stone"
-        [30308] = {30308, L_Quests[30308], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stone Hard Quilen"
-        [31760] = {31760, L_Quests[31760], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Striking First"
-        [30307] = {30307, L_Quests[30307], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Eternal Vigil"
-        [30281] = {30281, L_Quests[30281], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Silent Approach"
-        [30310] = {30310, L_Quests[30310], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Thundering Skies"
-        [31757] = {31757, L_Quests[31757], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L["Category_Time"], 1}, -- Golden Lotus - "Unleashed Spirits"
-        [31136] = {31136, L_Quests[31136], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "Behind Our Lines"
-        [30482] = {30482, L_Quests[30482], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Soul-Gatherer"
+        [30283] = {30283, L_Quests[30283], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "A Smashing Impression"
+        [31755] = {31755, L_Quests[31755], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Acts of Cruelty"
+        [30282] = {30282, L_Quests[30282], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Burning Away the Filth"
+        [31754] = {31754, L_Quests[31754], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Cannonfire"
+        [31762] = {31762, L_Quests[31762], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Crumbling Behemoth"
+        [30320] = {30320, L_Quests[30320], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Free Spirits"
+        [30312] = {30312, L_Quests[30312], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Given a Second Chance"
+        [31756] = {31756, L_Quests[31756], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "High Chance of Rain"
+        [30311] = {30311, L_Quests[30311], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "High Standards"
+        [30293] = {30293, L_Quests[30293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "In Enemy Hands" 
+        [31758] = {31758, L_Quests[31758], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Laosy Scouting"
+        [30292] = {30292, L_Quests[30292], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Rude Awakenings"
+        [30309] = {30309, L_Quests[30309], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Set in Stone"
+        [30308] = {30308, L_Quests[30308], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Stone Hard Quilen"
+        [31760] = {31760, L_Quests[31760], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Striking First"
+        [30307] = {30307, L_Quests[30307], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Eternal Vigil"
+        [30281] = {30281, L_Quests[30281], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Silent Approach"
+        [30310] = {30310, L_Quests[30310], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Thundering Skies"
+        [31757] = {31757, L_Quests[31757], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Unleashed Spirits"
+        [31136] = {31136, L_Quests[31136], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Behind Our Lines"
+        [30482] = {30482, L_Quests[30482], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Soul-Gatherer"
 
-        [31246] = {31246, L_Quests[31246], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Attack on Mistfall Village"
-        [31249] = {31249, L_Quests[31249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "Mistfall Village"
-        [30286] = {30286, L_Quests[30286], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Backed Into a Corner"
+        [31246] = {31246, L_Quests[31246], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Attack on Mistfall Village"
+        [31249] = {31249, L_Quests[31249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Mistfall Village"
+        [30286] = {30286, L_Quests[30286], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Backed Into a Corner"
         [30195] = {30195, L_Quests[30195], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Merchant_Benny"], "", "", 1}, -- Golden Lotus - "Blooming Blossoms"
         [30263] = {30263, L_Quests[30263], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Clearing in the Forest"
         [30194] = {30194, L_Quests[30194], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Encroaching Storm"
-        [30289] = {30289, L_Quests[30289], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Freeing Mind and Body"
+        [30289] = {30289, L_Quests[30289], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Freeing Mind and Body"
         [30196] = {30196, L_Quests[30196], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"], "", "", 1}, -- Golden Lotus - "Lushroom Rush"
         [30193] = {30193, L_Quests[30193], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"], "", "", 1}, -- Golden Lotus - "Meating Expectations"
-        [31293] = {31293, L_Quests[31293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Mogu Make Poor House Guests"
+        [31293] = {31293, L_Quests[31293], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Mogu Make Poor House Guests"
         [30192] = {30192, L_Quests[30192], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "My Town, It's on Fire"
         [30288] = {30288, L_Quests[30288], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "My Town, It's On Fire Again"
         [30231] = {30231, L_Quests[30231], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"], "", "", 1}, -- Golden Lotus - "Pomfruit Pickup"
@@ -762,37 +790,37 @@ C_MOP_DAILY_QUESTS = {
         [30232] = {30232, L_Quests[30232], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Ruffling Some Feathers"
         [30190] = {30190, L_Quests[30190], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "Sprite Plight"
         [30191] = {30191, L_Quests[30191], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"], "", "", 1}, -- Golden Lotus - "Steer Clear of the Beer Here"
-        [30290] = {30290, L_Quests[30290], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stonebound Killers"
+        [30290] = {30290, L_Quests[30290], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Stonebound Killers"
         [30237] = {30237, L_Quests[30237], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "The Pandaren Uprising Relived"
-        [30285] = {30285, L_Quests[30285], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Wu Kao Scouting Reports"
+        [30285] = {30285, L_Quests[30285], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Wu Kao Scouting Reports"
         
         [30236] = {30236, L_Quests[30236], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Aetha"
-        [30297] = {30297, L_Quests[30297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Baolai the Immolator"
-        [30296] = {30296, L_Quests[30296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Gaohun the Soul-Severer"
+        [30297] = {30297, L_Quests[30297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Baolai the Immolator"
+        [30296] = {30296, L_Quests[30296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Rook_Stonetoe"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Gaohun the Soul-Severer"
         [30239] = {30239, L_Quests[30239], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Lao-Fe the Slavebinder"
         [30235] = {30235, L_Quests[30235], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Mistfall_Village_Che_Wildwalker"], "", "", 1}, -- Golden Lotus - "Quid Pro Quo"
         
         [31244] = {31244, L_Quests[31244], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", "", 1}, -- Golden Lotus - "Guo-Lai Encampment"
         [31240] = {31240, L_Quests[31240], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"], "", "", 1}, -- Golden Lotus - "Guo-Lai Infestation"
-        [31296] = {31296, L_Quests[31296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Ruins of Guo-Lai"
+        [31296] = {31296, L_Quests[31296], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Ruins of Guo-Lai"
 
-        [30481] = {30481, L_Quests[30481], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"], "", L["Category_Time"], 1}, -- Golden Lotus - "Carved in Stone"
+        [30481] = {30481, L_Quests[30481], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Carved in Stone"
         [30304] = {30304, L_Quests[30304], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Hard as a Rock"
         [30200] = {30200, L_Quests[30200], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "In Ashen Webs"
-        [30299] = {30299, L_Quests[30299], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "No Stone Unturned"
+        [30299] = {30299, L_Quests[30299], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "No Stone Unturned"
         [30301] = {30301, L_Quests[30301], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"], "", "", 1}, -- Golden Lotus - "Offering a Warm Welcome"
         [30298] = {30298, L_Quests[30298], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"], "", "", 1}, -- Golden Lotus - "Painting the Ruins Red"
         [30205] = {30205, L_Quests[30205], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"], "", "", 1}, -- Golden Lotus - "Runelocked"
         [30206] = {30206, L_Quests[30206], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"], "", "", 1}, -- Golden Lotus - "Runes in the Ruins"
         [30204] = {30204, L_Quests[30204], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "That's Not a Rock!"
-        [30300] = {30300, L_Quests[30300], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Key to Success"
+        [30300] = {30300, L_Quests[30300], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Key to Success"
         [30228] = {30228, L_Quests[30228], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Troubling the Troublemakers"
 
         [30225] = {30225, L_Quests[30225], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "The Ashweb Matriarch"
         [30302] = {30302, L_Quests[30302], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"], "", "", 1}, -- Golden Lotus - "The Imperion Threat"
         [30227] = {30227, L_Quests[30227], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Wulon, the Granite Sentinel"
 
-        [31297] = {31297, L_Quests[31297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L["Category_Time"], 1}, -- Golden Lotus - "Setting Sun Garrison"
+        [31297] = {31297, L_Quests[31297], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Setting Sun Garrison"
         [30244] = {30244, L_Quests[30244], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Along the Serpent's Spine"
         [30266] = {30266, L_Quests[30266], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Bloodied Skies"
         [30245] = {30245, L_Quests[30245], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Lost Scouts"
@@ -810,20 +838,20 @@ C_MOP_DAILY_QUESTS = {
         [30249] = {30249, L_Quests[30249], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"], "", "", 1}, -- Golden Lotus - "Under the Setting Sun"
         [30251] = {30251, L_Quests[30251], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"], "", "", 1}, -- Golden Lotus - "Vyraxxis, the Krik'thik Swarm-Lord"
 
-        [31131] = {31131, L_Quests[31131], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L["Category_Time"], 1}, -- Golden Lotus - "Whitepetal Lake"
-        [30284] = {30284, L_Quests[30284], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Thousand Pointy Teeth"
-        [30338] = {30338, L_Quests[30338], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "A Weighty Task"
-        [30342] = {30342, L_Quests[30342], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Fiery Tongue, Fragile Feet"
-        [30339] = {30339, L_Quests[30339], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Merchant_Tantan"], "", L["Category_Time"], 1}, -- Golden Lotus - "Getting your Hands Dirty"
-        [30294] = {30294, L_Quests[30294], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L["Category_Time"], 1}, -- Golden Lotus - "Small Comforts"
-        [30265] = {30265, L_Quests[30265], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Sparkle in the Eye"
-        [30340] = {30340, L_Quests[30340], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Merchant_Tantan"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stick in the Mud"
-        [30291] = {30291, L_Quests[30291], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Stunning Display"
-        [30314] = {30314, L_Quests[30314], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Displaced Paleblade"
-        [30313] = {30313, L_Quests[30313], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "The Moving Mists"
-        [30341] = {30341, L_Quests[30341], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L["Category_Time"], 1}, -- Golden Lotus - "Under Watchful Eyes"
-        [30233] = {30233, L_Quests[30233], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Cracklefang"
-        [30234] = {30234, L_Quests[30234], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L["Category_Time"], 1}, -- Golden Lotus - "Vicejaw"
+        [31131] = {31131, L_Quests[31131], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Whitepetal Lake"
+        [30284] = {30284, L_Quests[30284], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "A Thousand Pointy Teeth"
+        [30338] = {30338, L_Quests[30338], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "A Weighty Task"
+        [30342] = {30342, L_Quests[30342], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Fiery Tongue, Fragile Feet"
+        [30339] = {30339, L_Quests[30339], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Merchant_Tantan"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Getting your Hands Dirty"
+        [30294] = {30294, L_Quests[30294], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Small Comforts"
+        [30265] = {30265, L_Quests[30265], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Sparkle in the Eye"
+        [30340] = {30340, L_Quests[30340], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Merchant_Tantan"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Stick in the Mud"
+        [30291] = {30291, L_Quests[30291], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Stunning Display"
+        [30314] = {30314, L_Quests[30314], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Displaced Paleblade"
+        [30313] = {30313, L_Quests[30313], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "The Moving Mists"
+        [30341] = {30341, L_Quests[30341], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Under Watchful Eyes"
+        [30233] = {30233, L_Quests[30233], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Cracklefang"
+        [30234] = {30234, L_Quests[30234], 90, 1269, L_Factions[1269], L_Units["Golden_Lotus_Whitepetal_Lake_Ren_Firetongue"], "", L_Categories["Category_Time"], 1}, -- Golden Lotus - "Vicejaw"
         
     };
 

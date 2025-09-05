@@ -335,15 +335,20 @@ function CreateMissionFrames(_missionFrames, _MissionList)
     end
 
     for _, questData in pairs(_MissionList) do
-        local questGiver = questData[6] or L["Other"]
-        local category = questData[7] or "Geral"
-        if not groupedQuests[questGiver] then
-            groupedQuests[questGiver] = {}
+        local questID = questData[1]
+        -- Filtro de facção
+        if(faction == C_RESTRICTED_FACTION_QUESTS[questID] or C_RESTRICTED_FACTION_QUESTS[questID] == nil) then
+            local questGiver = questData[6] or L["Other"]
+            local category = questData[7] or "Geral"
+            if not groupedQuests[questGiver] then
+                groupedQuests[questGiver] = {}
+            end
+            if not groupedQuests[questGiver][category] then
+                groupedQuests[questGiver][category] = {}
+            end
+        
+            table.insert(groupedQuests[questGiver][category], questData)
         end
-        if not groupedQuests[questGiver][category] then
-            groupedQuests[questGiver][category] = {}
-        end
-        table.insert(groupedQuests[questGiver][category], questData)
     end
 
     -- Ordena os NPCs alfabeticamente

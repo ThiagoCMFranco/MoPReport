@@ -4,11 +4,12 @@
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.0.2
+## Version: 1.0.3
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB
 ## SavedVariablesPerCharacter: MoPReportDB
+## IconTexture: Interface\AddOns\MoPReport\MopIcon.png
 
 # Libraries
 Libs\embeds.xml
@@ -22,10 +23,12 @@ Util\3rdPartyFix.lua
 Version_Data.lua
 
 # Game Localization
+localization\GameLocalization\enUS\Categories-enUS.lua
 localization\GameLocalization\enUS\NPCNames-enUS.lua
 localization\GameLocalization\enUS\FactionNames-enUS.lua
 localization\GameLocalization\enUS\QuestTitles-enUS.lua
 
+localization\GameLocalization\ptBR\Categories-ptBR.lua
 localization\GameLocalization\ptBR\NPCNames-ptBR.lua
 localization\GameLocalization\ptBR\FactionNames-ptBR.lua
 localization\GameLocalization\ptBR\QuestTitles-ptBR.lua
