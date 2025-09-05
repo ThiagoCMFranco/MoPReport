@@ -93,17 +93,21 @@ function MoPReport_LoadSettings()
 
     local trackerOptions = {}
     if(MoPReport_Game_Flavor == "Retail") then
-        trackerOptions = {L["ContextMenu_DefeultAddonOptions_Blizzard"]}
+        trackerOptions = {L["DefaultTrackerAddonOptions_Blizzard"]}
     end
 
     local TomTomLoaded = MoP_checkAddonLoaded("TomTom", "TOMTOM_WAY")
     local MapPinEnhancedLoaded = MoP_checkAddonLoaded("MapPinEnhanced", "MapPinEnhanced")
 
     if (TomTomLoaded) then
-        table.insert(trackerOptions, L["ContextMenu_DefeultAddonOptions_TomTom"])
+        table.insert(trackerOptions, L["DefaultTrackerAddonOptions_TomTom"])
+    else
+        table.insert(trackerOptions, L["DefaultTrackerAddonOptions_TomTom"] .. " (" .. ADDON_DISABLED .. ")")
     end
     if (MapPinEnhancedLoaded) then
-        table.insert(trackerOptions, L["ContextMenu_DefeultAddonOptions_MapPinEnhanced"])
+        table.insert(trackerOptions, L["DefaultTrackerAddonOptions_MapPinEnhanced"])
+    else
+        table.insert(trackerOptions, L["DefaultTrackerAddonOptions_MapPinEnhanced"] .. " (" .. ADDON_DISABLED .. ")")
     end
 
     local scrollContainerMainSettings = AceGUI:Create("SimpleGroup")

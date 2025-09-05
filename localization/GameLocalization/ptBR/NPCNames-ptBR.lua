@@ -6,7 +6,7 @@ local L_Units = qcc.L_Units
 
 --World Bosses
 
-L_Units["World_Bosses_Names_Ordos"] = "Ordos, o Deus-Fogo dos Yaungóis"
+L_Units["World_Bosses_Names_Ordos"] = "Ordos, Deus-Fogo dos Yaungóis"
 L_Units["World_Bosses_Names_Sha"] = "Sha da Raiva"
 L_Units["World_Bosses_Names_Oondasta"] = "Oondasta"
 L_Units["World_Bosses_Names_Gaileon"] = "Bando Gerreiro de Salyis"
