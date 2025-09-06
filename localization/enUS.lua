@@ -1,5 +1,5 @@
 --Translator Thiago Franco
-if GetLocale() ~= "ptBR" then return end
+if GetLocale() ~= "enUS" then return end
 local _, qcc = ...
 qcc.L = {}
 local L = qcc.L
