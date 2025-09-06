@@ -141,11 +141,53 @@ L_Units["Golden_Lotus_Whitepetal_Lake_He_Softfoot"] = "He Pés Leves" .. " (" ..
 
 L_Units["Golden_Lotus_Merchant_Tantan"] = "Mercador Tantan"
 
-
-
 L_Units["Golden_Lotus_"] = nil
 
-L_Units["Kirin_Tor_Offensive"] = nil
+L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"] = " Grã-senhora Jaina Proudmore"
+L_Units["Kirin_Tor_Offensive_Archmage_Modera"] = "Arquimaga Modera"
+L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"] = "Nasari Albaneve"
+L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"] = "Arquimago Lan'dalock"
+L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"] = "Capitão dos Batedores Daelin"
+L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"] = "Miúra Teceluz"
+
+L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"] = "Vereesa Correventos"
+L_Units["Kirin_Tor_Offensive_Danara_Silverglass"] = "Danara Vitralva"
+L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"] = "Vylene Amaranth"
+
+L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"] = "Capitã Elleana Olacrístia"
+L_Units["Kirin_Tor_Offensive_Warmage_Yurias"] = "Mago-de-guerra Yurias"
+
+L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"] = "Feiticeiro Sanitarista Estêvão Bomm'ar"
+L_Units["Kirin_Tor_Offensive_Lyalia"] = "Lyalia"
+
+L_Units["Kirin_Tor_Offensive_Dalvin_Jaacor"] = "Dalvo Jacura"
+L_Units["Kirin_Tor_Offensive_Ako"] = "Ako"
+
+L_Units["Kirin_Tor_Offensive_Taoshi"] = "Taoshi"
+
+L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"] = "Arquimago Aethas Fendessol"
+L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"] = "Grão-Magíster Rommath"
+L_Units["Sunreaver_Onslaught_Lor-themar_Theron"] = "Lor'themar Theron"
+L_Units["Sunreaver_Onslaught_Halduron_Brightwing"] = "Halduron Asaluz"
+
+L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"] = "Capitã dos Batedores Elsia"
+L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"] = "Magíster Edien Solinane"
+
+L_Units["Sunreaver_Onslaught_Girana_the_Blooded"] = "Girana, a Ensanguentada"
+L_Units["Sunreaver_Onslaught_Captain_Aerthas_Firehawk"] = "Capitão Aerthas Flamáquila"
+L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"] = "Ryshelle Melenáurea"
+
+L_Units["Sunreaver_Onslaught_Magister_Hathorel"] = "Magíster Hathorel"
+L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"] = "Grão-arcanista Savor"
+
+L_Units["Sunreaver_Onslaught_Amalia_Penshire"] = "Amália Pena-campos"
+L_Units["Sunreaver_Onslaught_Sunwalker_Dezco"] = "Andarilho do Sol Dezco"
+
+L_Units["Sunreaver_Onslaught_Elina_Zaralae"] = "Elina Zaralae"
+L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"] = "Kethiel Arrebol"
+
+L_Units["Sunreaver_Onslaught_Taoshi"] = "Taoshi"
+
 L_Units["Sunreaver_Onslaught_"] = nil
 
 L_Units["Empty_Crate"] = "Caixote Vazio"
