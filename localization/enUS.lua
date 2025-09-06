@@ -1,5 +1,5 @@
 --Translator Thiago Franco
-if GetLocale() ~= "enUS" then return end
+--if GetLocale() ~= "enUS" then return end
 local _, qcc = ...
 qcc.L = {}
 local L = qcc.L
@@ -10,7 +10,7 @@ L["DevelopmentTeamCredit"] = "Developed by |cFFFFFFFFThiago Franco (|cFFFF7C0ATo
 L["LClickAction"] = "Left Click: |cFFFFFFFFOpen Report.|r"
 L["RClickAction"] = "Right Click: |cFFFFFFFFSettings.|r"
 L["Settings"] = "Settings"
-L["lblCreditColabList"] = "|cFFFFC90EDevelopment:|r\nThiago Franco (Topolino)\n\n|cFFFFC90ELocalization:|r\nBrazilian Portuguese (ptBR) - Thiago Franco (Topolino)\nEnglish (enUS) - Thiago Franco (Topolino)"
+L["lblCreditColabList"] = "|cFFFFC90EDevelopment:|r\nThiago Franco (Topolino)\n\n|cFFFFC90ELocalization:|r\nBrazilian Portuguese (ptBR) - Thiago Franco (Topolino)\nEnglish (enUS) - Thiago Franco (Topolino)\nRussian (ruRU) - ZamestoTV"
 L["About_Title"] = "Track you Mists of Pandaria activities."
 L["ShowMainWindow"] = "Show Main Window"
 L["chkLockDragDrop"] = "Lock Main Window Movement."

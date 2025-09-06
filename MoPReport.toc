@@ -4,7 +4,7 @@
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.0.3
+## Version: 1.0.4
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB
@@ -33,9 +33,12 @@ localization\GameLocalization\ptBR\NPCNames-ptBR.lua
 localization\GameLocalization\ptBR\FactionNames-ptBR.lua
 localization\GameLocalization\ptBR\QuestTitles-ptBR.lua
 
+localization\GameLocalization\ruRU\Categories-ruRU.lua
+
 # Addon UI Localization
 localization\enUS.lua
 localization\ptBR.lua
+localization\ruRU.lua
 
 # Main Files
 Data\MoPDailiesDB.lua

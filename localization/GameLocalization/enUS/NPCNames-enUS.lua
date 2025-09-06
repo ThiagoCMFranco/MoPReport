@@ -143,7 +143,51 @@ L_Units["Golden_Lotus_Merchant_Tantan"] = "Merchant Tantan"
 
 L_Units["Golden_Lotus_"] = nil
 
-L_Units["Kirin_Tor_Offensive"] = nil
+L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"] = "Lady Jaina Proudmoore"
+L_Units["Kirin_Tor_Offensive_Archmage_Modera"] = "Archmage Modera"
+L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"] = "Narasi Snowdawn"
+L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"] = "Archmage Lan'dalock"
+L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"] = "Scout Captain Daelin"
+L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"] = "Miura Brightweaver"
+
+L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"] = "Vereesa Windrunner"
+L_Units["Kirin_Tor_Offensive_Danara_Silverglass"] = "Danara Silverglass"
+L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"] = "Vylene Amaranth"
+
+L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"] = "Captain Elleane Wavecrest"
+L_Units["Kirin_Tor_Offensive_Warmage_Yurias"] = "Warmage Yurias"
+
+L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"] = "Sanitation Sorcerer Stephen Litmatch"
+L_Units["Kirin_Tor_Offensive_Lyalia"] = "Lyalia"
+
+L_Units["Kirin_Tor_Offensive_Dalvin_Jaacor"] = "Dalvin Jaacor"
+L_Units["Kirin_Tor_Offensive_Ako"] = "Ako"
+
+L_Units["Kirin_Tor_Offensive_Taoshi"] = "Taoshi"
+
+L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"] = "Archmage Aethas Sunreaver"
+L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"] = "Grand Magister Rommath"
+L_Units["Sunreaver_Onslaught_Lor-themar_Theron"] = "Lor'themar Theron"
+L_Units["Sunreaver_Onslaught_Halduron_Brightwing"] = "Halduron Brightwing"
+
+L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"] = "Scout Captain Elsia"
+L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"] = "Magister Edien Sunhollow"
+
+L_Units["Sunreaver_Onslaught_Girana_the_Blooded"] = "Girana the Blooded"
+L_Units["Sunreaver_Onslaught_Captain_Aerthas_Firehawk"] = "Captain Aerthas Firehawk"
+L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"] = "Ryshelle Brightlock"
+
+L_Units["Sunreaver_Onslaught_Magister_Hathorel"] = "Magister Hathorel"
+L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"] = "High Arcanist Savor"
+
+L_Units["Sunreaver_Onslaught_Amalia_Penshire"] = "Amalia Penshire"
+L_Units["Sunreaver_Onslaught_Sunwalker_Dezco"] = "Sunwalker Dezco"
+
+L_Units["Sunreaver_Onslaught_Elina_Zaralae"] = "Elina Zaralae"
+L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"] = "Kethiel Sunlance"
+
+L_Units["Sunreaver_Onslaught_Taoshi"] = "Taoshi"
+
 L_Units["Sunreaver_Onslaught_"] = nil
 
 L_Units["Empty_Crate"] = "Empty Crate"

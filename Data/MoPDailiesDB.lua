@@ -190,6 +190,40 @@ C_NPC_COORDINATES = {
 
     [L_Units["Golden_Lotus_Merchant_Tantan"]] = {uiMapID = 390, position = {x = 0.422, y = 0.458}, name = L_Units["Golden_Lotus_Mistfall_Village_Cook_Tope"]},
 
+    [L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"]] = {uiMapID = 504, position = {x = 0.632, y = 0.722}, name = L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"]},
+    [L_Units["Kirin_Tor_Offensive_Archmage_Modera"]] = {uiMapID = 504, position = {x = 0.556, y = 0.744}, name = L_Units["Kirin_Tor_Offensive_Archmage_Modera"]},
+    [L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"]] = {uiMapID = 504, position = {x = 0.402, y = 0.594}, name = L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"]},
+    [L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"]] = {uiMapID = 504, position = {x = 0.422, y = 0.664}, name = L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"]},
+    [L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"]] = {uiMapID = 504, position = {x = 0.618, y = 0.520}, name = L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"]},
+    [L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"]] = {uiMapID = 504, position = {x = 0.618, y = 0.521}, name = L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"]},
+    [L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"]] = {uiMapID = 504, position = {x = 0.532, y = 0.722}, name = L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"]},
+    [L_Units["Kirin_Tor_Offensive_Danara_Silverglass"]] = {uiMapID = 504, position = {x = 0.402, y = 0.592}, name = L_Units["Kirin_Tor_Offensive_Danara_Silverglass"]},
+    [L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"]] = {uiMapID = 504, position = {x = 0.400, y = 0.592}, name = L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"]},
+    [L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"]] = {uiMapID = 504, position = {x = 0.526, y = 0.734}, name = L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"]},
+    [L_Units["Kirin_Tor_Offensive_Warmage_Yurias"]] = {uiMapID = 504, position = {x = 0.534, y = 0.736}, name = L_Units["Kirin_Tor_Offensive_Warmage_Yurias"]},
+    [L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"]] = {uiMapID = 504, position = {x = 0.556, y = 0.745}, name = L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"]},
+    [L_Units["Kirin_Tor_Offensive_Lyalia"]] = {uiMapID = 504, position = {x = 0.588, y = 0.744}, name = L_Units["Kirin_Tor_Offensive_Lyalia"]},
+    [L_Units["Kirin_Tor_Offensive_Dalvin_Jaacor"]] = {uiMapID = 504, position = {x = 0.422, y = 0.662}, name = L_Units["Kirin_Tor_Offensive_Dalvin_Jaacor"]},
+    [L_Units["Kirin_Tor_Offensive_Ako"]] = {uiMapID = 504, position = {x = 0.422, y = 0.665}, name = L_Units["Kirin_Tor_Offensive_Ako"]},
+    [L_Units["Kirin_Tor_Offensive_Taoshi"]] = {uiMapID = 504, position = {x = 0.586, y = 0.426}, name = L_Units["Kirin_Tor_Offensive_Taoshi"]},
+
+    [L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"]] = {uiMapID = 504, position = {x = 0.468, y = 0.668}, name = L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"]},
+    [L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"]] = {uiMapID = 504, position = {x = 0.384, y = 0.512}, name = L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"]},
+    [L_Units["Sunreaver_Onslaught_Lor-themar_Theron"]] = {uiMapID = 504, position = {x = 0.326, y = 0.354}, name = L_Units["Sunreaver_Onslaught_Lor-themar_Theron"]},
+    [L_Units["Sunreaver_Onslaught_Halduron_Brightwing"]] = {uiMapID = 504, position = {x = 0.324, y = 0.356}, name = L_Units["Sunreaver_Onslaught_Halduron_Brightwing"]},
+    [L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"]] = {uiMapID = 504, position = {x = 0.472, y = 0.405}, name = L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"]},
+    [L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"]] = {uiMapID = 504, position = {x = 0.472, y = 0.406}, name = L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"]},
+    [L_Units["Sunreaver_Onslaught_Girana_the_Blooded"]] = {uiMapID = 504, position = {x = 0.324, y = 0.352}, name = L_Units["Sunreaver_Onslaught_Girana_the_Blooded"]},
+    [L_Units["Sunreaver_Onslaught_Captain_Aerthas_Firehawk"]] = {uiMapID = 504, position = {x = 0.385, y = 0.512}, name = L_Units["Sunreaver_Onslaught_Captain_Aerthas_Firehawk"]},
+    [L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"]] = {uiMapID = 504, position = {x = 0.386, y = 0.512}, name = L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"]},
+    [L_Units["Sunreaver_Onslaught_Magister_Hathorel"]] = {uiMapID = 504, position = {x = 0.325, y = 0.352}, name = L_Units["Sunreaver_Onslaught_Magister_Hathorel"]},
+    [L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"]] = {uiMapID = 504, position = {x = 0.334, y = 0.350}, name = L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"]},
+    [L_Units["Sunreaver_Onslaught_Amalia_Penshire"]] = {uiMapID = 504, position = {x = 0.467, y = 0.669}, name = L_Units["Sunreaver_Onslaught_Amalia_Penshire"]},
+    [L_Units["Sunreaver_Onslaught_Sunwalker_Dezco"]] = {uiMapID = 504, position = {x = 0.468, y = 0.670}, name = L_Units["Sunreaver_Onslaught_Sunwalker_Dezco"]},
+    [L_Units["Sunreaver_Onslaught_Elina_Zaralae"]] = {uiMapID = 504, position = {x = 0.366, y = 0.646}, name = L_Units["Sunreaver_Onslaught_Elina_Zaralae"]},
+    [L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"]] = {uiMapID = 504, position = {x = 0.368, y = 0.348}, name = L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"]},
+    [L_Units["Sunreaver_Onslaught_Taoshi"]] = {uiMapID = 504, position = {x = 0.586, y = 0.426}, name = L_Units["Sunreaver_Onslaught_Taoshi"]},
+
 }
 
 
@@ -534,82 +568,107 @@ C_MOP_DAILY_QUESTS = {
     -- Ofensiva do Kirin Tor
     [1387] = {
 
-        [32567] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
-        [32551] = {32551, L_Quests[32551], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Compy Stomp"
-        [32554] = {32554, L_Quests[32554], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Dino Might"
-        [32553] = {32553, L_Quests[32553], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Direhorn vs Devilsaur"
-        [32552] = {32552, L_Quests[32552], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Loa-saur"
-        [32550] = {32550, L_Quests[32550], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Saur Loser"
+        ["32567_1"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
+        ["32567_2"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
+        ["32567_3"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
+        ["32567_4"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
 
-        [32568] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
-        [32558] = {32558, L_Quests[32558], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "All In the Family"
-        [32555] = {32555, L_Quests[32555], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Centuries in Sentries"
-        [32559] = {32559, L_Quests[32559], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Even Giants Fall"
-        [32560] = {32560, L_Quests[32560], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Keep It Secret"
-        [32557] = {32557, L_Quests[32557], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Out of Enemy Hands"
-        [32556] = {32556, L_Quests[32556], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The More You Know"
+        [32551] = {32551, L_Quests[32551], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Compy Stomp"
+        [32554] = {32554, L_Quests[32554], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Dino Might"
+        [32553] = {32553, L_Quests[32553], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "Direhorn vs Devilsaur"
+        [32552] = {32552, L_Quests[32552], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "Loa-saur"
+        [32550] = {32550, L_Quests[32550], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Saur Loser"
 
-        [32731] = {32731, L_Quests[32731], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Court of Bones"
-        [32525] = {32525, L_Quests[32525], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Ashes of the Enemy"
-        [32527] = {32527, L_Quests[32527], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Grave Circumstances"
-        [32528] = {32528, L_Quests[32528], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Into the Crypts"
-        [32532] = {32532, L_Quests[32532], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Rise No More!"
-        [32526] = {32526, L_Quests[32526], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Soul Surrender"
-        [32533] = {32533, L_Quests[32533], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Stone Cold"
-        [32530] = {32530, L_Quests[32530], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Bloodletter"
-        [32529] = {32529, L_Quests[32529], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Call of Thunder"
-        [32531] = {32531, L_Quests[32531], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Conquest of Stone"
+        ["32568_1"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
+        ["32568_2"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
+        ["32568_3"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
+        ["32568_4"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
 
-        [32634] = {32634, L_Quests[32634], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Breaking Down the Defenses"
-        [32636] = {32636, L_Quests[32636], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Captive Audience"
-        [32639] = {32639, L_Quests[32639], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Deconstruction"
-        [32632] = {32632, L_Quests[32632], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Made for War"
-        [32638] = {32638, L_Quests[32638], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Mana Scavengers"
-        [32301] = {32301, L_Quests[32301], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Old Enemies"
-        [32637] = {32637, L_Quests[32637], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Overpowered"
-        [32633] = {32633, L_Quests[32633], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Spellbound"
-        [32628] = {32628, L_Quests[32628], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Tactical Mana Bombs"
+        [32558] = {32558, L_Quests[32558], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "All In the Family"
+        [32555] = {32555, L_Quests[32555], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "Centuries in Sentries"
+        [32559] = {32559, L_Quests[32559], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Even Giants Fall"
+        [32560] = {32560, L_Quests[32560], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Keep It Secret"
+        [32557] = {32557, L_Quests[32557], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Out of Enemy Hands"
+        [32556] = {32556, L_Quests[32556], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "The More You Know"
 
-        [32571] = {32571, L_Quests[32571], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "A Wing to Fly On"
-        [32573] = {32573, L_Quests[32573], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Enemies Beneath the Tower"
-        [32574] = {32574, L_Quests[32574], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Shuddering Moor"
-        [32572] = {32572, L_Quests[32572], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Sleepless Legion"
-        [32575] = {32575, L_Quests[32575], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Zandalari Colossus"
+        [32731] = {32731, L_Quests[32731], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"], "", "", 1}, -- Kirin Tor Offensive - "The Court of Bones"
+        [32525] = {32525, L_Quests[32525], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Danara_Silverglass"], "", "", 1}, -- Kirin Tor Offensive - "Ashes of the Enemy"
+        [32527] = {32527, L_Quests[32527], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Grave Circumstances"
+        [32528] = {32528, L_Quests[32528], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Danara_Silverglass"], "", "", 1}, -- Kirin Tor Offensive - "Into the Crypts"
+        [32532] = {32532, L_Quests[32532], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Danara_Silverglass"], "", "", 1}, -- Kirin Tor Offensive - "Rise No More!"
+        [32526] = {32526, L_Quests[32526], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Soul Surrender"
+        [32533] = {32533, L_Quests[32533], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Danara_Silverglass"], "", "", 1}, -- Kirin Tor Offensive - "Stone Cold"
+        [32530] = {32530, L_Quests[32530], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"], "", "", 1}, -- Kirin Tor Offensive - "The Bloodletter"
+        [32529] = {32529, L_Quests[32529], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"], "", "", 1}, -- Kirin Tor Offensive - "The Call of Thunder"
+        [32531] = {32531, L_Quests[32531], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vylene_Amaranth"], "", "", 1}, -- Kirin Tor Offensive - "The Conquest of Stone"
 
-        [32586] = {32586, L_Quests[32586], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Maximum Capacitor"
-        [32588] = {32588, L_Quests[32588], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "On Her Magic-ey Secret Service"
+        [32634] = {32634, L_Quests[32634], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Breaking Down the Defenses"
+        [32636] = {32636, L_Quests[32636], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Captive Audience"
+        [32639] = {32639, L_Quests[32639], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Deconstruction"
+        [32632] = {32632, L_Quests[32632], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Warmage_Yurias"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Made for War"
+        [32638] = {32638, L_Quests[32638], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Mana Scavengers"
+        [32301] = {32301, L_Quests[32301], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Old Enemies"
+        [32637] = {32637, L_Quests[32637], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Overpowered"
+        [32633] = {32633, L_Quests[32633], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Warmage_Yurias"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Spellbound"
+        [32628] = {32628, L_Quests[32628], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", L_Categories["Category_PvP"], 1}, -- Kirin Tor Offensive - "Tactical Mana Bombs"
 
-        [32732] = {32732, L_Quests[32732], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Ihgaluk Crag"
-        [32537] = {32537, L_Quests[32537], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "De-Constructed"
-        [32546] = {32546, L_Quests[32546], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Just Some Light Clean-Up Work"
-        [32548] = {32548, L_Quests[32548], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Left To Rot"
-        [32536] = {32536, L_Quests[32536], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Manipulating the Saurok"
-        [32606] = {32606, L_Quests[32606], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Subtle Encouragement"
-        [32547] = {32547, L_Quests[32547], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Creeping Carpet of Ihgaluk"
-        [32545] = {32545, L_Quests[32545], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Residents of Ihgaluk"
-        [32535] = {32535, L_Quests[32535], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "The Skumblade Threat"
+        [32571] = {32571, L_Quests[32571], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Warmage_Yurias"], "", "", 1}, -- Kirin Tor Offensive - "A Wing to Fly On"
+        [32573] = {32573, L_Quests[32573], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", "", 1}, -- Kirin Tor Offensive - "Enemies Beneath the Tower"
+        [32574] = {32574, L_Quests[32574], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"], "", "", 1}, -- Kirin Tor Offensive - "The Shuddering Moor"
+        [32572] = {32572, L_Quests[32572], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", "", 1}, -- Kirin Tor Offensive - "The Sleepless Legion"
+        [32575] = {32575, L_Quests[32575], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Vereesa_Windrunner"], "", "", 1}, -- Kirin Tor Offensive - "The Zandalari Colossus"
 
-        [32485] = {32485, L_Quests[32485], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Bolstering the Defenses"
-        [32627] = {32627, L_Quests[32627], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Charged Moganite"
+        [32586] = {32586, L_Quests[32586], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "Maximum Capacitor"
+        [32588] = {32588, L_Quests[32588], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "On Her Magic-ey Secret Service"
 
-        [32733] = {32733, L_Quests[32733], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Za'Tual"
-        [32543] = {32543, L_Quests[32543], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Dangers of Za'Tual"
-        [32539] = {32539, L_Quests[32539], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Dark Offerings"
-        [32540] = {32540, L_Quests[32540], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Harbingers of the Loa"
-        [32538] = {32538, L_Quests[32538], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Heinous Sacrifice"
-        [32541] = {32541, L_Quests[32541], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Preventing a Future Threat"
-        [32544] = {32544, L_Quests[32544], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Pterrible Ptorment"
-        [32542] = {32542, L_Quests[32542], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Surgical Strike"
+        [32732] = {32732, L_Quests[32732], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Captain_Elleane_Wavecrest"], "", "", 1}, -- Kirin Tor Offensive - "Ihgaluk Crag"
+        [32537] = {32537, L_Quests[32537], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "De-Constructed"
+        [32546] = {32546, L_Quests[32546], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"], "", "", 1}, -- Kirin Tor Offensive - "Just Some Light Clean-Up Work"
+        [32548] = {32548, L_Quests[32548], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"], "", "", 1}, -- Kirin Tor Offensive - "Left To Rot"
+        [32536] = {32536, L_Quests[32536], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Manipulating the Saurok"
+        [32606] = {32606, L_Quests[32606], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Subtle Encouragement"
+        [32547] = {32547, L_Quests[32547], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Sanitation_Sorcerer_Stephen_Litmatch"], "", "", 1}, -- Kirin Tor Offensive - "The Creeping Carpet of Ihgaluk"
+        [32545] = {32545, L_Quests[32545], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lyalia"], "", "", 1}, -- Kirin Tor Offensive - "The Residents of Ihgaluk"
+        [32535] = {32535, L_Quests[32535], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "The Skumblade Threat"
 
-        [32578] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
-        [32579] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
-        [32580] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
-        [32607] = {32607, L_Quests[32607], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Extended Shore Leave"
-        [32724] = {32724, L_Quests[32724], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Forge Ahead!"
-        [32581] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
-        [32608] = {32608, L_Quests[32608], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Raiding the Vault"
-        [32582] = {32582, L_Quests[32582], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Raining Bones"
-        [32583] = {32583, L_Quests[32583], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive"], "", "", 1}, -- Kirin Tor Offensive - "Zandalari on the Rise"
+        [32485] = {32485, L_Quests[32485], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Bolstering the Defenses"
+        [32627] = {32627, L_Quests[32627], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Warmage_Yurias"], "", "", 1}, -- Kirin Tor Offensive - "Charged Moganite"
+
+        [32733] = {32733, L_Quests[32733], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Za'Tual"
+        [32543] = {32543, L_Quests[32543], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Dangers of Za'Tual"
+        [32539] = {32539, L_Quests[32539], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Dalvin_Jaacor"], "", "", 1}, -- Kirin Tor Offensive - "Dark Offerings"
+        [32540] = {32540, L_Quests[32540], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Harbingers of the Loa"
+        [32538] = {32538, L_Quests[32538], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Dalvin_Jaacor"], "", "", 1}, -- Kirin Tor Offensive - "Heinous Sacrifice"
+        [32541] = {32541, L_Quests[32541], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Ako"], "", "", 1}, -- Kirin Tor Offensive - "Preventing a Future Threat"
+        [32544] = {32544, L_Quests[32544], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Ako"], "", "", 1}, -- Kirin Tor Offensive - "Pterrible Ptorment"
+        [32542] = {32542, L_Quests[32542], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Surgical Strike"
+
+        ["32578_1"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
+        ["32578_2"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
+        ["32578_3"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
+        ["32578_4"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
+
+        ["32579_1"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
+        ["32579_2"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
+        ["32579_3"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
+        ["32579_4"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
+
+        ["32580_1"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
+        ["32580_2"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
+        ["32580_3"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
+        ["32580_4"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
+
+        [32607] = {32607, L_Quests[32607], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Taoshi"], "", "", 1}, -- Kirin Tor Offensive - "Extended Shore Leave"
+        [32724] = {32724, L_Quests[32724], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Forge Ahead!"
+
+        ["32581_1"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
+        ["32581_2"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
+        ["32581_3"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
+        ["32581_4"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
+
+        [32608] = {32608, L_Quests[32608], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Taoshi"], "", "", 1}, -- Kirin Tor Offensive - "Raiding the Vault"
+        [32582] = {32582, L_Quests[32582], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Raining Bones"
+        [32583] = {32583, L_Quests[32583], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Zandalari on the Rise"
         
     };
 
@@ -669,83 +728,108 @@ C_MOP_DAILY_QUESTS = {
     -- Sunreaver Onslaught
     [1388] = {
 
-        [32523] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
-        [32282] = {32282, L_Quests[32282], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Compy Stomp"
-        [32298] = {32298, L_Quests[32298], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Dino Might"
-        [32297] = {32297, L_Quests[32297], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Direhorn vs Devilsaur"
-        [32283] = {32283, L_Quests[32283], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Loa-saur"
-        [32207] = {32207, L_Quests[32207], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Saur Loser"
+        ["32523_1"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
+        ["32523_2"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
+        ["32523_3"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
+        ["32523_4"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
 
-        [32524] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
-        [32234] = {32234, L_Quests[32234], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Knowledge Is Power"
-        [32494] = {32494, L_Quests[32494], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Power Play"
-        [32493] = {32493, L_Quests[32493], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "They All Fall Down"
-        [32206] = {32206, L_Quests[32206], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "This Just Won't Do"
-        [32233] = {32233, L_Quests[32233], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Very Disarming"
-        [32232] = {32232, L_Quests[32232], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "What's Inside Counts"
+        [32282] = {32282, L_Quests[32282], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Compy Stomp"
+        [32298] = {32298, L_Quests[32298], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Dino Might"
+        [32297] = {32297, L_Quests[32297], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Direhorn vs Devilsaur"
+        [32283] = {32283, L_Quests[32283], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Loa-saur"
+        [32207] = {32207, L_Quests[32207], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Saur Loser"
 
-        [32728] = {32728, L_Quests[32728], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Court of Bones"
-        [32218] = {32218, L_Quests[32218], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Ashes of the Enemy"
-        [32201] = {32201, L_Quests[32201], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Grave Circumstances"
-        [32226] = {32226, L_Quests[32226], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Into the Crypts"
-        [32224] = {32224, L_Quests[32224], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Rise No More!"
-        [32220] = {32220, L_Quests[32220], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Soul Surrender"
-        [32219] = {32219, L_Quests[32219], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Stone Cold"
-        [32495] = {32495, L_Quests[32495], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Bloodletter"
-        [32225] = {32225, L_Quests[32225], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Call of Thunder"
-        [32517] = {32517, L_Quests[32517], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Conquest of Stone"
+        ["32524_1"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
+        ["32524_2"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
+        ["32524_3"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
+        ["32524_4"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
 
-        [32288] = {32288, L_Quests[32288], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Bolstering the Defenses"
-        [32265] = {32265, L_Quests[32265], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Charged Moganite"
-        [32300] = {32300, L_Quests[32300], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Disarming Irony"
+        [32234] = {32234, L_Quests[32234], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Knowledge Is Power"
+        [32494] = {32494, L_Quests[32494], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Power Play"
+        [32493] = {32493, L_Quests[32493], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "They All Fall Down"
+        [32206] = {32206, L_Quests[32206], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "This Just Won't Do"
+        [32233] = {32233, L_Quests[32233], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Very Disarming"
+        [32232] = {32232, L_Quests[32232], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "What's Inside Counts"
 
-        [32506] = {32506, L_Quests[32506], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "A Wing to Fly On"
-        [32287] = {32287, L_Quests[32287], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Enemies Beneath the Tower"
-        [32285] = {32285, L_Quests[32285], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Shuddering Moor"
-        [32228] = {32228, L_Quests[32228], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Sleepless Legion"
-        [32230] = {32230, L_Quests[32230], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Zandalari Colossus"
+        [32728] = {32728, L_Quests[32728], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", "", 1}, -- Sunreaver Onslaught - "The Court of Bones"
+        [32218] = {32218, L_Quests[32218], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Captain_Aerthas_Firehawk"], "", "", 1}, -- Sunreaver Onslaught - "Ashes of the Enemy"
+        [32201] = {32201, L_Quests[32201], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Grave Circumstances"
+        [32226] = {32226, L_Quests[32226], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"], "", "", 1}, -- Sunreaver Onslaught - "Into the Crypts"
+        [32224] = {32224, L_Quests[32224], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"], "", "", 1}, -- Sunreaver Onslaught - "Rise No More!"
+        [32220] = {32220, L_Quests[32220], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Captain_Aerthas_Firehawk"], "", "", 1}, -- Sunreaver Onslaught - "Soul Surrender"
+        [32219] = {32219, L_Quests[32219], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"], "", "", 1}, -- Sunreaver Onslaught - "Stone Cold"
+        [32495] = {32495, L_Quests[32495], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "The Bloodletter"
+        [32225] = {32225, L_Quests[32225], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "The Call of Thunder"
+        [32517] = {32517, L_Quests[32517], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Ryshelle_Brightlock"], "", "", 1}, -- Sunreaver Onslaught - "The Conquest of Stone"
 
-        [32208] = {32208, L_Quests[32208], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Maximum Capacitor"
-        [32209] = {32209, L_Quests[32209], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Save Our Scouts!"
+        [32288] = {32288, L_Quests[32288], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Hathorel"], "", "", 1}, -- Sunreaver Onslaught - "Bolstering the Defenses"
+        [32265] = {32265, L_Quests[32265], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"], "", "", 1}, -- Sunreaver Onslaught - "Charged Moganite"
+        [32300] = {32300, L_Quests[32300], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Hathorel"], "", "", 1}, -- Sunreaver Onslaught - "Disarming Irony"
 
-        [32730] = {32730, L_Quests[32730], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Ihgaluk Crag"
-        [32255] = {32255, L_Quests[32255], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "De-Constructed"
-        [32299] = {32299, L_Quests[32299], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Just Some Light Clean-Up Work"
-        [32491] = {32491, L_Quests[32491], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Left To Rot"
-        [32254] = {32254, L_Quests[32254], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Manipulating the Saurok"
-        [32605] = {32605, L_Quests[32605], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Subtle Encouragement"
-        [32489] = {32489, L_Quests[32489], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Creeping Carpet of Ihgaluk"
-        [32274] = {32274, L_Quests[32274], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Residents of Ihgaluk"
-        [32204] = {32204, L_Quests[32204], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "The Skumblade Threat"
+        [32506] = {32506, L_Quests[32506], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Hathorel"], "", "", 1}, -- Sunreaver Onslaught - "A Wing to Fly On"
+        [32287] = {32287, L_Quests[32287], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"], "", "", 1}, -- Sunreaver Onslaught - "Enemies Beneath the Tower"
+        [32285] = {32285, L_Quests[32285], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", "", 1}, -- Sunreaver Onslaught - "The Shuddering Moor"
+        [32228] = {32228, L_Quests[32228], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"], "", "", 1}, -- Sunreaver Onslaught - "The Sleepless Legion"
+        [32230] = {32230, L_Quests[32230], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", "", 1}, -- Sunreaver Onslaught - "The Zandalari Colossus"
 
-        [32269] = {32269, L_Quests[32269], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Breaking Down the Defenses"
-        [32262] = {32262, L_Quests[32262], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Captive Audience"
-        [32302] = {32302, L_Quests[32302], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Deconstruction"
-        [32303] = {32303, L_Quests[32303], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Made for War"
-        [32266] = {32266, L_Quests[32266], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Mana Manifestations"
-        [32213] = {32213, L_Quests[32213], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Old Enemies"
-        [32305] = {32305, L_Quests[32305], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Overpowered"
-        [32264] = {32264, L_Quests[32264], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Spellbound"
-        [32268] = {32268, L_Quests[32268], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Tactical Mana Bombs"
+        [32208] = {32208, L_Quests[32208], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Maximum Capacitor"
+        [32209] = {32209, L_Quests[32209], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Save Our Scouts!"
 
-        [32729] = {32729, L_Quests[32729], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Za'Tual"
-        [32200] = {32200, L_Quests[32200], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Dangers of Za'Tual"
-        [32217] = {32217, L_Quests[32217], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Dark Offerings"
-        [32252] = {32252, L_Quests[32252], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Harbingers of the Loa"
-        [32215] = {32215, L_Quests[32215], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Heinous Sacrifice"
-        [32227] = {32227, L_Quests[32227], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Preventing a Future Threat"
-        [32216] = {32216, L_Quests[32216], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Pterrible Ptorment"
-        [32275] = {32275, L_Quests[32275], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Surgical Strike"
+        [32730] = {32730, L_Quests[32730], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Hathorel"], "", "", 1}, -- Sunreaver Onslaught - "Ihgaluk Crag"
+        [32255] = {32255, L_Quests[32255], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "De-Constructed"
+        [32299] = {32299, L_Quests[32299], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Amalia_Penshire"], "", "", 1}, -- Sunreaver Onslaught - "Just Some Light Clean-Up Work"
+        [32491] = {32491, L_Quests[32491], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Amalia_Penshire"], "", "", 1}, -- Sunreaver Onslaught - "Left To Rot"
+        [32254] = {32254, L_Quests[32254], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Manipulating the Saurok"
+        [32605] = {32605, L_Quests[32605], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Subtle Encouragement"
+        [32489] = {32489, L_Quests[32489], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Amalia_Penshire"], "", "", 1}, -- Sunreaver Onslaught - "The Creeping Carpet of Ihgaluk"
+        [32274] = {32274, L_Quests[32274], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Sunwalker_Dezco"], "", "", 1}, -- Sunreaver Onslaught - "The Residents of Ihgaluk"
+        [32204] = {32204, L_Quests[32204], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "The Skumblade Threat"
 
-        [32293] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
-        [32520] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
-        [32521] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
-        [32676] = {32676, L_Quests[32676], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Extended Shore Leave"
-        [32722] = {32722, L_Quests[32722], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Forge Ahead!"
-        [32522] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
-        [32677] = {32677, L_Quests[32677], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Raiding the Vault"
-        [32294] = {32294, L_Quests[32294], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Raining Bones"
-        [32564] = {32564, L_Quests[32564], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_"], "", "", 1}, -- Sunreaver Onslaught - "Zandalari on the Rise"
+        [32269] = {32269, L_Quests[32269], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Breaking Down the Defenses"
+        [32262] = {32262, L_Quests[32262], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Hathorel"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Captive Audience"
+        [32302] = {32302, L_Quests[32302], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Deconstruction"
+        [32303] = {32303, L_Quests[32303], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Made for War"
+        [32266] = {32266, L_Quests[32266], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Mana Manifestations"
+        [32213] = {32213, L_Quests[32213], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Old Enemies"
+        [32305] = {32305, L_Quests[32305], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Hathorel"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Overpowered"
+        [32264] = {32264, L_Quests[32264], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_High_Arcanist_Savor"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Spellbound"
+        [32268] = {32268, L_Quests[32268], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Girana_the_Blooded"], "", L_Categories["Category_PvP"], 1}, -- Sunreaver Onslaught - "Tactical Mana Bombs"
+
+        [32729] = {32729, L_Quests[32729], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Za'Tual"
+        [32200] = {32200, L_Quests[32200], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Dangers of Za'Tual"
+        [32217] = {32217, L_Quests[32217], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Elina_Zaralae"], "", "", 1}, -- Sunreaver Onslaught - "Dark Offerings"
+        [32252] = {32252, L_Quests[32252], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Harbingers of the Loa"
+        [32215] = {32215, L_Quests[32215], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Elina_Zaralae"], "", "", 1}, -- Sunreaver Onslaught - "Heinous Sacrifice"
+        [32227] = {32227, L_Quests[32227], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"], "", "", 1}, -- Sunreaver Onslaught - "Preventing a Future Threat"
+        [32216] = {32216, L_Quests[32216], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"], "", "", 1}, -- Sunreaver Onslaught - "Pterrible Ptorment"
+        [32275] = {32275, L_Quests[32275], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Surgical Strike"
+
+        ["32293_1"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
+        ["32293_2"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
+        ["32293_3"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
+        ["32293_4"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
+
+        ["32520_1"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
+        ["32520_2"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
+        ["32520_3"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
+        ["32520_4"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
+
+        ["32521_1"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
+        ["32521_2"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
+        ["32521_3"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
+        ["32521_4"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
+
+        [32676] = {32676, L_Quests[32676], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Taoshi"], "", "", 1}, -- Sunreaver Onslaught - "Extended Shore Leave"
+        [32722] = {32722, L_Quests[32722], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Forge Ahead!"
+
+        ["32522_1"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
+        ["32522_2"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
+        ["32522_3"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
+        ["32522_4"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
+
+        [32677] = {32677, L_Quests[32677], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Taoshi"], "", "", 1}, -- Sunreaver Onslaught - "Raiding the Vault"
+        [32294] = {32294, L_Quests[32294], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Raining Bones"
+        [32564] = {32564, L_Quests[32564], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Zandalari on the Rise"
 
     };
 
