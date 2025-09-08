@@ -70,11 +70,13 @@ C_INTERFACE_TEXTURES = {
         ["questIcon"] = "QuestDaily", --QuestRepeatableTurnin
         ["trackIcon"] = "Target-Tracker", --PlayerFriend
         ["detailsBackground"] = "tradeskill-background-recipe",
+        ["friendDetail"] = "minortalents-icon-book",
     },
     ["Retail"] = {
         ["questIcon"] = "Recurringavailablequesticon",
         ["trackIcon"] = "crosshair_track_32",
         ["detailsBackground"] = "Professions-Recipe-Background",
+        ["friendDetail"] = "minortalents-icon-book",
     },
 }
 
@@ -99,7 +101,6 @@ C_NPC_COORDINATES = {
     [L_Units["Cloud_Serpent_Suchi_the_Sweet"]] = {uiMapID = 448, position = {x = 0.584, y = 0.446}, name = L_Units["Cloud_Serpent_Suchi_the_Sweet"]},
     [L_Units["Cloud_Serpent_Big_Bao"]] = {uiMapID = 448, position = {x = 0.574, y = 0.440}, name = L_Units["Cloud_Serpent_Big_Bao"]},
     
-
     [L_Units["The_Klaxxi_Kaz'tik_the_Manipulator"]] = {uiMapID = 422, position = {x = 0.542, y = 0.358}, name = L_Units["The_Klaxxi_Kaz'tik_the_Manipulator"]},
     [L_Units["The_Klaxxi_Rik'kal_the_Dissector"]] = {uiMapID = 422, position = {x = 0.544, y = 0.358}, name = L_Units["The_Klaxxi_Rik'kal_the_Dissector"]},
     [L_Units["The_Klaxxi_Hisek_the_Swarmkeeper"]] = {uiMapID = 422, position = {x = 0.548, y = 0.360}, name = L_Units["The_Klaxxi_Hisek_the_Swarmkeeper"]},
@@ -225,12 +226,6 @@ C_NPC_COORDINATES = {
     [L_Units["Sunreaver_Onslaught_Taoshi"]] = {uiMapID = 504, position = {x = 0.586, y = 0.426}, name = L_Units["Sunreaver_Onslaught_Taoshi"]},
 
 }
-
-
-
-
-
-
 
 --key: Faction Id
 --data: Faction Id, Faction Name, Faction Level, Faction Type, Faction Allignment, Hide if unknown, Use Details Window

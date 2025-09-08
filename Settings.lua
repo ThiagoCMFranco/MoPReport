@@ -252,7 +252,7 @@ local tree = {
     { 
         value = "S",
         text = L["Settings_Menu_About"],
-        icon = "Interface\\Icons\\Inv_misc_questionmark",
+        icon = "Interface\\AddOns\\MoPReport\\MopIcon.png",
     },
     { 
         value = "G",
