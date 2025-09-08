@@ -27,25 +27,6 @@ function QCCFrame_OnLoad(self)
 	self:SetTitle(L["AddonName_Interface"]);
 	self.PortraitContainer.portrait:SetTexture("Interface\\AddOns\\MoPReport\\MopIcon.png");
 	self:RegisterForDrag("LeftButton");
-
-    local version, build, date, tocversion = GetBuildInfo()
-
-end
-
-function VerifyQuestCompleted(p_questID)
-
-    local isCompleted = false
-    local title = nil
-    if type(tonumber(p_questID)) == "number" then
-        isCompleted = C_QuestLog.IsQuestFlaggedCompleted(p_questID)
-	    title = C_QuestLog.GetTitleForQuestID(p_questID)
-    else
-        isCompleted = false
-        title = ""
-    end
-
-    return {title,isCompleted}
-    
 end
 
  local currencyFrame = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")

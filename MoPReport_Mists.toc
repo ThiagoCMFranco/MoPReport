@@ -4,7 +4,7 @@
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.0.4
+## Version: 1.0.5
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB
@@ -42,7 +42,11 @@ localization\ruRU.lua
 
 # Main Files
 Data\MoPDailiesDB.lua
-Util\Core.lua
+Core\Functions.lua
+Core\WorldBosses.lua
+Core\Factions.lua
+Core\Currencies.lua
+Core\Quests.lua
 MoPReport.lua
 MoPReportFrame.xml
 DetailsFrame_Mists.xml

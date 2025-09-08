@@ -57,7 +57,7 @@ function MoPReport_OnLoad(self)
 end
 
 function MoPReportWorkOrders_OnLoad(self)
-	loadWorkOrderIcon(self)
+	LoadWorkOrderIcon(self)
 end
 
 function CreateInlineIcon(atlasNameOrTexID, sizeX, sizeY, xOffset, yOffset)
@@ -157,6 +157,7 @@ MoPReportMinimapButton:Show(L["AddonName"])
 local eventListenerFrame = CreateFrame("Frame", "MoPReportEventListenerFrame", UIParent)
 
 eventListenerFrame:RegisterEvent("ADDON_LOADED")
+eventListenerFrame:RegisterEvent("QUEST_COMPLETE")
 
 eventListenerFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
@@ -166,6 +167,10 @@ eventListenerFrame:SetScript("OnEvent", function(self, event, ...)
             MoPReportMinimapButton:Register(L["AddonName"], miniButton, MoPReportSharedDB.minimap)
         end
 	end
+
+    if event == "QUEST_COMPLETE" then
+        allCC = UpdateCompletedQuestsList()
+    end
 end)
 
 function MoP_ToggleMinimapButton(_param)
