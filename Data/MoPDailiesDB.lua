@@ -28,13 +28,15 @@ local L_Quests = qcc.L_Quests
 local L_Categories = qcc.L_Categories
 
 C_CATEGORY_ICONS = {
-    [L_Categories["Category_Cook"]] = {icon = "worldquest-icon-cooking", tooltip = ""},
-    [L_Categories["Category_Arch"]] = {icon = "worldquest-icon-archaeology", tooltip = ""},
-    [L_Categories["Category_FAid"]] = {icon = "worldquest-icon-firstaid", tooltip = ""},
-    [L_Categories["Category_Fish"]] = {icon = "worldquest-icon-fishing", tooltip = ""},
-    [L_Categories["Category_Race"]] = {icon = "racing", tooltip = ""},
+    [L_Categories["Category_Cook"]] = {icon = "worldquest-icon-cooking", tooltip = L_Categories["Category_Cook"]},
+    [L_Categories["Category_Arch"]] = {icon = "worldquest-icon-archaeology", tooltip = L_Categories["Category_Arch"]},
+    [L_Categories["Category_FAid"]] = {icon = "worldquest-icon-firstaid", tooltip = L_Categories["Category_FAid"]},
+    [L_Categories["Category_Fish"]] = {icon = "worldquest-icon-fishing", tooltip = L_Categories["Category_Fish"]},
+    [L_Categories["Category_Race"]] = {icon = "racing", tooltip = L_Categories["Category_Race"]},
     [L_Categories["Category_PvP"]] = {icon = "BattleMaster", tooltip = L_Categories["Category_PvP_Tooltip"]},
-    [L_Categories["Category_Time"]] = {icon = "questlog-questtypeicon-clockyellow", tooltip = L_Categories["Category_Time_Tooltip"]},
+    [L_Categories["Category_Drop"]] = {icon = "DungeonSkull", tooltip = L_Categories["Category_Drop_Tooltip"]},
+    [L_Categories["Category_Shop"]] = {icon = "Banker", tooltip = L_Categories["Category_Shop_Tooltip"]},
+    [L_Categories["Category_Auto"]] = {icon = "mechagon-projects", tooltip = L_Categories["Category_Auto_Tooltip"]},  
 }
 
 C_RESTRICTED_FACTION_QUESTS = {
@@ -62,6 +64,181 @@ C_RESTRICTED_FACTION_QUESTS = {
 
     [32642] = "Horde",
     [32643] = "Horde",
+
+    --Kirin Tor Offensive
+
+    [32567] = "Alliance",
+    
+    [32551] = "Alliance",
+    [32554] = "Alliance",
+    [32553] = "Alliance",
+    [32552] = "Alliance",
+    [32550] = "Alliance",
+    
+    [32568] = "Alliance",
+    
+    [32558] = "Alliance",
+    [32555] = "Alliance",
+    [32559] = "Alliance",
+    [32560] = "Alliance",
+    [32557] = "Alliance",
+    [32556] = "Alliance",
+    
+    [32731] = "Alliance",
+    [32525] = "Alliance",
+    [32527] = "Alliance",
+    [32528] = "Alliance",
+    [32532] = "Alliance",
+    [32526] = "Alliance",
+    [32533] = "Alliance",
+    [32530] = "Alliance",
+    [32529] = "Alliance",
+    [32531] = "Alliance",
+    
+    [32634] = "Alliance",
+    [32636] = "Alliance",
+    [32639] = "Alliance",
+    [32632] = "Alliance",
+    [32638] = "Alliance",
+    [32301] = "Alliance",
+    [32637] = "Alliance",
+    [32633] = "Alliance",
+    [32628] = "Alliance",
+    
+    [32571] = "Alliance",
+    [32573] = "Alliance",
+    [32574] = "Alliance",
+    [32572] = "Alliance",
+    [32575] = "Alliance",
+    
+    [32586] = "Alliance",
+    [32588] = "Alliance",
+    
+    [32732] = "Alliance",
+    [32537] = "Alliance",
+    [32546] = "Alliance",
+    [32548] = "Alliance",
+    [32536] = "Alliance",
+    [32606] = "Alliance",
+    [32547] = "Alliance",
+    [32545] = "Alliance",
+    [32535] = "Alliance",
+    
+    [32485] = "Alliance",
+    [32627] = "Alliance",
+    
+    [32733] = "Alliance",
+    [32543] = "Alliance",
+    [32539] = "Alliance",
+    [32540] = "Alliance",
+    [32538] = "Alliance",
+    [32541] = "Alliance",
+    [32544] = "Alliance",
+    [32542] = "Alliance",
+    
+    [32578] = "Alliance",
+    
+    [32579] = "Alliance",
+    
+    [32580] = "Alliance",
+    
+    [32607] = "Alliance",
+    [32724] = "Alliance",
+    
+    [32581] = "Alliance",
+    
+    [32608] = "Alliance",
+    [32582] = "Alliance",
+    [32583] = "Alliance",
+        
+
+    --Sunreaver Onslaught
+
+    [32523] = "Horde",
+    
+    [32282] = "Horde",
+    [32298] = "Horde",
+    [32297] = "Horde",
+    [32283] = "Horde",
+    [32207] = "Horde",
+    
+    [32524] = "Horde",
+    
+    [32234] = "Horde",
+    [32494] = "Horde",
+    [32493] = "Horde",
+    [32206] = "Horde",
+    [32233] = "Horde",
+    [32232] = "Horde",
+    
+    [32728] = "Horde",
+    [32218] = "Horde",
+    [32201] = "Horde",
+    [32226] = "Horde",
+    [32224] = "Horde",
+    [32220] = "Horde",
+    [32219] = "Horde",
+    [32495] = "Horde",
+    [32225] = "Horde",
+    [32517] = "Horde",
+    
+    [32288] = "Horde",
+    [32265] = "Horde",
+    [32300] = "Horde",
+    
+    [32506] = "Horde",
+    [32287] = "Horde",
+    [32285] = "Horde",
+    [32228] = "Horde",
+    [32230] = "Horde",
+    
+    [32208] = "Horde",
+    [32209] = "Horde",
+    
+    [32730] = "Horde",
+    [32255] = "Horde",
+    [32299] = "Horde",
+    [32491] = "Horde",
+    [32254] = "Horde",
+    [32605] = "Horde",
+    [32489] = "Horde",
+    [32274] = "Horde",
+    [32204] = "Horde",
+    
+    [32269] = "Horde",
+    [32262] = "Horde",
+    [32302] = "Horde",
+    [32303] = "Horde",
+    [32266] = "Horde",
+    [32213] = "Horde",
+    [32305] = "Horde",
+    [32264] = "Horde",
+    [32268] = "Horde",
+    
+    [32729] = "Horde",
+    [32200] = "Horde",
+    [32217] = "Horde",
+    [32252] = "Horde",
+    [32215] = "Horde",
+    [32227] = "Horde",
+    [32216] = "Horde",
+    [32275] = "Horde",
+    
+    [32293] = "Horde",
+    
+    [32520] = "Horde",
+    
+    [32521] = "Horde",
+    
+    [32676] = "Horde",
+    [32722] = "Horde",
+    
+    [32522] = "Horde",
+    
+    [32677] = "Horde",
+    [32294] = "Horde",
+    [32564] = "Horde",
+    
 }
 
 --use: C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"]
@@ -71,12 +248,14 @@ C_INTERFACE_TEXTURES = {
         ["trackIcon"] = "Target-Tracker", --PlayerFriend
         ["detailsBackground"] = "tradeskill-background-recipe",
         ["friendDetail"] = "minortalents-icon-book",
+        ["workOrders"] = "poi-workorders",
     },
     ["Retail"] = {
         ["questIcon"] = "Recurringavailablequesticon",
         ["trackIcon"] = "crosshair_track_32",
         ["detailsBackground"] = "Professions-Recipe-Background",
         ["friendDetail"] = "minortalents-icon-book",
+        ["workOrders"] = "poi-workorders",
     },
 }
 
@@ -373,7 +552,7 @@ C_MOP_DAILY_QUESTS = {
         [31231] = {31231, L_Quests[31231], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kil'ruk_the_Wind-Reaver"], "", "", 12}, -- The Klaxxi - Dreadspinner Extermination
         [31235] = {31235, L_Quests[31235], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kil'ruk_the_Wind-Reaver"], "", "", 13}, -- The Klaxxi - Nope Nope Nope
         [31234] = {31234, L_Quests[31234], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Rik'kal_the_Dissector"], "", "", 14}, -- The Klaxxi - Putting An Eye Out
-        [31677] = {31677, L_Quests[31677], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Ashes_of_Warlord_Gurthan"], "", "", 15}, -- The Klaxxi - The Warlord's Ashes
+        [31677] = {31677, L_Quests[31677], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Ashes_of_Warlord_Gurthan"], "", L_Categories["Category_Drop"], 15}, -- The Klaxxi - The Warlord's Ashes
 
         [31109] = {31109, L_Quests[31109], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kil'ruk_the_Wind-Reaver"], "", "", 15}, -- The Klaxxi - Culling the Swarm
         [31216] = {31216, L_Quests[31216], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Xaril_the_Poisoned_Mind"], "", "", 15}, -- The Klaxxi - Dark Skies
@@ -382,12 +561,12 @@ C_MOP_DAILY_QUESTS = {
         [31496] = {31496, L_Quests[31496], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Korven_the_Prime"], "", "", 15}, -- The Klaxxi - Sampling the Empire's Finest
         [31503] = {31503, L_Quests[31503], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Rik'kal_the_Dissector"], "", "", 15}, -- The Klaxxi - Shortcut to Ruin
         [31487] = {31487, L_Quests[31487], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kaz'tik_the_Manipulator"], "", "", 15}, -- The Klaxxi - Sonic Disruption
-        [31599] = {31599, L_Quests[31599], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Enormous_Kunchong_Mandibles"], "", "", 15}, -- The Klaxxi - The Matriarch's Maw
+        [31599] = {31599, L_Quests[31599], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Enormous_Kunchong_Mandibles"], "", L_Categories["Category_Drop"], 15}, -- The Klaxxi - The Matriarch's Maw
         [31502] = {31502, L_Quests[31502], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Rik'kal_the_Dissector"], "", "", 15}, -- The Klaxxi - Wing Clip
 
         [31111] = {31111, L_Quests[31111], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kil'ruk_the_Wind-Reaver"], "", "", 15}, -- The Klaxxi - Eradicating the Zan'thik
         [31509] = {31509, L_Quests[31509], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Rik'kal_the_Dissector"], "", "", 15}, -- The Klaxxi - Fear Takes Root
-        [31598] = {31598, L_Quests[31598], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Massive_Kyparite_Core"], "", "", 15}, -- The Klaxxi - Kypa'rak's Core
+        [31598] = {31598, L_Quests[31598], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Massive_Kyparite_Core"], "", L_Categories["Category_Drop"], 15}, -- The Klaxxi - Kypa'rak's Core
         [31506] = {31506, L_Quests[31506], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kaz'tik_the_Manipulator"], "", "", 15}, -- The Klaxxi - Shackles of Manipulation
         [31508] = {31508, L_Quests[31508], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Rik'kal_the_Dissector"], "", "", 15}, -- The Klaxxi - Specimen Request
         [31505] = {31505, L_Quests[31505], 90, 1337, L_Factions[1337], L_Units["The_Klaxxi_Kil'ruk_the_Wind-Reaver"], "", "", 15}, -- The Klaxxi - Vess-Guard Duty
@@ -546,23 +725,24 @@ C_MOP_DAILY_QUESTS = {
         [32115] = {32115, L_Quests[32115], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "Shackles of the Past"
         [32121] = {32121, L_Quests[32121], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Hilda_Hornswaggle"], "", "", 1}, -- Operation: Shieldwall - "The Spirit Trap"
 
-        [32166] = {32166, L_Quests[32166], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crab"
-        [32186] = {32186, L_Quests[32186], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crab"
-        [32172] = {32172, L_Quests[32172], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Operation: Shieldwall - "A Colossal Victory"
+        [32166] = {32166, L_Quests[32166], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], L_Categories["Category_Shop"], 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crab"
+        [32186] = {32186, L_Quests[32186], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], L_Categories["Category_Drop"], 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crab"
+        [32172] = {32172, L_Quests[32172], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], L_Categories["Category_Auto"], 3}, -- Operation: Shieldwall - "A Colossal Victory"
 
-        [32164] = {32164, L_Quests[32164], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crane"
-        [32184] = {32184, L_Quests[32184], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crane"
-        [32170] = {32170, L_Quests[32170], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Operation: Shieldwall - "Ancient's Fall"
+        [32164] = {32164, L_Quests[32164], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], L_Categories["Category_Shop"], 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Crane"
+        [32184] = {32184, L_Quests[32184], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], L_Categories["Category_Drop"], 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Crane"
+        [32170] = {32170, L_Quests[32170], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], L_Categories["Category_Auto"], 3}, -- Operation: Shieldwall - "Ancient's Fall"
 
-        [32165] = {32165, L_Quests[32165], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Tiger"
-        [32185] = {32185, L_Quests[32185], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Tiger"
-        [32171] = {32171, L_Quests[32171], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Operation: Shieldwall - "End of an Elder"
+        [32165] = {32165, L_Quests[32165], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], L_Categories["Category_Shop"], 1}, -- Operation: Shieldwall - "Beastmaster's Hunt: The Tiger"
+        [32185] = {32185, L_Quests[32185], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], L_Categories["Category_Drop"], 2}, -- Operation: Shieldwall - "Beastmaster's Quarry: The Tiger"
+        [32171] = {32171, L_Quests[32171], 90, 1376, L_Factions[1376], L_Units["Operation_Shieldwall_Huntsman_Blake"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], L_Categories["Category_Auto"], 3}, -- Operation: Shieldwall - "End of an Elder"
 
     };
 
     -- Ofensiva do Kirin Tor
     [1387] = {
 
+        [32567] = {},
         ["32567_1"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
         ["32567_2"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
         ["32567_3"] = {32567, L_Quests[32567], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "The Beast Pens"
@@ -574,6 +754,7 @@ C_MOP_DAILY_QUESTS = {
         [32552] = {32552, L_Quests[32552], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"], "", "", 1}, -- Kirin Tor Offensive - "Loa-saur"
         [32550] = {32550, L_Quests[32550], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Saur Loser"
 
+        [32568] = {},
         ["32568_1"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
         ["32568_2"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
         ["32568_3"] = {32568, L_Quests[32568], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "No Time To Rest"
@@ -638,16 +819,19 @@ C_MOP_DAILY_QUESTS = {
         [32544] = {32544, L_Quests[32544], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Ako"], "", "", 1}, -- Kirin Tor Offensive - "Pterrible Ptorment"
         [32542] = {32542, L_Quests[32542], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Surgical Strike"
 
+        [32578] = {},
         ["32578_1"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
         ["32578_2"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
         ["32578_3"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
         ["32578_4"] = {32578, L_Quests[32578], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Among the Bones"
 
+        [32579] = {},
         ["32579_1"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
         ["32579_2"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
         ["32579_3"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
         ["32579_4"] = {32579, L_Quests[32579], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"], "", "", 1}, -- Kirin Tor Offensive - "Competing Magic"
 
+        [32580] = {},
         ["32580_1"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
         ["32580_2"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
         ["32580_3"] = {32580, L_Quests[32580], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Encroaching Force"
@@ -656,6 +840,7 @@ C_MOP_DAILY_QUESTS = {
         [32607] = {32607, L_Quests[32607], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Taoshi"], "", "", 1}, -- Kirin Tor Offensive - "Extended Shore Leave"
         [32724] = {32724, L_Quests[32724], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"], "", "", 1}, -- Kirin Tor Offensive - "Forge Ahead!"
 
+        [32581] = {},
         ["32581_1"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
         ["32581_2"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Archmage_Modera"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
         ["32581_3"] = {32581, L_Quests[32581], 90, 1387, L_Factions[1387], L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"], "", "", 1}, -- Kirin Tor Offensive - "Imposing Threat"
@@ -706,23 +891,24 @@ C_MOP_DAILY_QUESTS = {
         [32343] = {32343, L_Quests[32343], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "Ogudei's Lieutenants"
         [32342] = {32342, L_Quests[32342], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Kaelis_Sunsoar"], "", "", 1}, -- Dominance Offensive - "The Spirit Trap"
 
-        [32163] = {32163, L_Quests[32163], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crab"
-        [32183] = {32183, L_Quests[32183], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crab"
-        [32169] = {32169, L_Quests[32169], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], "", 3}, -- Dominance Offensive - "A Colossal Victory"
+        [32163] = {32163, L_Quests[32163], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], L_Categories["Category_Shop"], 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crab"
+        [32183] = {32183, L_Quests[32183], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], L_Categories["Category_Drop"], 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crab"
+        [32169] = {32169, L_Quests[32169], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crab_Crate"], L_Categories["Category_Auto"], 3}, -- Dominance Offensive - "A Colossal Victory"
 
-        [32161] = {32161, L_Quests[32161], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crane"
-        [32181] = {32181, L_Quests[32181], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crane"
-        [32167] = {32167, L_Quests[32167], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], "", 3}, -- Dominance Offensive - "Ancient's Fall"
+        [32161] = {32161, L_Quests[32161], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], L_Categories["Category_Shop"], 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Crane"
+        [32181] = {32181, L_Quests[32181], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], L_Categories["Category_Drop"], 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Crane"
+        [32167] = {32167, L_Quests[32167], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Crane_Snare"], L_Categories["Category_Auto"], 3}, -- Dominance Offensive - "Ancient's Fall"
 
-        [32162] = {32162, L_Quests[32162], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Tiger"
-        [32182] = {32182, L_Quests[32182], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Tiger"
-        [32168] = {32168, L_Quests[32168], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], "", 3}, -- Dominance Offensive - "End of an Elder"
+        [32162] = {32162, L_Quests[32162], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], L_Categories["Category_Shop"], 1}, -- Dominance Offensive - "Beastmaster's Hunt: The Tiger"
+        [32182] = {32182, L_Quests[32182], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], L_Categories["Category_Drop"], 2}, -- Dominance Offensive - "Beastmaster's Quarry: The Tiger"
+        [32168] = {32168, L_Quests[32168], 90, 1375, L_Factions[1375], L_Units["Dominance_Offensive_Jorn_Skyseer"], L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"], L_Categories["Category_Auto"], 3}, -- Dominance Offensive - "End of an Elder"
 
     };
 
     -- Sunreaver Onslaught
     [1388] = {
 
+        [32523] = {},
         ["32523_1"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
         ["32523_2"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
         ["32523_3"] = {32523, L_Quests[32523], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "The Beast Pens"
@@ -734,6 +920,7 @@ C_MOP_DAILY_QUESTS = {
         [32283] = {32283, L_Quests[32283], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Loa-saur"
         [32207] = {32207, L_Quests[32207], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Magister_Edien_Sunhollow"], "", "", 1}, -- Sunreaver Onslaught - "Saur Loser"
 
+        [32524] = {},
         ["32524_1"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
         ["32524_2"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
         ["32524_3"] = {32524, L_Quests[32524], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "The Beating of Troll Drums"
@@ -799,16 +986,19 @@ C_MOP_DAILY_QUESTS = {
         [32216] = {32216, L_Quests[32216], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Kethiel_Sunlance"], "", "", 1}, -- Sunreaver Onslaught - "Pterrible Ptorment"
         [32275] = {32275, L_Quests[32275], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Surgical Strike"
 
+        [32293] = {},
         ["32293_1"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
         ["32293_2"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
         ["32293_3"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
         ["32293_4"] = {32293, L_Quests[32293], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Among the Bones"
 
+        [32520] = {},
         ["32520_1"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
         ["32520_2"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
         ["32520_3"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
         ["32520_4"] = {32520, L_Quests[32520], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Halduron_Brightwing"], "", "", 1}, -- Sunreaver Onslaught - "Competing Magic"
 
+        [32521] = {},
         ["32521_1"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
         ["32521_2"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
         ["32521_3"] = {32521, L_Quests[32521], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Encroaching Force"
@@ -817,6 +1007,7 @@ C_MOP_DAILY_QUESTS = {
         [32676] = {32676, L_Quests[32676], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Taoshi"], "", "", 1}, -- Sunreaver Onslaught - "Extended Shore Leave"
         [32722] = {32722, L_Quests[32722], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Scout_Captain_Elsia"], "", "", 1}, -- Sunreaver Onslaught - "Forge Ahead!"
 
+        [32522] = {},
         ["32522_1"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Archmage_Aethas_Sunreaver"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
         ["32522_2"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Grand_Magister_Rommath"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
         ["32522_3"] = {32522, L_Quests[32522], 90, 1388, L_Factions[1388], L_Units["Sunreaver_Onslaught_Lor-themar_Theron"], "", "", 1}, -- Sunreaver Onslaught - "Imposing Threat"
@@ -949,6 +1140,21 @@ C_MOP_DAILY_QUESTS = {
         [32647] = {32647, L_Quests[32647], 90, 1337, L_Factions[1337], L_Units["Work_Order"], "", "", 4},
         [32648] = {32648, L_Quests[32648], 90, 1337, L_Factions[1337], L_Units["Empty_Crate"], "", "", 4},
     }
+}
+
+C_SHARED_QUEST = {
+    [32293] = true,
+    [32520] = true,
+    [32521] = true,
+    [32522] = true,
+    [32523] = true,
+    [32524] = true,
+    [32578] = true,
+    [32579] = true,
+    [32580] = true,
+    [32581] = true,
+    [32567] = true,
+    [32568] = true,
 }
 
 --key: Quest Id

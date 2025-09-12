@@ -54,6 +54,12 @@ function MoPReport_OnLoad(self)
 		MoPReport_Game_Flavor = "Other"
 		MoPReport_TOCVersion = tocversion
     end
+
+    --LoadCompletedQuestsIcon(self)
+end
+
+function MoPReportMainFrame_OnLoad(self)
+	LoadCompletedQuestsIcon(self)
 end
 
 function MoPReportWorkOrders_OnLoad(self)
