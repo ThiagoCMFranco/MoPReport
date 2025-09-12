@@ -114,6 +114,9 @@
                 <Anchors>
                     <Anchor point="TOPRIGHT" x="-30" y="-60"/>
                 </Anchors>
+                <Scripts>
+			        <OnLoad function="MoPReportMainFrame_OnLoad"/>
+                </Scripts>
                 <ScrollChild>
                     <Frame name="$parentScrollChild">
                         <Size x="350" y="420"/>

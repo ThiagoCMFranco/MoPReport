@@ -27,7 +27,7 @@ local faction = UnitFactionGroup("player")
 
 allCC = {}
 
-function CreateMissionFrames(_missionFrames, _MissionList)
+function CreateMissionFrames(_missionFrames, _MissionList, _type)
     -- Limpa frames antigos, se existirem
     if _missionFrames.missionFrames then
         for _, frame in ipairs(_missionFrames.missionFrames) do
@@ -35,6 +35,7 @@ function CreateMissionFrames(_missionFrames, _MissionList)
             frame:SetParent(nil)
         end
     end
+    
     _missionFrames.missionFrames = {}
 
     allCC = UpdateCompletedQuestsList()
@@ -42,6 +43,17 @@ function CreateMissionFrames(_missionFrames, _MissionList)
     local parent = _missionFrames
     local prevFrame = nil
     local offsetY = -10 -- margem inicial do topo
+
+    if(_type == "empty") then
+        local messageFrame = CreateFrame("Frame", nil, parent, "BackdropTemplate")
+        messageFrame:SetSize(320, 22)
+        messageFrame:SetPoint("TOPLEFT", parent, "TOPLEFT", 10, offsetY)
+        local headerText = messageFrame:CreateFontString(nil, "OVERLAY", "QuestTitleFontBlackShadow") --GameFontNormalLarge
+        headerText:SetPoint("CENTER", 0, 0)
+        headerText:SetText(L["NoMissonCompleted"])
+        table.insert(_missionFrames.missionFrames, messageFrame)
+        return
+    end
 
     -- Agrupa as quests por questGiver (índice 6), depois por Categoria (índice 7)
     local groupedQuests = {}
@@ -54,16 +66,18 @@ function CreateMissionFrames(_missionFrames, _MissionList)
         local questID = questData[1]
         -- Filtro de facção: limita a exibição de missões de facções específicas por NPCs de facções neeutras
         if(faction == C_RESTRICTED_FACTION_QUESTS[questID] or C_RESTRICTED_FACTION_QUESTS[questID] == nil) then
-            local questGiver = questData[6] or L["Other"]
-            local category = questData[7] or L["Other"]
-            if not groupedQuests[questGiver] then
-                groupedQuests[questGiver] = {}
+            if(questData[1] ~= nil) then
+                local questGiver = questData[6] or L["Other"]
+                local category = questData[7] or L["Other"]
+                if not groupedQuests[questGiver] then
+                    groupedQuests[questGiver] = {}
+                end
+                if not groupedQuests[questGiver][category] then
+                    groupedQuests[questGiver][category] = {}
+                end
+            
+                table.insert(groupedQuests[questGiver][category], questData)
             end
-            if not groupedQuests[questGiver][category] then
-                groupedQuests[questGiver][category] = {}
-            end
-        
-            table.insert(groupedQuests[questGiver][category], questData)
         end
     end
 
@@ -152,7 +166,22 @@ function CreateMissionFrames(_missionFrames, _MissionList)
 
                 local text = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
                 text:SetPoint("LEFT", 23, 0)
-                local status = allCC[questID] and "|cFF00FF00" .. L["Completed"] .. "|r" or "|cFF999999" .. L["Not_Completed"] .. "|r"
+                --local status = allCC[questID] and "|cFF00FF00" .. L["Completed"] .. "|r" or "|cFF999999" .. L["Not_Completed"] .. "|r"
+
+                -- Verifica se a missão está concluída ou em andamento
+                local status = ""
+
+                if type(questID) == "string" then
+                    questID = questID.gsub(questID,"_1","")
+                end
+
+                if allCC[questID] then
+                    status = "|cFF00FF00" .. L["Completed"] .. "|r"
+                elseif IsQuestInProgress(questID) then
+                    status = "|cFF48CAE4" .. L["InProgress"] .. "|r"
+                else
+                    status = "|cFF999999" .. L["Not_Completed"] .. "|r"
+                end
 
                 if(C_CATEGORY_ICONS[questData[8]] == nil) then
                     text:SetText(CreateInlineIcon(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"]).." " ..title.."\n"..status)

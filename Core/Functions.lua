@@ -80,13 +80,14 @@ function LoadWorkOrderIcon(frame)
     CheckButton:SetPoint('CENTER', 0, -10)
     CheckButton:SetSize(28, 28)
     CheckButton:SetFrameLevel(2)
-    CheckButton:SetNormalTexture(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"]) --Recurringavailablequesticon
-	CheckButton:SetHighlightTexture(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"])
+    CheckButton:SetNormalTexture(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["workOrders"]) --Recurringavailablequesticon
+	CheckButton:SetHighlightTexture(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["workOrders"])
 	CheckButton:GetHighlightTexture():SetAlpha(0.5)
     
     CheckButton:Hide()
     
     CheckButton:SetScript('OnClick',function(self) DetailsFrame_ToggleDetailsWindow(nil, true) end)
+    
     CheckButton:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
         MOP_ShowIconTooltip(GameTooltip, L["CheckWorkOrders"])
@@ -99,6 +100,54 @@ function LoadWorkOrderIcon(frame)
     CheckButton:Show()
 
     MoPReportFrameWorkOrdersTitle:SetText(L["WorkOrders"])
+end
+
+function TableHasData(_table)
+        local status = "empty"
+        local count = 0
+
+        for k, v in pairs(_table) do
+            count = count + 1
+            if(count > 1) then
+                status = "filled"
+                break
+            end
+        end
+        return status
+end
+
+function LoadCompletedQuestsIcon(frame)
+    local CheckButton = CreateFrame("CheckButton", nil, frame, "UIButtonTemplate")
+    CheckButton:SetPoint('TOPRIGHT', 20, 34)
+    CheckButton:SetSize(22, 22)
+    CheckButton:SetFrameLevel(2)
+    CheckButton:SetNormalTexture(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"]) --Recurringavailablequesticon
+	CheckButton:SetHighlightTexture(C_INTERFACE_TEXTURES[MoPReport_Game_Flavor]["questIcon"])
+	CheckButton:GetHighlightTexture():SetAlpha(0.5)
+    
+    CheckButton:Hide()
+    
+    CheckButton:SetScript('OnClick',function(self) DetailsFrame_ToggleDetailsWindow("None", false, true) 
+
+        allCC = CheckCompletedQuests()
+    
+        local status = TableHasData(allCC)
+
+        CreateMissionFrames(DetailsFrameScrollScrollChild, GetDailyQuestDataByIDs(allCC), status)
+    
+    end)
+    
+    CheckButton:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
+        MOP_ShowIconTooltip(GameTooltip, L["CheckCompletedQuests"])
+        GameTooltip:Show()
+    end)
+    CheckButton:SetScript("OnLeave", function(self)
+        GameTooltip:Hide()
+    end)
+
+    CheckButton:Show()
+
 end
 
 -- Função compatível com WoW 5.x (Mists of Pandaria)
@@ -189,7 +238,7 @@ function ListReputations_classic()
         return _factionList
 end
 
-function CheckCompletedQuests()
+function CheckCompletedQuests_old()
     local _allCompletedQuests = C_QuestLog.GetAllCompletedQuestIDs()
     local _tableAllCompletedQuests = {}
     for _, quest in ipairs(_allCompletedQuests) do
@@ -198,22 +247,96 @@ function CheckCompletedQuests()
     return _tableAllCompletedQuests
 end
 
-function CheckCompletedQuests_classic()
-    local _allCompletedQuests = GetQuestsCompleted()
-    local _tableAllCompletedQuests = {}
-    for _, quest in ipairs(_allCompletedQuests) do
-        table.insert(_tableAllCompletedQuests, quest, true)
+-- Retorna apenas os IDs de quests que estão em C_MOP_DAILY_QUESTS
+function CheckCompletedQuests()
+
+    local _allCompletedQuests = {}
+
+    if(MoPReport_Game_Flavor == "Classic") then    
+        _allCompletedQuests = GetQuestsCompleted()
+    else
+        _allCompletedQuests = C_QuestLog.GetAllCompletedQuestIDs()
     end
-    return _tableAllCompletedQuests
+
+
+    local _filteredCompletedQuests = {}
+
+    --_allCompletedQuests = {32567, 30149,30148}
+
+    -- Cria um set de todos os IDs válidos de C_MOP_DAILY_QUESTS
+    local validQuestIDs = {}
+    for factionID, quests in pairs(C_MOP_DAILY_QUESTS) do
+        if type(quests) == "table" then
+            for questID, _ in pairs(quests) do
+                validQuestIDs[questID] = true
+            end
+        end
+    end
+
+    -- Filtra apenas os quests que estão em C_MOP_DAILY_QUESTS
+    for _, questID in ipairs(_allCompletedQuests) do
+        if(C_SHARED_QUEST[questID]) then
+            if validQuestIDs[questID] then
+                _filteredCompletedQuests[tostring(questID) .. "_1"] = true
+                _filteredCompletedQuests[tostring(questID) .. "_2"] = true
+                _filteredCompletedQuests[tostring(questID) .. "_3"] = true
+                _filteredCompletedQuests[tostring(questID) .. "_4"] = true
+                _filteredCompletedQuests[questID] = true
+                end
+            else
+                if validQuestIDs[questID] then
+                    _filteredCompletedQuests[questID] = true
+                end
+        end
+    end
+
+    return _filteredCompletedQuests
 end
+
+-- Retorna uma tabela com os dados de C_MOP_DAILY_QUESTS para os códigos fornecidos em questIDList
+function GetDailyQuestDataByIDs(questIDList)
+    local result = {}
+    -- Cria um índice rápido para busca
+    local questIndex = {}
+    for factionID, quests in pairs(C_MOP_DAILY_QUESTS) do
+        if type(quests) == "table" then
+            for questID, questData in pairs(quests) do
+                if(questData[2] == nil) then
+                    --Oculta shared dummy quest
+                else
+                    questIndex[questID] = questData
+                end
+                
+            end
+        end
+    end
+ 
+    for questID, _  in pairs(questIDList) do
+        if questIndex[questID] then
+            result[questID] = questIndex[questID]
+        end
+    end
+
+    return result
+end
+
+--function CheckCompletedQuests_classic()
+--    local _allCompletedQuests = GetQuestsCompleted()
+--    local _tableAllCompletedQuests = {}
+--    for _, quest in ipairs(_allCompletedQuests) do
+--        table.insert(_tableAllCompletedQuests, quest, true)
+--    end
+--    return _tableAllCompletedQuests
+--end
 
 function UpdateCompletedQuestsList()
     local allCC = {}
-    if (MoPReport_Game_Flavor == "Classic") then
-        allCC = CheckCompletedQuests_classic()
-    else
+    --if (MoPReport_Game_Flavor == "Classic") then
+    --    allCC = CheckCompletedQuests_classic()
+    --else
         allCC = CheckCompletedQuests()
-    end   
+    --end   
+
     return allCC
 end
 
@@ -354,4 +477,25 @@ function VerifyQuestCompleted(p_questID)
 
     return {title,isCompleted}
 
+end
+
+function IsQuestInProgress(questID)
+    -- Percorre o quest log do jogador e verifica se a missão está ativa
+    if(MoPReport_Game_Flavor == "Classic") then    
+        for i = 1, GetNumQuestLogEntries() do
+            local info = C_QuestLog.GetQuestInfo(i)
+            if info and info.questID == questID then
+                return true
+            end
+        end
+    else
+        for i = 1, C_QuestLog.GetNumQuestLogEntries() do
+            local info = C_QuestLog.GetInfo(i)
+            if info and info.questID == questID then
+                return true
+            end
+        end
+    end
+    
+    return false
 end

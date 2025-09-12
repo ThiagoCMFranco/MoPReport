@@ -43,7 +43,7 @@ function DetailsHide(self)
     self:Hide();
 end
 
-function DetailsFrame_ToggleDetailsWindow(_factionID, _isWorkOrder)
+function DetailsFrame_ToggleDetailsWindow(_factionID, _isWorkOrder, _isComplete)
 	if(_thisFrame:IsShown() and _openDetail == _factionID) then
         DetailsHide(_thisFrame)
         _openDetail = 0
@@ -51,6 +51,8 @@ function DetailsFrame_ToggleDetailsWindow(_factionID, _isWorkOrder)
 		DetailsShow(_thisFrame)
         if _isWorkOrder then
             CreateMissionFrames(DetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS["WORK_ORDERS"])
+        elseif _isComplete then
+            
         else
             CreateMissionFrames(DetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS[_factionID])
         end
