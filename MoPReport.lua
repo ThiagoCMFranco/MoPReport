@@ -164,6 +164,8 @@ local eventListenerFrame = CreateFrame("Frame", "MoPReportEventListenerFrame", U
 
 eventListenerFrame:RegisterEvent("ADDON_LOADED")
 eventListenerFrame:RegisterEvent("QUEST_COMPLETE")
+eventListenerFrame:RegisterEvent("QUEST_LOG_UPDATE")
+eventListenerFrame:RegisterEvent("UPDATE_FACTION")
 
 eventListenerFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
@@ -176,6 +178,27 @@ eventListenerFrame:SetScript("OnEvent", function(self, event, ...)
 
     if event == "QUEST_COMPLETE" then
         allCC = UpdateCompletedQuestsList()
+    end
+
+    if event == "QUEST_LOG_UPDATE" then
+        allCC = UpdateCompletedQuestsList()
+        if MoPReportDetailsFrame:IsShown() then
+            if _openDetail == "WORK_ORDERS" then
+                CreateMissionFrames(MoPReportDetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS["WORK_ORDERS"])
+            elseif _openDetail == "None" then
+                local status = TableHasData(allCC)
+                CreateMissionFrames(MoPReportDetailsFrameScrollScrollChild, GetDailyQuestDataByIDs(allCC), status)
+            else
+                CreateMissionFrames(MoPReportDetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS[_openDetail])
+            end
+        end
+
+    end
+
+    if event == "UPDATE_FACTION" then
+        if(MoPReportFrame:IsShown()) then
+            CreateFactionFrames(MoPReportFrameScrollScrollChild, C_MOP_FACTIONS, C_MOP_FRIENDS)
+        end
     end
 end)
 

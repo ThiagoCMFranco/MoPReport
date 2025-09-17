@@ -238,6 +238,100 @@ C_RESTRICTED_FACTION_QUESTS = {
     [32677] = "Horde",
     [32294] = "Horde",
     [32564] = "Horde",
+
+    --Operation: Shieldwall
+
+    [32154] = "Alliance",
+    [32159] = "Alliance",
+    [32446] = "Alliance",
+    [32156] = "Alliance",
+    [32155] = "Alliance",
+    [32157] = "Alliance",
+    [32158] = "Alliance",
+    [32433] = "Alliance",
+
+    [32451] = "Alliance",
+    [32143] = "Alliance",
+    [32145] = "Alliance",
+    [32146] = "Alliance",
+    [32144] = "Alliance",
+    [32142] = "Alliance",
+
+    [32148] = "Alliance",
+    [32153] = "Alliance",
+    [32149] = "Alliance",
+    [32152] = "Alliance",
+    [32150] = "Alliance",
+
+    [32116] = "Alliance",
+    [32347] = "Alliance",
+    [32119] = "Alliance",
+    [32122] = "Alliance",
+    [32346] = "Alliance",
+    [32115] = "Alliance",
+    [32121] = "Alliance",
+
+    [32166] = "Alliance",
+    [32186] = "Alliance",
+    [32172] = "Alliance",
+
+    [32164] = "Alliance",
+    [32184] = "Alliance",
+    [32170] = "Alliance",
+
+    [32165] = "Alliance",
+    [32185] = "Alliance",
+    [32171] = "Alliance",
+
+    --Dominance Offensive
+    
+    [32199] = "Horde",
+    [32221] = "Horde",
+    [32223] = "Horde",
+    [32214] = "Horde",
+    [32197] = "Horde",
+    [32222] = "Horde",
+    [32136] = "Horde",
+    [32237] = "Horde",
+    [32137] = "Horde",
+    [32140] = "Horde",
+    [32236] = "Horde",
+    [32141] = "Horde",
+    [32138] = "Horde",
+    [32139] = "Horde",
+    [32238] = "Horde",
+
+    [32127] = "Horde",
+    [32128] = "Horde",
+    [32123] = "Horde",
+    [32235] = "Horde",
+    [32126] = "Horde",
+
+    [32450] = "Horde",
+    [32130] = "Horde",
+    [32135] = "Horde",
+    [32133] = "Horde",
+    [32131] = "Horde",
+    [32132] = "Horde",
+
+    [32449] = "Horde",
+    [32344] = "Horde",
+    [32348] = "Horde",
+    [32120] = "Horde",
+    [32343] = "Horde",
+    [32342] = "Horde",
+
+    [32163] = "Horde",
+    [32183] = "Horde",
+    [32169] = "Horde",
+
+    [32161] = "Horde",
+    [32181] = "Horde",
+    [32167] = "Horde",
+
+    [32162] = "Horde",
+    [32182] = "Horde",
+    [32168] = "Horde",
     
 }
 

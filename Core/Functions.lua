@@ -86,7 +86,7 @@ function LoadWorkOrderIcon(frame)
     
     CheckButton:Hide()
     
-    CheckButton:SetScript('OnClick',function(self) DetailsFrame_ToggleDetailsWindow(nil, true) end)
+    CheckButton:SetScript('OnClick',function(self) MoPReportDetailsFrame_ToggleDetailsWindow(nil, true) end)
     
     CheckButton:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
@@ -108,7 +108,7 @@ function TableHasData(_table)
 
         for k, v in pairs(_table) do
             count = count + 1
-            if(count > 1) then
+            if(count > 0) then
                 status = "filled"
                 break
             end
@@ -127,13 +127,13 @@ function LoadCompletedQuestsIcon(frame)
     
     CheckButton:Hide()
     
-    CheckButton:SetScript('OnClick',function(self) DetailsFrame_ToggleDetailsWindow("None", false, true) 
+    CheckButton:SetScript('OnClick',function(self) MoPReportDetailsFrame_ToggleDetailsWindow("None", false, true) 
 
-        allCC = CheckCompletedQuests()
+        local allCC = CheckCompletedQuests()
     
         local status = TableHasData(allCC)
 
-        CreateMissionFrames(DetailsFrameScrollScrollChild, GetDailyQuestDataByIDs(allCC), status)
+        CreateMissionFrames(MoPReportDetailsFrameScrollScrollChild, GetDailyQuestDataByIDs(allCC), status)
     
     end)
     
@@ -498,4 +498,27 @@ function IsQuestInProgress(questID)
     end
     
     return false
+end
+
+function AddHelpIcon(_LabelHelp, _TooltipText)
+
+    _LabelHelp:SetText("  " .. CreateInlineIcon("glueannouncementpopup-icon-info"))
+    _LabelHelp:SetWidth(22)
+    _LabelHelp:SetCallback("OnEnter", function(widget, event, text)
+        GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR");
+		GameTooltip:SetText(
+            _TooltipText
+            , 1, 1, 1, nil, true);
+            GameTooltip:ClearAllPoints()
+        local mX, mY = GetCursorPosition()
+        local uiScale = UIParent:GetEffectiveScale()
+        local tooltipWidth = GameTooltip:GetWidth()
+        local tooltipHeight = GameTooltip:GetHeight()
+        GameTooltip:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", mX / uiScale + 10 / uiScale, mY / uiScale - tooltipHeight)
+		GameTooltip:Show();
+    end)
+    _LabelHelp:SetCallback("OnLeave", function(widget, event, text)
+        GameTooltip:Hide();
+    end)
+
 end

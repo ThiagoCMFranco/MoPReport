@@ -220,6 +220,12 @@ function MoPReport_LoadSettings()
 
     ddlTrackerAddon:SetValue(MoPReportDB.DefaultTrackerAddon)
 
+    local LabelDefeultTrackerAddonHelp = AceGUI:Create("InteractiveLabel")
+
+    scrollFrameMainSettings:AddChild(LabelDefeultTrackerAddonHelp)
+    AddHelpIcon(LabelDefeultTrackerAddonHelp, L["DefaultTrackerAddonHelp"])
+    AddLineSkip(scrollFrameMainSettings)
+
     end
 
 end
