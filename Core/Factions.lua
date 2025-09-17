@@ -129,7 +129,7 @@ function CreateFactionFrames(_factionFrames, _FactionsList, _FriendsList)
 
                         if _enabledFaction[factionID] then
                             if factionData[7] then
-                                CheckButton:SetScript('OnClick',function(self) DetailsFrame_ToggleDetailsWindow(factionID) end)
+                                CheckButton:SetScript('OnClick',function(self) MoPReportDetailsFrame_ToggleDetailsWindow(factionID) end)
                                 CheckButton:SetScript("OnEnter", function(self)
                                     GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
                                     MOP_ShowIconTooltip(GameTooltip, L["CheckDailyQuests"])
@@ -229,7 +229,7 @@ function CreateFactionFrames(_factionFrames, _FactionsList, _FriendsList)
                                 
                                     if _enabledFaction[friendID] then
                                         if friendData[7] then
-                                            CheckButton:SetScript('OnClick',function(self) DetailsFrame_ToggleDetailsWindow(friendID) end)
+                                            CheckButton:SetScript('OnClick',function(self) MoPReportDetailsFrame_ToggleDetailsWindow(friendID) end)
                                             CheckButton:SetScript("OnEnter", function(self)
                                                 GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
                                                 MOP_ShowIconTooltip(GameTooltip, "Detalhes")

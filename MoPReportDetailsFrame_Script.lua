@@ -21,9 +21,12 @@
 --------------------------------------------------------------------------------
 
 local _thisFrame = {}
-local _openDetail = 0
+_penDetail = 0
 
-function DetailsFrame_OnLoad(self)
+local name, qcc = ...
+local L = qcc.L 
+
+function MoPReportDetailsFrame_OnLoad(self)
 	self:RegisterForDrag("LeftButton");
     _thisFrame = self
 end
@@ -43,20 +46,25 @@ function DetailsHide(self)
     self:Hide();
 end
 
-function DetailsFrame_ToggleDetailsWindow(_factionID, _isWorkOrder, _isComplete)
-	if(_thisFrame:IsShown() and _openDetail == _factionID) then
+function MoPReportDetailsFrame_ToggleDetailsWindow(_factionID, _isWorkOrder, _isComplete)
+	if(_thisFrame:IsShown() and (_openDetail == _factionID or (_openDetail == "WORK_ORDERS" and _factionID == nil))) then
         DetailsHide(_thisFrame)
         _openDetail = 0
 	else
 		DetailsShow(_thisFrame)
         if _isWorkOrder then
-            CreateMissionFrames(DetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS["WORK_ORDERS"])
+            CreateMissionFrames(MoPReportDetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS["WORK_ORDERS"])
+            MoPReportDetailsFrameQuestsTitleTitle:SetText(L["WorkOrders"])
+            _openDetail = "WORK_ORDERS"
         elseif _isComplete then
-            
+            _openDetail = "None"
+            MoPReportDetailsFrameQuestsTitleTitle:SetText(L["CompletedMissions"])
         else
-            CreateMissionFrames(DetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS[_factionID])
+            CreateMissionFrames(MoPReportDetailsFrameScrollScrollChild, C_MOP_DAILY_QUESTS[_factionID])
+            _openDetail = _factionID
+            MoPReportDetailsFrameQuestsTitleTitle:SetText(C_MOP_FACTIONS[_factionID][2])
         end
-        _openDetail = _factionID
+        
 	end
 end
 
