@@ -219,6 +219,8 @@ function SetupSlashCommands()
             MoPReport:ToggleSettingsFrame()
         elseif (arg == "ui") then
             MoPReport_ToggleMainWindow()
+        elseif (arg == "ExportData") then
+            MoPReportDataExtractor:RunExtraction()
         else
 			MoPReport_ToggleMainWindow()
         end
