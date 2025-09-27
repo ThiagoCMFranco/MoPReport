@@ -164,6 +164,12 @@ function CreateMissionFrames(_missionFrames, _MissionList, _type)
                 frame:SetSize(320, 36)
                 frame:SetPoint("TOPLEFT", prevFrame, "BOTTOMLEFT", 0, -5)
 
+                frame:SetScript("OnMouseDown", function(self, btn)
+                    if btn == "RightButton" then
+                        local contextMenu = MenuUtil.CreateContextMenu(frame, QuestsGeneratorFunction, questData[2], questData[1]);
+                    end
+                end)
+
                 local text = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
                 text:SetPoint("LEFT", 23, 0)
                 --local status = allCC[questID] and "|cFF00FF00" .. L["Completed"] .. "|r" or "|cFF999999" .. L["Not_Completed"] .. "|r"
