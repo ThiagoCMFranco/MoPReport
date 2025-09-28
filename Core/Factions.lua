@@ -117,6 +117,13 @@ function CreateFactionFrames(_factionFrames, _FactionsList, _FriendsList)
                             frame:SetPoint("TOPLEFT", prevFrame, "BOTTOMLEFT", 0, -2)
                         end
 
+                        frame:SetScript("OnMouseDown", function(self, btn)
+                            if btn == "RightButton" then
+                                local contextMenu = MenuUtil.CreateContextMenu(frame, FactionsGeneratorFunction, factionData[2], factionData[1]);
+                            end
+                        end)
+                        
+
                         local CheckButton = CreateFrame("CheckButton", nil, frame, "UIButtonTemplate")
                         CheckButton:SetPoint('TOPRIGHT', -8,-8)
     		            CheckButton:SetSize(20, 20)
@@ -204,6 +211,11 @@ function CreateFactionFrames(_factionFrames, _FactionsList, _FriendsList)
                                         status = "|cff999999(" .. L["Unknown_Friend"] .. ")|r"
                                     else
                                         friendFrame:SetSize(300, 42)
+                                        friendFrame:SetScript("OnMouseDown", function(self, btn)
+                                            if btn == "RightButton" then
+                                                local contextMenu = MenuUtil.CreateContextMenu(friendFrame, FactionsGeneratorFunction, friendData[2], friendData[1]);
+                                            end
+                                        end)
                                     end
                                     friendFrame:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background"})
                                     friendFrame:SetBackdropColor(0.1,0.1,0.1,0.5)

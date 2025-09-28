@@ -252,8 +252,11 @@ function CheckCompletedQuests()
 
     local _allCompletedQuests = {}
 
-    if(MoPReport_Game_Flavor == "Classic") then    
-        _allCompletedQuests = GetQuestsCompleted()
+    if (MoPReport_Game_Flavor == "Classic") then    
+        local completedQuestsList = GetQuestsCompleted()
+        for qID, _ in pairs(completedQuestsList) do
+            table.insert(_allCompletedQuests,qID)
+        end
     else
         _allCompletedQuests = C_QuestLog.GetAllCompletedQuestIDs()
     end
@@ -483,8 +486,8 @@ function IsQuestInProgress(questID)
     -- Percorre o quest log do jogador e verifica se a missão está ativa
     if(MoPReport_Game_Flavor == "Classic") then    
         for i = 1, GetNumQuestLogEntries() do
-            local info = C_QuestLog.GetQuestInfo(i)
-            if info and info.questID == questID then
+            local _, _, _, _, _, _, _, qID = GetQuestLogTitle(i)
+            if qID == questID then
                 return true
             end
         end
@@ -522,3 +525,212 @@ function AddHelpIcon(_LabelHelp, _TooltipText)
     end)
 
 end
+
+--contextMenu
+
+function FactionsGeneratorFunction(owner, rootDescription, _factionName, _factionID)
+
+	rootDescription:CreateTitle(_factionName);
+
+    if(MoPReport_Game_Flavor == "Classic") then
+        local name, standing, min, max, value, factionID = GetWatchedFactionInfo()
+        if(factionID and factionID == _factionID) then
+            rootDescription:CreateButton(L["ReputationExperienceBarHide"], function(data)
+                SetWatchedFactionIndex(0)
+            end);
+        else
+	        rootDescription:CreateButton(L["ReputationExperienceBarShow"], function(data)
+
+                local factionID = _factionID
+                local l_factionIndex = 1
+                local l_numFactions = GetNumFactions()
+
+                while l_factionIndex <= l_numFactions do
+                    name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(l_factionIndex)
+
+                    if isHeader and isCollapsed then
+                        ExpandFactionHeader(l_factionIndex)
+                        l_numFactions = GetNumFactions()
+                    end
+
+                  if _factionID == factionID then
+                    SetWatchedFactionIndex(l_factionIndex) 
+                    break
+                  end
+
+                  l_factionIndex = l_factionIndex + 1
+                end
+
+            end);
+        end
+
+    else
+        local factionData = C_Reputation.GetWatchedFactionData()
+        if(factionData and factionData.factionID == _factionID) then
+            	    rootDescription:CreateButton(L["ReputationExperienceBarHide"], function(data)
+                C_Reputation.SetWatchedFactionByID(0)
+            end);
+        else
+	        rootDescription:CreateButton(L["ReputationExperienceBarShow"], function(data)
+                C_Reputation.SetWatchedFactionByID(_factionID)
+            end);
+        end
+
+    end
+
+--rootDescription:CreateDivider()
+
+end
+
+function QuestsGeneratorFunction(owner, rootDescription, _QuestName, _QuestId)
+
+    if(MoPReport_Game_Flavor == "Classic") then
+
+        -- Verifica se a missão está ativa no quest log
+        local function IsClassicQuestInProgress(questID)
+            for i = 1, GetNumQuestLogEntries() do
+                local title, _, _, _, _, _, _, qID = GetQuestLogTitle(i)
+                if qID == questID then
+                    return true, i, title
+                end
+            end
+            return false, nil, nil
+        end
+
+        local inProgress, questLogIndex, questTitle = IsClassicQuestInProgress(_QuestId)
+        if inProgress then
+            rootDescription:CreateTitle(_QuestName)
+
+            rootDescription:CreateButton(L["ShowOnQuestLog"], function(data)
+                -- Seleciona a missão no quest log
+                if questLogIndex then
+                        SelectQuestLogEntry(questLogIndex)
+                        QuestLog_Update()   -- Atualiza o painel do Quest Log
+                end
+
+                if QuestLogFrame and QuestLogFrame:IsShown() then
+                    ToggleQuestLog()
+                    ToggleQuestLog()
+                else
+                    ToggleQuestLog()
+                end
+            end)
+
+            -- Verifica se está sendo rastreada
+            local isThisWatched = false
+            for i = 1, GetNumQuestWatches() do
+                local watchedIndex = GetQuestIndexForWatch(i)
+                if watchedIndex == questLogIndex then
+                    isThisWatched = true
+                    break
+                end
+            end
+
+            if isThisWatched then
+                rootDescription:CreateButton(L["Untrack"], function(data)
+                    RemoveQuestWatch(questLogIndex)
+                    WatchFrame_Update() -- Atualiza o painel de rastreamento
+                    QuestLog_Update()   -- Atualiza o painel do Quest Log
+                end)
+            end
+
+            if not isThisWatched then
+                rootDescription:CreateButton(L["Track"], function(data)
+                    AddQuestWatch(questLogIndex)
+                    WatchFrame_Update() -- Atualiza o painel de rastreamento
+                    QuestLog_Update()   -- Atualiza o painel do Quest Log
+                end)
+            end
+
+            rootDescription:CreateButton(L["Abandon"], function(data)
+                MoP_Abandon_QuestIndex = questLogIndex
+                StaticPopup_Show("POPUP_DIALOG_CONFIRM_ABANDON_QUEST")
+            end)
+
+        end
+
+    else
+
+    if(IsQuestInProgress(_QuestId)) then
+
+	rootDescription:CreateTitle(_QuestName);
+
+        rootDescription:CreateButton(L["ShowOnQuestLog"], function(data)
+            if not (WorldMapFrame and WorldMapFrame:IsShown()) then
+                ToggleQuestLog()
+            end
+
+            -- Aguarda o próximo frame para garantir que o Quest Log abriu antes de selecionar a missão
+            C_Timer.After(0.1, function()
+                if C_QuestLog and C_QuestLog.SetSelectedQuest then
+                    C_QuestLog.SetSelectedQuest(_QuestId)
+                end
+                -- Mostra o painel de detalhes se existir
+                if QuestMapFrame and QuestMapFrame.DetailsFrame then
+                    QuestMapFrame.DetailsFrame:Show()
+                    if QuestMapFrame.DetailsFrame.questID ~= _QuestId then
+                        QuestMapFrame_ShowQuestDetails(_QuestId)
+                    end
+                elseif QuestLogDetailFrame then
+                    QuestLogDetailFrame:Show()
+                end
+            end)
+            
+        end);
+
+        local isThisWatched = false;
+
+        for i = 1, C_QuestLog.GetNumQuestWatches()
+        do
+            local watchedID = C_QuestLog.GetQuestIDForQuestWatchIndex(i)
+            if(watchedID == _QuestId) then
+                isThisWatched = true
+            end
+        end
+
+        if isThisWatched then
+	        rootDescription:CreateButton(L["Untrack"], function(data)
+                C_QuestLog.RemoveQuestWatch(_QuestId);
+            end);
+        end
+
+        if not isThisWatched then
+        	rootDescription:CreateButton(L["Track"], function(data)
+                C_QuestLog.AddQuestWatch(_QuestId);
+            end);
+        end
+
+        rootDescription:CreateButton(L["Abandon"], function(data)
+                 
+            MoP_Abandon_QuestId = _QuestId
+
+            StaticPopup_Show ("POPUP_DIALOG_CONFIRM_ABANDON_QUEST")
+
+
+        end);
+        
+    end
+
+end
+
+end
+
+StaticPopupDialogs["POPUP_DIALOG_CONFIRM_ABANDON_QUEST"] = {
+    text = L["Dialog_Abandon_Quest_Message"],
+    button1 = L["Dialog_Yes"],
+    button2 = L["Dialog_No"],
+    OnAccept = function()
+        if (MoPReport_Game_Flavor == "Classic") then
+            SelectQuestLogEntry(MoP_Abandon_QuestIndex);
+            AbandonQuest();
+        else
+            C_QuestLog.SetSelectedQuest(MoP_Abandon_QuestId);
+            C_QuestLog.SetAbandonQuest();
+            C_QuestLog.AbandonQuest();
+        end
+    end,
+    timeout = 0,
+    whileDead = true,
+    hideOnEscape = true,
+    preferredIndex = 3,
+  }
