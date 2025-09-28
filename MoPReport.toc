@@ -28,6 +28,11 @@ localization\GameLocalization\enUS\NPCNames-enUS.lua
 localization\GameLocalization\enUS\FactionNames-enUS.lua
 localization\GameLocalization\enUS\QuestTitles-enUS.lua
 
+localization\GameLocalization\frFR\Categories-frFR.lua
+localization\GameLocalization\frFR\NPCNames-frFR.lua
+localization\GameLocalization\frFR\FactionNames-frFR.lua
+localization\GameLocalization\frFR\QuestTitles-frFR.lua
+
 localization\GameLocalization\ptBR\Categories-ptBR.lua
 localization\GameLocalization\ptBR\NPCNames-ptBR.lua
 localization\GameLocalization\ptBR\FactionNames-ptBR.lua
@@ -37,6 +42,7 @@ localization\GameLocalization\ruRU\Categories-ruRU.lua
 
 # Addon UI Localization
 localization\enUS.lua
+localization\frFR.lua
 localization\ptBR.lua
 localization\ruRU.lua
 
