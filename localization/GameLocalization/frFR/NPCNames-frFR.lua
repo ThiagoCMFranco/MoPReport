@@ -27,7 +27,7 @@ L_Units["Cloud_Serpent_Big_Bao"] = "Gros Bao"
 
 --Shado-Pan
 
-L_Units["Shado_Pan_Ban_Bearheart"] = "Ban Cœur dʼOurs"
+L_Units["Shado_Pan_Ban_Bearheart"] = "Ban Cœur d’Ours"
 L_Units["Shado_Pan_Ling_of_the_Six_Pools"] = "Ling des Six Bassins"
 L_Units["Shado_Pan_Master_Snowdrift"] = "Maître Banc de Neige"
 
@@ -57,7 +57,7 @@ L_Units["The_Tillers_"] = "" --Necessita dividir em referências individuais par
 L_Units["The_August_Celestials_Thelonius"] = "Thélonius"
 L_Units["The_August_Celestials_Kuo-Na_Quillpaw"] = "Kuo Na Patte de Plumes"
 L_Units["The_August_Celestials_Yan_Quillpaw"] = "Yan Patte de Plumes"
-L_Units["The_August_Celestials_Ogo_the_Elder"] = "Ogo lʼAncien"
+L_Units["The_August_Celestials_Ogo_the_Elder"] = "Ogo l’Ancien"
 L_Units["The_August_Celestials_Ogo_the_Youger"] = "Ogo le Jeune"
 L_Units["The_August_Celestials_High_Adept_Paosha"] = "Grand adepte Paosha"
 L_Units["The_August_Celestials_Yak-Keeper_Kyana"] = "Gardienne de yacks Kyana"
@@ -111,7 +111,7 @@ L_Units["QuestHub_Whitepetal_Lake"] = "Lac Blanc-Pétale"
 L_Units["Golden_Lotus_Golden_Pagoda_Ren_Firetongue"] = "Ren Langue de Feu" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
 L_Units["Golden_Lotus_Golden_Pagoda_Sun_Tenderheart"] = "Sun Cœur de Douceur" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
 L_Units["Golden_Lotus_Golden_Pagoda_Anji_Autumnlight"] = "Anji Clair d’Automne" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
-L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"] = "Kun Clair d'Automne" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
+L_Units["Golden_Lotus_Golden_Pagoda_Kun_Autumnlight"] = "Kun Clair d’Automne" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
 L_Units["Golden_Lotus_Golden_Pagoda_Leven_Dawnblade"] = "Leven Lame de l’Aube" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
 L_Units["Golden_Lotus_Golden_Pagoda_He_Softfoot"] = "He Pas de Loup" .. " (" .. L_Units["QuestHub_Golden_Pagoda"] .. ")"
 
@@ -125,12 +125,12 @@ L_Units["Golden_Lotus_Mistfall_Village_Mayor_Shiyo"] = "Maire Shiyo" .. " (" .. 
 L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Leven_Dawnblade"] = "Leven Lame de l’Aube" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")" --338 386
 L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sun_Tenderheart"] = "Sun Cœur de Douceur" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
 L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Anji_Autumnlight"] = "Anji Clair d’Automne" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
-L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"] = "Kun Clair d'Automne" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
+L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Kun_Autumnlight"] = "Kun Clair d’Automne" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
 L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Rook_Stonetoe"] = "Freux Orteil de Pierre" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
 L_Units["Golden_Lotus_Ruins_of_Guo-Lai_Sinan_the_Dreamer"] = "Sinan la Rêveuse" .. " (" .. L_Units["QuestHub_Ruins_of_Guo-Lai"] .. ")"
 
 L_Units["Golden_Lotus_Setting_Sun_Anji_Autumnlight"] = "Anji Clair d’Automne" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
-L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"] = "Kun Clair d'Automne" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
+L_Units["Golden_Lotus_Setting_Sun_Kun_Autumnlight"] = "Kun Clair d’Automne" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
 L_Units["Golden_Lotus_Setting_Sun_Kelari_Featherfoot"] = "Kelari Pied Plume" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
 L_Units["Golden_Lotus_Setting_Sun_Yumi_Goldenpaw"] = "Yumi Patte d’Or" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
 L_Units["Golden_Lotus_Setting_Sun_Hai-Me_Heavyhands"] = "Hai Me Mains de Plomb" .. " (" .. L_Units["QuestHub_Setting_Sun"] .. ")"
@@ -145,7 +145,7 @@ L_Units["Golden_Lotus_"] = nil
 L_Units["Kirin_Tor_Offensive_Lady_Jaina_Proudmoore"] = "Dame Jaina Portvaillant"
 L_Units["Kirin_Tor_Offensive_Archmage_Modera"] = "Archimage Modera"
 L_Units["Kirin_Tor_Offensive_Narasi_Snowdawn"] = "Narasi Aubeneige"
-L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"] = "Archimage Lanʼdalock"
+L_Units["Kirin_Tor_Offensive_Archmage_Lan-dalock"] = "Archimage Lan’dalock"
 L_Units["Kirin_Tor_Offensive_Scout_Captain_Daelin"] = "Capitaine des éclaireurs Daelin"
 L_Units["Kirin_Tor_Offensive_Miura_Brightweaver"] = "Miura Tissebrille"
 
