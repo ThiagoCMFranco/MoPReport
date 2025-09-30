@@ -1,0 +1,39 @@
+--Translator ork
+--if GetLocale() ~= "frFR" then return end
+local _, qcc = ...
+qcc.L_Factions = {}
+local L_Factions = qcc.L_Factions
+
+L_Factions[1269] = "Lotus doré"
+L_Factions[1271] = "L’ordre du Serpent-nuage"
+L_Factions[1435] = "Assaut des Pandashan"
+L_Factions[1270] = "Pandashan"
+L_Factions[1302] = "Les Hameçonneurs"
+L_Factions[1341] = "Les Astres vénérables"
+L_Factions[1359] = "Le prince noir"
+L_Factions[1337] = "Les Klaxxi"
+L_Factions[1492] = "Empereur Shaohao"
+L_Factions[1345] = "Les Chroniqueurs"
+L_Factions[1440] = "Rébellion sombrelance"
+L_Factions[1216] = "Académie de Shang Xi"
+L_Factions[1416] = "Confiance d’Akama"
+L_Factions[1351] = "Les Maîtres brasseurs"
+L_Factions[1387] = "Offensive du Kirin Tor"
+L_Factions[1376] = "Opération Bouclier"
+L_Factions[1242] = "Jinyu de Nageperle"
+L_Factions[1388] = "Assaut des Saccage-soleil"
+L_Factions[1375] = "Offensive Domination"
+L_Factions[1228] = "Hozen des forêts"
+L_Factions[1272] = "Les Laboureurs"
+
+L_Factions[1358] = "Nat Pagle"
+L_Factions[1283] = "Fermier Fung"
+L_Factions[1277] = "Chii Chii"
+L_Factions[1275] = "Ella"
+L_Factions[1276] = "Vieux Patte des Hauts"
+L_Factions[1282] = "Marée Pelage de Roseau"
+L_Factions[1273] = "Jogu l’Ivrogne"
+L_Factions[1278] = "Sho"
+L_Factions[1280] = "Tina Griffe de Tourbe"
+L_Factions[1279] = "Haohan Griffe de Tourbe"
+L_Factions[1281] = "Gina Griffe de Tourbe"

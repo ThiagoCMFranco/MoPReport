@@ -1,0 +1,32 @@
+--Translator ork
+--if GetLocale() ~= "frFR" then return end
+local _, qcc = ...
+qcc.L_Categories = {}
+local L_Categories = qcc.L_Categories
+
+L_Categories["Category_Cook"] = "Cuisine"
+L_Categories["Category_Arch"] = "Archéologie"
+L_Categories["Category_FAid"] = "Secourisme"
+L_Categories["Category_Fish"] = "Pêche"
+L_Categories["Category_PvP"] = "JcJ"
+L_Categories["Category_PvP_Tooltip"] = "Joueur contre Joueur"
+L_Categories["Category_Professions"] = "Métiers"
+L_Categories["Category_Time"] = "Limitée"
+L_Categories["Category_Time_Tooltip"] = "Indisponible après le Siège d’Orgrimmar."
+L_Categories["Category_Race"] = "Course"
+L_Categories["Category_SET_1"] = "Ensemble 1"
+L_Categories["Category_SET_2"] = "Ensemble 2"
+L_Categories["Category_SET_3"] = "Ensemble 3"
+L_Categories["Category_Drop"] = "Pillée"
+L_Categories["Category_Drop_Tooltip"] = "Cette quête commence en pillant un objet sur un objet ou un cadavre."
+L_Categories["Category_Shop"] = "Vendeur"
+L_Categories["Category_Shop_Tooltip"] = "Cette quête commence avec un objet vendu par le donneur de quête."
+L_Categories["Category_Auto"] = "Auto"
+L_Categories["Category_Auto_Tooltip"] = "Cette quête commence immédiatement après que son prérequis soit terminé."
+L_Categories["Category_Krasarang_Sturdy_Crab_Crate"] = "Solide caisse à crabes" -- 91856
+L_Categories["Category_Krasarang_Sturdy_Crane_Snare"] = "Solide piège à grues" -- 91854
+L_Categories["Category_Krasarang_Sturdy_Tiger_Trap"] = "Piège à tigres solide" -- 91855
+L_Categories["Category_Chi-Ji"] = "Berceau de Chi-Ji"
+L_Categories["Category_Niuzao"] = "Temple de Niuzao"
+L_Categories["Category_Jade_Serpent"] = "Temple du Serpent de jade"
+L_Categories["Category_White_Tiger"] = "Temple du Tigre blanc"
