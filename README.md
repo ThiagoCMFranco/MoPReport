@@ -16,6 +16,7 @@ Currently Supported Languages:
 Full Support:
 - Brazilian Portuguese (ptBR) - Developer Native Language  
 - English (enUS) - 100% translated  
+- French (frFR) - 100% translated  
  
 ## Main Features
 Track Pandaria Currencies.  
