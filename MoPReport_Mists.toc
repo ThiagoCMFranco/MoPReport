@@ -1,4 +1,4 @@
-## Interface: 50500, 50501
+## Interface: 50500, 50501, 50502
 ## Title: Mists of Pandaria Report
 ## Notes: Check your Pandaria daily quests, work orders, currencies, world bosses and reputations in one place.
 ## Category-ptBR: Missões
