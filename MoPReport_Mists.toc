@@ -4,7 +4,7 @@
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.2.2
+## Version: 1.2.3
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB, MoPReportExtractDataDB
