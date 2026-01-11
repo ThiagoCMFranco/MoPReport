@@ -27,6 +27,8 @@ local L = qcc.L
 
 local C_LanguageContributors = {}
 
+MoPReportIntegration = MoPReportIntegration or {}
+
 local AceGUI = LibStub("AceGUI-3.0")
 
 -- Create a container frame
@@ -87,7 +89,7 @@ function MoPReport_LoadAbout()
     scrollFrameAbout:AddChild(LabelAboutLocalizationDisclaimer)
 end
 
-function MoPReport_LoadSettings()
+function MoPReport_LoadSettings(treeW)
 
     treeW:ReleaseChildren()
 
@@ -185,6 +187,7 @@ function MoPReport_LoadSettings()
     chkHideMinimapIcon:SetLabel(L["chkHideMinimapIcon"])
     chkHideMinimapIcon:SetCallback("OnValueChanged", function(widget, event, text) 
         MoPReportDB.HideMinimapIcon = chkHideMinimapIcon:GetValue()
+        MoPReportSharedDB.minimap.hide = MoPReportDB.HideMinimapIcon
         MoP_ToggleMinimapButton(chkHideMinimapIcon:GetValue())
     end)
     chkHideMinimapIcon:SetWidth(700)
@@ -280,7 +283,7 @@ local tree = {
 
   treeW:SetCallback("OnGroupSelected", function(container, _, group, ...)
     if group == "G" then
-        MoPReport_LoadSettings()
+        MoPReport_LoadSettings(treeW)
     elseif group == "C" then
         MoPReport_LoadCredits()
     elseif group == "S" then
