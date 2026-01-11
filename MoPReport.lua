@@ -35,6 +35,9 @@ if not MoPReportSharedDB then
     MoPReportSharedDB = {minimap = {hide = false}}
 end
 
+if not MoPReportDB then
+    MoPReportDB = {minimap = {hide = false}}
+end
 
 function MoPReport_OnLoad(self)
 	-- Allows close with ESC

@@ -31,12 +31,14 @@ local function CheckUpdate(remoteVersion, sender)
     local remote = tonumber(remoteVersion)
     if remote and remote > C_MOPREPORT_VERSION_UID then
         if not hasWarned then
-            print("|cFF00FF00["..AddonName.."]|r Uma versão mais recente foi detectada via |cFFFFD100" .. sender .. "|r (Versão: |cFFFF0000".. formatarNumeroVersao(remote) .."|r).")
+            print("|cFF00FF00["..AddonName.."]|r[|cFFFF0000" .. formatarNumeroVersao(C_MOPREPORT_VERSION_UID) .. "|r]: " .. L["NewVersionMessage"] .. "|cFF00FF00".. formatarNumeroVersao(remote) .."|r.")
             hasWarned = true
         end
         -- Atualizar a referência de versão mais recente
         InitializeSharedDB()
-        MoPReportSharedDB.LatestVersionUID = remote
+        if (remote > MoPReportSharedDB.LatestVersionUID) then
+            MoPReportSharedDB.LatestVersionUID = remote
+        end
     end
 end
 
@@ -47,7 +49,7 @@ local function CheckUpdateFromSharedDB()
     
     if latestRef and tonumber(latestRef) > C_MOPREPORT_VERSION_UID then
         if not hasWarned then
-            print("|cFF00FF00["..AddonName.."]|r - |cFFFF0000" .. formatarNumeroVersao(C_MOPREPORT_VERSION_UID) .. "|r: " .. L["NewVersionMessage"] .. "|cFF00FF00".. formatarNumeroVersao(latestRef) .."|r")
+            print("|cFF00FF00["..AddonName.."]|r[|cFFFF0000" .. formatarNumeroVersao(C_MOPREPORT_VERSION_UID) .. "|r]: " .. L["NewVersionMessage"] .. "|cFF00FF00".. formatarNumeroVersao(latestRef) .."|r.")
             hasWarned = true
         end
     end
@@ -63,14 +65,20 @@ local function QueryVersion(manual)
     
     local sent = false
 
-    -- 1. Verifica na Guilda
     if IsInGuild() then
         C_ChatInfo.SendAddonMessage(Prefix, "QUERY_VERSION", "GUILD")
         sent = true
     end
 
-    -- 2. Verifica no Grupo/Raide
-    local groupChannel = IsInRaid() and "RAID" or (IsInGroup() and "PARTY" or nil)
+    local groupChannel
+    if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) then
+        groupChannel = "INSTANCE_CHAT"
+    elseif IsInRaid() then
+        groupChannel = "RAID"
+    elseif IsInGroup() then
+        groupChannel = "PARTY"
+    end
+    
     if groupChannel then
         C_ChatInfo.SendAddonMessage(Prefix, "QUERY_VERSION", groupChannel)
         sent = true
@@ -85,7 +93,6 @@ local function QueryVersion(manual)
         print("|cFF00FF00["..AddonName.."]|r|cFFFF0000[Debug]|r Você não está em um grupo ou guilda.")
     end
 
-    -- Se manual, verificar também o fallback
     if manual then
         CheckUpdateFromSharedDB()
     end
@@ -127,18 +134,14 @@ VersionManager:SetScript("OnEvent", function(self, event, ...)
 end)
 
 function formatarNumeroVersao(num)
-    -- Garante que trabalhamos com um número inteiro e limita a 9 dígitos
     num = tonumber(num)
     if not num then return "0.0.0" end
     num = math.floor(num) % 1000000000
 
-    -- Isolar os blocos matematicamente
     -- Bloco 1 (Milhões), Bloco 2 (Milhares), Bloco 3 (Unidades)
     local b1 = math.floor(num / 1000000)
     local b2 = math.floor((num % 1000000) / 1000)
     local b3 = num % 1000
 
-    -- A concatenação nativa de strings em Lua já descarta zeros à esquerda
-    -- de números ao convertê-los para string.
     return b1 .. "." .. b2 .. "." .. b3
 end
