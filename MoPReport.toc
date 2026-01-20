@@ -1,10 +1,10 @@
-## Interface: 110200, 110205, 110207
+## Interface: 110200, 110205, 110207, 120000
 ## Title: Mists of Pandaria Report
 ## Notes: Check your Pandaria daily quests, work orders, currencies, world bosses and reputations in one place.
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.2.7
+## Version: 1.2.8
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB, MoPReportExtractDataDB
