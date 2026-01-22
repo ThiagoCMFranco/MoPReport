@@ -11,3 +11,11 @@ function SetACE3WidgetFontSize(_widget, _size)
     _widget:SetFont(font, _size, style)
 end
 --"Gambiarra da Braba - Fim"
+
+local AceGUI = LibStub("AceGUI-3.0")
+
+function AddLineSkip(_frame)
+    local LabelLineSkip = AceGUI:Create("InteractiveLabel")
+    LabelLineSkip:SetText("")
+    _frame:AddChild(LabelLineSkip)
+end
