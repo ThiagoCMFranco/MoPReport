@@ -224,6 +224,8 @@ function SetupSlashCommands()
             MoPReport_ToggleMainWindow()
         elseif (arg == "ExportData") then
             MoPReportDataExtractor:RunExtraction()
+        elseif (arg == "boss") then
+            ShowMoPReportBosses()
         else
 			MoPReport_ToggleMainWindow()
         end

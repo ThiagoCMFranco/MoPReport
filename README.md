@@ -6,14 +6,14 @@ Check your Pandaria daily quests, work orders, currencies, world bosses and repu
 
 Game Addon Categories: Quests & Leveling.  
 
-Our goal is simple, make as easy as possible for everyone to get access to relevant information during gameplay. With this simple window addon we bring to Mists of Pandaria the same feeling of using the reports and sumary windows existing in retail since Warlords of Draenor (6.0.0). Check what you have already done today or this week, locate NPCs, track reputations, hunt world bosses and more.
+Our goal is simple, make as easy as possible for everyone to get access to relevant information during gameplay. With this simple window addon we bring to Mists of Pandaria the same feeling of using the reports and sumary windows existing in retail since Warlords of Draenor (6.0.0). Check what you have already done today or this week, locate NPCs, track reputations, hunt world bosses and more.  
 
 Version Compatibility:  
 - Retail (11.2.0+)  
 - Mists of Pandaria Classic (5.5.0+)  
 
-Currently Supported Languages:   
-Full Support:
+Currently Supported Languages:  
+Full Support:  
 - Brazilian Portuguese (ptBR) - Developer Native Language  
 - English (enUS) - 100% translated  
 - French (frFR) - 100% translated  
@@ -65,5 +65,5 @@ You can check the addon changelog and development roadmap on our GitHub project 
 Find our community at https://discord.gg/M7wQQFRjaq  
 
 Help us with a donation using the methods availiable on our Discord Channel on Help Us Chat.  
-Donations: PagSeguro/PagBank (https://pag.ae/7_BDYY22Q) or PayPal.  
+Donations: PagSeguro/PagBank (https://pag.ae/81u_gUZeo) or PayPal.  
 Only for Donations from Brazil: Pix.
