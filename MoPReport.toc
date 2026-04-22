@@ -1,4 +1,4 @@
-## Interface: 110200, 110205, 110207, 120000, 120001
+## Interface: 110200, 110205, 110207, 120000, 120001, 120005
 ## Title: Mists of Pandaria Report
 ## Notes: Check your Pandaria daily quests, work orders, currencies, world bosses and reputations in one place.
 ## Category-ptBR: Missões
