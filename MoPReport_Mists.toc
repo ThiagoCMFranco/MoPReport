@@ -1,10 +1,10 @@
-## Interface: 50500, 50501, 50502, 50503
+## Interface: 50500, 50501, 50502, 50503, 50504
 ## Title: Mists of Pandaria Report
 ## Notes: Check your Pandaria daily quests, work orders, currencies, world bosses and reputations in one place.
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.2.12
+## Version: 1.2.13
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB, MoPReportExtractDataDB
