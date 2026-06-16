@@ -1,5 +1,5 @@
 --Translator ork
---if GetLocale() ~= "frFR" then return end
+if GetLocale() ~= "frFR" then return end
 local _, qcc = ...
 qcc.L_Quests = {}
 local L_Quests = qcc.L_Quests
