@@ -123,6 +123,12 @@ function MoPReport_LoadSettings(treeW)
     scrollFrameMainSettings:SetLayout("Flow")
     scrollContainerMainSettings:AddChild(scrollFrameMainSettings)
 
+    local LabelGeneral_Title = AceGUI:Create("Label")
+    LabelGeneral_Title:SetText("|cFFFFC90E" .. L["Settings_Menu_General"] .. "|r")
+    SetACE3WidgetFontSize(LabelGeneral_Title, 20)
+    LabelGeneral_Title:SetWidth(640)
+    scrollFrameMainSettings:AddChild(LabelGeneral_Title)
+
     --Geral
     local chkHideUnavailableContent = AceGUI:Create("CheckBox")
 
@@ -247,6 +253,12 @@ function MoPReport_LoadCredits()
     local scrollFrameCredits = AceGUI:Create("ScrollFrame")
     scrollFrameCredits:SetLayout("Flow")
     scrollContainerCredits:AddChild(scrollFrameCredits)
+
+    local LabelCredits_Title = AceGUI:Create("Label")
+    LabelCredits_Title:SetText("|cFFFFC90E" .. L["Settings_Menu_Credit"] .. "|r")
+    SetACE3WidgetFontSize(LabelCredits_Title, 20)
+    LabelCredits_Title:SetWidth(640)
+    scrollFrameCredits:AddChild(LabelCredits_Title)
 
     local LabelCredits = AceGUI:Create("Label")
     LabelCredits:SetText(L["lblCreditColabList"])
