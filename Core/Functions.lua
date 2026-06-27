@@ -421,11 +421,13 @@ function AddReputationBarToFactionCard(parentFrame, current, treshold, percent, 
     local bar = CreateFrame("StatusBar", nil, parentFrame)
     if(reputationType == "Faction") then
         bar:SetSize(300, 12)
+        bar:SetPoint("BOTTOMLEFT", parentFrame, "BOTTOMLEFT", 10, 8)
     else
-        bar:SetSize(280, 12)
+        bar:SetSize(280, 10)
+        bar:SetPoint("BOTTOMLEFT", parentFrame, "BOTTOMLEFT", 10, 6)
     end
 
-    bar:SetPoint("BOTTOMLEFT", parentFrame, "BOTTOMLEFT", 10, 6)
+    --bar:SetPoint("BOTTOMLEFT", parentFrame, "BOTTOMLEFT", 10, 6)
     bar:SetMinMaxValues(0, 100)
     bar:SetValue(percent or 0)
     bar:SetStatusBarTexture("Interface/TargetingFrame/UI-StatusBar")
@@ -462,6 +464,16 @@ function AddReputationBarToFactionCard(parentFrame, current, treshold, percent, 
     end
     if treshold == 1 then repLabel = "" else repLabel = " (" .. current .. "/" .. treshold .. ")" end
     bar.label:SetText((L[standingLabel] .. repLabel) or "")
+
+    local borderFrame = CreateFrame("Frame", nil, bar, "BackdropTemplate")
+        borderFrame:SetPoint("TOPLEFT", bar, "TOPLEFT", -2, 2)
+        borderFrame:SetPoint("BOTTOMRIGHT", bar, "BOTTOMRIGHT", 2, -2)
+        borderFrame:SetBackdrop({
+            edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+            edgeSize = 10,
+            insets = { left = 1, right = 1, top = 1, bottom = 1 }
+        })
+        borderFrame:SetBackdropBorderColor(0.5, 0.5, 0.5, 0.8)
 
     return bar
 end
