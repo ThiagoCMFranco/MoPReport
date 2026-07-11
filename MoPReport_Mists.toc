@@ -4,7 +4,7 @@
 ## Category-ptBR: Missões
 ## Category-enUS: Quests
 ## Author: Thiago Franco (Topolino)
-## Version: 1.2.15
+## Version: 1.2.16
 ## RequiredDeps:
 ## X-Curse-Project-ID: 1339447
 ## SavedVariables: MoPReportSharedDB, MoPReportExtractDataDB
@@ -60,4 +60,5 @@ DetailsFrame_Mists.xml
 Settings.lua
 
 Util\DataExtractor.lua
+Util\DataExporter.lua
 Util\VersionChecker.lua

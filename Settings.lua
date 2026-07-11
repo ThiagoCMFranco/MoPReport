@@ -267,6 +267,40 @@ function MoPReport_LoadCredits()
     LabelCredits:SetWidth(580)
     scrollFrameCredits:AddChild(LabelCredits)
 
+    local headingCredit1 = AceGUI:Create("Heading")
+    headingCredit1:SetRelativeWidth(1)
+    scrollFrameCredits:AddChild(headingCredit1)
+
+    if MoPReport_Game_Flavor == "Classic" then return end
+
+    local LabelHelpTranslate_Title = AceGUI:Create("Label")
+    LabelHelpTranslate_Title:SetText("|cFFFFC90E" .. L["lblTranslationHelp_Title"] .. "|r")
+    SetACE3WidgetFontSize(LabelHelpTranslate_Title, 20)
+    LabelHelpTranslate_Title:SetWidth(640)
+    scrollFrameCredits:AddChild(LabelHelpTranslate_Title)
+
+    local LabelTranslationHelp = AceGUI:Create("Label")
+    LabelTranslationHelp:SetText(L["lblTranslationHelp"])
+    SetACE3WidgetFontSize(LabelTranslationHelp, 13)
+    LabelTranslationHelp:SetWidth(580)
+    scrollFrameCredits:AddChild(LabelTranslationHelp)
+
+    local btnDataExporter = AceGUI:Create("Button")
+    btnDataExporter:SetText(L["buttonDataExporter"])
+    btnDataExporter:SetWidth(300)
+    btnDataExporter:SetCallback("OnClick", function() 
+        MoPReportDataExporter:OpenExportWindow()
+    end)
+    scrollFrameCredits:AddChild(btnDataExporter)
+
+    local btnClearExportedCache = AceGUI:Create("Button")
+    btnClearExportedCache:SetText(L["buttonClearExportedCache"])
+    btnClearExportedCache:SetWidth(220)
+    btnClearExportedCache:SetCallback("OnClick", function() 
+        MoPReportExtractDataDB = {}
+    end)
+    scrollFrameCredits:AddChild(btnClearExportedCache)
+
 end
 
 local tree = { 
