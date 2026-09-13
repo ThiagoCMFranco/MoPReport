@@ -138,7 +138,7 @@ function CreateWorldBossFrames(_worldBossesFrames, _WorldBossesList)
             end)
             CheckButton:SetScript("OnEnter", function(self)
                 GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT")
-                MOP_ShowIconTooltip(GameTooltip, L["Track"] .. title)
+                MOP_ShowIconTooltip(GameTooltip, L["Track"] .. " " .. title)
                 GameTooltip:Show()
             end)
     	    CheckButton:SetScript("OnLeave", function(self)
@@ -183,7 +183,7 @@ local function UpdateCharacterData()
     
     local charData = MoPReportSharedDB[realm][charName]
     local currentTime = GetServerTime()
-    local secondsToReset = GetQuestResetTime()
+    local secondsToReset = C_DateAndTime.GetSecondsUntilWeeklyReset()    
     local nextReset = currentTime + secondsToReset
 
     -- Lógica de Reset: Se o log atual for mais antigo que o reset esperado
