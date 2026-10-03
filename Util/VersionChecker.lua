@@ -20,8 +20,8 @@
 --
 --------------------------------------------------------------------------------
 
-local name, qcc = ...
-local L = qcc.L 
+local name, MoPReport = ...
+local L = MoPReport.L 
 
 local AddonName = L["AddonName"]
 local Prefix = "MOP_VER_CHECK"

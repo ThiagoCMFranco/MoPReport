@@ -1,8 +1,8 @@
 --Translator ork
 if GetLocale() ~= "frFR" then return end
-local _, qcc = ...
-qcc.L_Factions = {}
-local L_Factions = qcc.L_Factions
+local _, MoPReport = ...
+MoPReport.L_Factions = {}
+local L_Factions = MoPReport.L_Factions
 
 L_Factions[1269] = "Lotus doré"
 L_Factions[1271] = "L’ordre du Serpent-nuage"

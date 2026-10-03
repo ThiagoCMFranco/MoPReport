@@ -1,8 +1,8 @@
 --Translator ork
 if GetLocale() ~= "frFR" then return end
-local _, qcc = ...
-qcc.L_Quests = {}
-local L_Quests = qcc.L_Quests
+local _, MoPReport = ...
+MoPReport.L_Quests = {}
+local L_Quests = MoPReport.L_Quests
 
 L_Quests[30151] = "Attrape !"
 L_Quests[31704] = "On est pas dans le caca !"

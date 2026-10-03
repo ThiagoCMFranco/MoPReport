@@ -1,8 +1,8 @@
 --Translator Thiago Franco
 if GetLocale() ~= "ptBR" then return end
-local _, qcc = ...
-qcc.L_Factions = {}
-local L_Factions = qcc.L_Factions
+local _, MoPReport = ...
+MoPReport.L_Factions = {}
+local L_Factions = MoPReport.L_Factions
 
 L_Factions[1269] = "Lótus Dourado"
 L_Factions[1271] = "Ordem da Serpente das Nuvens"

@@ -134,7 +134,7 @@
             </ScrollFrame>
         </Frames>
 		<Scripts>
-			<OnLoad function="QCCFrame_OnLoad"/>
+			<OnLoad function="MoPReportFrame_OnLoad"/>
 			<OnDragStart>if not MoPReportDB.LockDragDrop then self:StartMoving(); end</OnDragStart>
 			<OnDragStop>self:StopMovingOrSizing();</OnDragStop>
             <OnShow>
