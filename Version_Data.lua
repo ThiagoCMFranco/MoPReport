@@ -20,5 +20,5 @@
 --
 --------------------------------------------------------------------------------
 
-C_MOPREPORT_VERSION_UID = 1002019
-C_MOPREPORT_VERSION_SEMANTIC_NUMBER = "1.2.19"
+C_MOPREPORT_VERSION_UID = 1002020
+C_MOPREPORT_VERSION_SEMANTIC_NUMBER = "1.2.20"

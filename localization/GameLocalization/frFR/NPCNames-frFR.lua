@@ -1,8 +1,8 @@
 --Translator ork
 if GetLocale() ~= "frFR" then return end
-local _, qcc = ...
-qcc.L_Units = {}
-local L_Units = qcc.L_Units
+local _, MoPReport = ...
+MoPReport.L_Units = {}
+local L_Units = MoPReport.L_Units
 
 --World Bosses
 

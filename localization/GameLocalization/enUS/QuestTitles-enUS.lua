@@ -1,8 +1,8 @@
 --Translator Thiago Franco
 --if GetLocale() ~= "enUS" then return end
-local _, qcc = ...
-qcc.L_Quests = {}
-local L_Quests = qcc.L_Quests
+local _, MoPReport = ...
+MoPReport.L_Quests = {}
+local L_Quests = MoPReport.L_Quests
 
 L_Quests[30151] = "Catch!"
 L_Quests[31704] = "Pooped"

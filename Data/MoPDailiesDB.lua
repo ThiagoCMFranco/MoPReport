@@ -20,12 +20,12 @@
 --
 --------------------------------------------------------------------------------
 
-local name, qcc = ...
-local L = qcc.L 
-local L_Factions = qcc.L_Factions
-local L_Units = qcc.L_Units
-local L_Quests = qcc.L_Quests
-local L_Categories = qcc.L_Categories
+local name, MoPReport = ...
+local L = MoPReport.L 
+local L_Factions = MoPReport.L_Factions
+local L_Units = MoPReport.L_Units
+local L_Quests = MoPReport.L_Quests
+local L_Categories = MoPReport.L_Categories
 
 C_CATEGORY_ICONS = {
     [L_Categories["Category_Cook"]] = {icon = "worldquest-icon-cooking", tooltip = L_Categories["Category_Cook"]},

@@ -23,8 +23,8 @@
 local _thisFrame = {}
 _penDetail = 0
 
-local name, qcc = ...
-local L = qcc.L 
+local name, MoPReport = ...
+local L = MoPReport.L 
 
 function MoPReportDetailsFrame_OnLoad(self)
 	self:RegisterForDrag("LeftButton");

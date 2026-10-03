@@ -26,8 +26,8 @@ if not MoPReportDB then
     MoPReportDB = {}
 end
 
-local name, qcc = ...
-local L = qcc.L 
+local name, MoPReport = ...
+local L = MoPReport.L 
     
 MoPReport = MoPReport or {}
 

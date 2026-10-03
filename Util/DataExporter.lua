@@ -25,8 +25,8 @@ MoPReportDataExporter = {}
 local textoMoPParaCopiar = {}
 local mopLinhasContainer = {}
 
-local name, mct = ...
-local L = mct.L 
+local name, MoPReport = ...
+local L = MoPReport.L 
 
 -------------------------------------------------------------------------------
 -- CRIAÇÃO DA INTERFACE GRÁFICA (UI)

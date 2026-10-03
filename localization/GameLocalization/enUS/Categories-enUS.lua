@@ -1,8 +1,8 @@
 --Translator Thiago Franco
 --if GetLocale() ~= "enUS" then return end
-local _, qcc = ...
-qcc.L_Categories = {}
-local L_Categories = qcc.L_Categories
+local _, MoPReport = ...
+MoPReport.L_Categories = {}
+local L_Categories = MoPReport.L_Categories
 
 L_Categories["Category_Cook"] = "Cooking"
 L_Categories["Category_Arch"] = "Archaeology"

@@ -20,10 +20,10 @@
 --
 --------------------------------------------------------------------------------
 
-local name, qcc = ...
-local L = qcc.L 
+local name, MoPReport = ...
+local L = MoPReport.L 
 
-function QCCFrame_OnLoad(self)
+function MoPReportFrame_OnLoad(self)
 	self:SetTitle(L["AddonName_Interface"]);
 	self.PortraitContainer.portrait:SetTexture("Interface\\AddOns\\MoPReport\\MopIcon.png");
 	self:RegisterForDrag("LeftButton");

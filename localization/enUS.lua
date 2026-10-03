@@ -1,8 +1,8 @@
 --Translator Thiago Franco
 --if GetLocale() ~= "enUS" then return end
-local _, qcc = ...
-qcc.L = {}
-local L = qcc.L
+local _, MoPReport = ...
+MoPReport.L = {}
+local L = MoPReport.L
 
 L["AddonName"] = "MoPReport"
 L["AddonName_Interface"] = "Pandaria's Report"
